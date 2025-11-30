@@ -7,28 +7,28 @@
   <style>
     @font-face {
       font-family: 'OpenRunde';
-      src: url('https://your-domain.com/fonts/OpenRunde-Regular-BF64ee9c6978988.woff') format('woff');
+      src: url('/fonts/OpenRunde-Regular-BF64ee9c6978988.woff') format('woff');
       font-weight: 400;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
       font-family: 'OpenRunde';
-      src: url('https://your-domain.com/fonts/OpenRunde-Medium-BF64ee9c695513a.woff') format('woff');
+      src: url('/fonts/OpenRunde-Medium-BF64ee9c695513a.woff') format('woff');
       font-weight: 500;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
       font-family: 'OpenRunde';
-      src: url('https://your-domain.com/fonts/OpenRunde-Semibold-BF64ee9c69788f3.woff') format('woff');
+      src: url('/fonts/OpenRunde-Semibold-BF64ee9c69788f3.woff') format('woff');
       font-weight: 600;
       font-style: normal;
       font-display: swap;
     }
     @font-face {
       font-family: 'OpenRunde';
-      src: url('https://your-domain.com/fonts/OpenRunde-Bold-BF64ee9c696534f.woff') format('woff');
+      src: url('/fonts/OpenRunde-Bold-BF64ee9c696534f.woff') format('woff');
       font-weight: 700;
       font-style: normal;
       font-display: swap;
@@ -238,9 +238,14 @@
   </div>
 
   <script>
-    // Configuration - UPDATE THIS with your deployed URL
-    const API_URL = 'http://localhost:3000/api/blog';
-    const BLOG_BASE_URL = 'http://localhost:3000/blog';
+    // Configuration - Automatically detects environment
+    const isProduction = window.location.hostname !== 'localhost';
+    const BASE_URL = isProduction
+      ? window.location.origin
+      : 'http://localhost:3000';
+
+    const API_URL = `${BASE_URL}/api/blog`;
+    const BLOG_BASE_URL = `${BASE_URL}/blog`;
 
     async function fetchBlogPosts() {
       try {
