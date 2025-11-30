@@ -1,4 +1,4 @@
-import { getNotionBlogPostBySlug, getNotionBlogPosts } from "@/lib/notion"
+import { getContentfulBlogPostBySlug, getContentfulBlogPosts } from "@/lib/contentful"
 import { BlogCard } from "@/components/blog-card"
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
@@ -11,7 +11,7 @@ interface BlogPostPageProps {
 }
 
 export async function generateStaticParams() {
-  const blogPosts = await getNotionBlogPosts()
+  const blogPosts = await getContentfulBlogPosts()
   return blogPosts.map((post) => ({
     slug: post.slug,
   }))
@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: BlogPostPageProps) {
   const resolvedParams = await params
-  const post = await getNotionBlogPostBySlug(resolvedParams.slug)
+  const post = await getContentfulBlogPostBySlug(resolvedParams.slug)
 
   if (!post) {
     return {
@@ -35,13 +35,13 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const resolvedParams = await params
-  const post = await getNotionBlogPostBySlug(resolvedParams.slug)
+  const post = await getContentfulBlogPostBySlug(resolvedParams.slug)
 
   if (!post) {
     notFound()
   }
 
-  const blogPosts = await getNotionBlogPosts()
+  const blogPosts = await getContentfulBlogPosts()
   const relatedPosts = blogPosts.filter((p) => p.id !== post.id).slice(0, 3)
 
   return (

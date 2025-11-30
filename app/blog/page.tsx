@@ -1,5 +1,5 @@
 import { BlogList } from "@/components/blog-list"
-import { getNotionBlogPosts } from "@/lib/notion"
+import { getContentfulBlogPosts } from "@/lib/contentful"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
@@ -9,7 +9,7 @@ export const metadata = {
 }
 
 export default async function BlogPage() {
-  const blogPosts = await getNotionBlogPosts()
+  const blogPosts = await getContentfulBlogPosts()
   return (
     <main className="min-h-screen bg-background">
       {/* Page Header */}

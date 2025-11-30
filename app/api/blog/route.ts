@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server"
-import { getNotionBlogPosts } from "@/lib/notion"
+import { getContentfulBlogPosts } from "@/lib/contentful"
 
 export async function GET() {
   try {
-    const posts = await getNotionBlogPosts()
+    const posts = await getContentfulBlogPosts()
 
     return NextResponse.json({
       success: true,
