@@ -12,6 +12,8 @@ export interface BlogPost {
     avatar: string
   }
   readTime: number
+  category?: string
+  featured?: boolean
 }
 
 export const blogPosts: BlogPost[] = [

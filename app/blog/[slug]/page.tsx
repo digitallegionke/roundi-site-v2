@@ -1,4 +1,4 @@
-import { getBlogPostBySlug, blogPosts } from "@/lib/blog-data"
+import { getNotionBlogPostBySlug, getNotionBlogPosts } from "@/lib/notion"
 import { BlogCard } from "@/components/blog-card"
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
@@ -11,6 +11,7 @@ interface BlogPostPageProps {
 }
 
 export async function generateStaticParams() {
+  const blogPosts = await getNotionBlogPosts()
   return blogPosts.map((post) => ({
     slug: post.slug,
   }))
@@ -18,7 +19,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: BlogPostPageProps) {
   const resolvedParams = await params
-  const post = getBlogPostBySlug(resolvedParams.slug)
+  const post = await getNotionBlogPostBySlug(resolvedParams.slug)
 
   if (!post) {
     return {
@@ -34,57 +35,47 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const resolvedParams = await params
-  const post = getBlogPostBySlug(resolvedParams.slug)
+  const post = await getNotionBlogPostBySlug(resolvedParams.slug)
 
   if (!post) {
     notFound()
   }
 
+  const blogPosts = await getNotionBlogPosts()
   const relatedPosts = blogPosts.filter((p) => p.id !== post.id).slice(0, 3)
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border sticky top-0 bg-background/80 backdrop-blur-sm z-50">
-        <nav className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center gap-4">
-          <Link
-            href="/blog"
-            className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ChevronLeft className="w-4 h-4" />
-            Back
-          </Link>
-        </nav>
-      </header>
-
       {/* Post Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-0 mt-16">
         {/* Title Section */}
         <div className="mb-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4 text-balance">{post.title}</h1>
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 py-4 border-b border-border">
-            <div className="flex items-center gap-4">
-              <img
-                src={post.author.avatar || "/placeholder.svg"}
-                alt={post.author.name}
-                className="w-12 h-12 rounded-full object-cover"
-              />
-              <div>
-                <p className="font-medium text-foreground">{post.author.name}</p>
-                <p className="text-sm text-muted-foreground">{post.author.title}</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 text-sm text-muted-foreground">
-              <time>{post.date}</time>
-              <span>•</span>
-              <span>{post.readTime} min read</span>
-            </div>
-          </div>
+          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 text-balance">{post.title}</h1>
         </div>
 
         {/* Featured Image */}
         <div className="mb-8 rounded-lg overflow-hidden">
           <img src={post.image || "/placeholder.svg"} alt={post.title} className="w-full h-96 object-cover" />
+        </div>
+
+        {/* Meta Information */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-8 mb-8 border-b border-border">
+          <div className="flex items-center gap-4">
+            <img
+              src={post.author.avatar || "/placeholder.svg"}
+              alt={post.author.name}
+              className="w-12 h-12 rounded-full object-cover"
+            />
+            <div>
+              <p className="font-medium text-foreground">{post.author.name}</p>
+              <p className="text-sm text-muted-foreground">{post.author.title}</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 text-sm text-muted-foreground">
+            <time>{post.date}</time>
+            <span>•</span>
+            <span>{post.readTime} min read</span>
+          </div>
         </div>
 
         {/* Post Body */}
@@ -129,9 +120,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </section>
       )}
-
-      {/* Footer */}
-      
     </main>
   )
 }

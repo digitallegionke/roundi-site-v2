@@ -1,18 +1,13 @@
 import Link from "next/link"
 import { BlogList } from "@/components/blog-list"
-import { getFeaturedPosts } from "@/lib/blog-data"
+import { getNotionFeaturedPosts } from "@/lib/notion"
 import { Button } from "@/components/ui/button"
 
-export default function Home() {
-  const featuredPosts = getFeaturedPosts(3)
+export default async function Home() {
+  const featuredPosts = await getNotionFeaturedPosts(3)
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border sticky top-0 bg-background/80 backdrop-blur-sm z-50">
-        
-      </header>
-
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 sm:pb-[0]">
         <div className="mb-12">
@@ -29,12 +24,6 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <BlogList posts={featuredPosts} />
       </section>
-
-      {/* CTA Section */}
-      
-
-      {/* Footer */}
-      
     </main>
   )
 }
