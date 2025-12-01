@@ -9,8 +9,14 @@ const client = createClient({
 
 // Helper to extract image URL from Contentful assets
 function getImageUrl(asset: any): string {
-  if (!asset || !asset.fields) return "/placeholder.jpg"
-  return asset.fields.file?.url ? `https:${asset.fields.file.url}` : "/placeholder.jpg"
+  if (!asset || !asset.fields) {
+    console.log("No asset or asset.fields found")
+    return "/placeholder.jpg"
+  }
+
+  const url = asset.fields.file?.url ? `https:${asset.fields.file.url}` : "/placeholder.jpg"
+  console.log("Image URL extracted:", url)
+  return url
 }
 
 // Helper to extract text from Rich Text field
@@ -34,6 +40,21 @@ function getRichTextContent(richText: any): string {
           return node.value || ""
         }
 
+        // Handle hyperlinks
+        if (node.nodeType === "hyperlink" && node.content) {
+          return extractText(node.content)
+        }
+
+        // Handle list items
+        if (node.nodeType === "list-item" && node.content) {
+          return "• " + extractText(node.content)
+        }
+
+        // Handle unordered/ordered lists
+        if ((node.nodeType === "unordered-list" || node.nodeType === "ordered-list") && node.content) {
+          return extractText(node.content) + "\n\n"
+        }
+
         // Handle paragraph, heading, and other block nodes
         if (node.content && Array.isArray(node.content)) {
           const text = extractText(node.content)
@@ -49,9 +70,7 @@ function getRichTextContent(richText: any): string {
       .join("")
   }
 
-  const result = extractText(richText.content).trim()
-  console.log("Extracted text result:", result)
-  return result
+  return extractText(richText.content).trim()
 }
 
 // Fetch all blog posts from Contentful
@@ -65,14 +84,16 @@ export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
     const posts: BlogPost[] = response.items.map((item: any) => {
       const fields = item.fields
 
+      const contentText = getRichTextContent(fields.copy || fields.excerpt) || ""
+
       return {
         id: item.sys.id,
         title: fields.name || "",
         slug: fields.slug || item.sys.id,
-        excerpt: getRichTextContent(fields.excerpt) || "",
-        content: getRichTextContent(fields.excerpt) || "", // Using excerpt as content since you don't have separate content field
+        excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""), // First 200 chars as excerpt
+        content: contentText, // Full content from copy field
         date: fields.date || new Date().toISOString().split("T")[0],
-        readTime: 5, // Default read time since you don't have this field
+        readTime: Math.ceil(contentText.split(" ").length / 200) || 5, // Calculate read time based on word count
         author: {
           name: fields.author || "Anonymous",
           avatar: "/placeholder-user.jpg", // Default avatar since you don't have this field
@@ -107,19 +128,16 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
     const item: any = response.items[0]
     const fields = item.fields
 
-    // Debug logging
-    console.log("Contentful fields:", JSON.stringify(fields, null, 2))
-    console.log("Excerpt field:", fields.excerpt)
-    console.log("Extracted content:", getRichTextContent(fields.excerpt))
+    const contentText = getRichTextContent(fields.copy || fields.excerpt) || ""
 
     return {
       id: item.sys.id,
       title: fields.name || "",
       slug: fields.slug || item.sys.id,
-      excerpt: getRichTextContent(fields.excerpt) || "",
-      content: getRichTextContent(fields.excerpt) || "",
+      excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
+      content: contentText,
       date: fields.date || new Date().toISOString().split("T")[0],
-      readTime: 5,
+      readTime: Math.ceil(contentText.split(" ").length / 200) || 5,
       author: {
         name: fields.author || "Anonymous",
         avatar: "/placeholder-user.jpg",
@@ -146,15 +164,16 @@ export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]>
 
     const posts: BlogPost[] = response.items.map((item: any) => {
       const fields = item.fields
+      const contentText = getRichTextContent(fields.copy || fields.excerpt) || ""
 
       return {
         id: item.sys.id,
         title: fields.name || "",
         slug: fields.slug || item.sys.id,
-        excerpt: getRichTextContent(fields.excerpt) || "",
-        content: getRichTextContent(fields.excerpt) || "",
+        excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
+        content: contentText,
         date: fields.date || new Date().toISOString().split("T")[0],
-        readTime: 5,
+        readTime: Math.ceil(contentText.split(" ").length / 200) || 5,
         author: {
           name: fields.author || "Anonymous",
           avatar: "/placeholder-user.jpg",
