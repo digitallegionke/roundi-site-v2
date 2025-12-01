@@ -90,6 +90,7 @@ export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
       return {
         id: item.sys.id,
         title: fields.name || "",
+        subtitle: fields.subtitle || "",
         slug: fields.slug || item.sys.id,
         excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
         content: contentText,
@@ -136,6 +137,7 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
     return {
       id: item.sys.id,
       title: fields.name || "",
+      subtitle: fields.subtitle || "",
       slug: fields.slug || item.sys.id,
       excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
       content: contentText,
@@ -174,6 +176,7 @@ export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]>
       return {
         id: item.sys.id,
         title: fields.name || "",
+        subtitle: fields.subtitle || "",
         slug: fields.slug || item.sys.id,
         excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
         content: contentText,

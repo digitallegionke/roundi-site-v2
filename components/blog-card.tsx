@@ -23,6 +23,9 @@ export function BlogCard({ post, variant = "default" }: BlogCardProps) {
           <h3 className="text-base font-semibold text-foreground line-clamp-2 group-hover:text-primary transition-colors mt-2">
             {post.title}
           </h3>
+          {post.subtitle && (
+            <p className="text-sm text-muted-foreground line-clamp-2 mt-1">{post.subtitle}</p>
+          )}
         </article>
       </Link>
     )
@@ -46,6 +49,9 @@ export function BlogCard({ post, variant = "default" }: BlogCardProps) {
         <h2 className="text-xl font-bold text-foreground line-clamp-2 group-hover:text-primary transition-colors mb-2">
           {post.title}
         </h2>
+        {post.subtitle && (
+          <p className="text-base text-muted-foreground line-clamp-1 mb-2">{post.subtitle}</p>
+        )}
         <p className="text-base text-muted-foreground line-clamp-2">{post.excerpt}</p>
         <div className="flex items-center gap-3 mt-4">
           <img

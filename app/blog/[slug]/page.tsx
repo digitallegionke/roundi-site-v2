@@ -68,6 +68,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Title Section */}
         <div className="mb-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 text-balance">{post.title}</h1>
+          {post.subtitle && (
+            <p className="text-xl text-muted-foreground leading-relaxed">{post.subtitle}</p>
+          )}
         </div>
 
         {/* Featured Image */}

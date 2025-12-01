@@ -1,6 +1,7 @@
 export interface BlogPost {
   id: string
   title: string
+  subtitle?: string
   slug: string
   excerpt: string
   content: string
