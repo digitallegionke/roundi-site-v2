@@ -1,5 +1,6 @@
 import { getContentfulBlogPostBySlug, getContentfulBlogPosts } from "@/lib/contentful"
 import { BlogCard } from "@/components/blog-card"
+import { RichTextRenderer } from "@/components/rich-text-renderer"
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
 import { notFound } from "next/navigation"
@@ -94,12 +95,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
 
         {/* Post Body */}
-        <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
-          {post.content.split("\n\n").map((paragraph, index) => (
-            <p key={index} className="text-base text-foreground leading-relaxed mb-6">
-              {paragraph}
-            </p>
-          ))}
+        <div className="mb-12">
+          {post.richContent ? (
+            <RichTextRenderer content={post.richContent} />
+          ) : (
+            <div className="prose prose-lg dark:prose-invert max-w-none">
+              {post.content.split("\n\n").map((paragraph, index) => (
+                <p key={index} className="text-base text-foreground leading-relaxed mb-6">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Author Bio */}

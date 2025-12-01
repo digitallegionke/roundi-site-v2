@@ -84,24 +84,26 @@ export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
     const posts: BlogPost[] = response.items.map((item: any) => {
       const fields = item.fields
 
-      const contentText = getRichTextContent(fields.copy || fields.excerpt) || ""
+      const richContent = fields.copy || fields.excerpt
+      const contentText = getRichTextContent(richContent) || ""
 
       return {
         id: item.sys.id,
         title: fields.name || "",
         slug: fields.slug || item.sys.id,
-        excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""), // First 200 chars as excerpt
-        content: contentText, // Full content from copy field
+        excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
+        content: contentText,
+        richContent: richContent, // Store the raw Rich Text structure
         date: fields.date || new Date().toISOString().split("T")[0],
-        readTime: Math.ceil(contentText.split(" ").length / 200) || 5, // Calculate read time based on word count
+        readTime: Math.ceil(contentText.split(" ").length / 200) || 5,
         author: {
           name: fields.author || "Anonymous",
-          avatar: "/placeholder-user.jpg", // Default avatar since you don't have this field
-          title: "Writer", // Default title since you don't have this field
+          avatar: "/placeholder-user.jpg",
+          title: "Writer",
         },
         image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.jpg",
         category: fields.category || "General",
-        featured: false, // Default to false since you don't have this field
+        featured: false,
       }
     })
 
@@ -128,7 +130,8 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
     const item: any = response.items[0]
     const fields = item.fields
 
-    const contentText = getRichTextContent(fields.copy || fields.excerpt) || ""
+    const richContent = fields.copy || fields.excerpt
+    const contentText = getRichTextContent(richContent) || ""
 
     return {
       id: item.sys.id,
@@ -136,6 +139,7 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
       slug: fields.slug || item.sys.id,
       excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
       content: contentText,
+      richContent: richContent,
       date: fields.date || new Date().toISOString().split("T")[0],
       readTime: Math.ceil(contentText.split(" ").length / 200) || 5,
       author: {
@@ -164,7 +168,8 @@ export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]>
 
     const posts: BlogPost[] = response.items.map((item: any) => {
       const fields = item.fields
-      const contentText = getRichTextContent(fields.copy || fields.excerpt) || ""
+      const richContent = fields.copy || fields.excerpt
+      const contentText = getRichTextContent(richContent) || ""
 
       return {
         id: item.sys.id,
@@ -172,6 +177,7 @@ export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]>
         slug: fields.slug || item.sys.id,
         excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
         content: contentText,
+        richContent: richContent,
         date: fields.date || new Date().toISOString().split("T")[0],
         readTime: Math.ceil(contentText.split(" ").length / 200) || 5,
         author: {

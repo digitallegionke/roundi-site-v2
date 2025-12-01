@@ -4,6 +4,7 @@ export interface BlogPost {
   slug: string
   excerpt: string
   content: string
+  richContent?: any // Rich Text document from Contentful
   image: string
   date: string
   author: {
