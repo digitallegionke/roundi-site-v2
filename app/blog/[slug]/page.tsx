@@ -48,6 +48,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     <main className="min-h-screen bg-background">
       {/* Post Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-0 mt-16">
+        {/* Back Button */}
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
+        >
+          <ChevronLeft className="w-4 h-4" />
+          Back to blog
+        </Link>
+
         {/* Title Section */}
         <div className="mb-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 text-balance">{post.title}</h1>
