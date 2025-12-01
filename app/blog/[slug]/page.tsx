@@ -10,6 +10,12 @@ interface BlogPostPageProps {
   }>
 }
 
+// Revalidate this page every 60 seconds
+export const revalidate = 60
+
+// Enable dynamic params to allow new blog posts to be generated
+export const dynamicParams = true
+
 export async function generateStaticParams() {
   const blogPosts = await getContentfulBlogPosts()
   return blogPosts.map((post) => ({

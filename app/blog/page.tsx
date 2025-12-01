@@ -8,6 +8,9 @@ export const metadata = {
   description: "Explore our collection of articles and insights.",
 }
 
+// Revalidate this page every 60 seconds
+export const revalidate = 60
+
 export default async function BlogPage() {
   const blogPosts = await getContentfulBlogPosts()
   return (

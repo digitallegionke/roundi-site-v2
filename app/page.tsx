@@ -3,6 +3,9 @@ import { BlogList } from "@/components/blog-list"
 import { getContentfulFeaturedPosts } from "@/lib/contentful"
 import { Button } from "@/components/ui/button"
 
+// Revalidate this page every 60 seconds
+export const revalidate = 60
+
 export default async function Home() {
   const featuredPosts = await getContentfulFeaturedPosts(3)
 
