@@ -68,15 +68,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Title Section */}
         <div className="mb-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 text-balance">{post.title}</h1>
-          {post.subtitle && (
-            <p className="text-xl text-muted-foreground leading-relaxed">{post.subtitle}</p>
-          )}
         </div>
 
         {/* Featured Image */}
         <div className="mb-8 rounded-lg overflow-hidden">
           <img src={post.image || "/placeholder.svg"} alt={post.title} className="w-full h-96 object-cover" />
         </div>
+
+        {/* Subtitle Section */}
+        {post.subtitle && (
+          <div className="mb-8">
+            <p className="text-xl text-muted-foreground leading-relaxed">{post.subtitle}</p>
+          </div>
+        )}
 
         {/* Meta Information */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-8 mb-8 border-b border-border">
