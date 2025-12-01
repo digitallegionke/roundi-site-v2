@@ -87,10 +87,20 @@ export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
       const richContent = fields.copy || fields.excerpt
       const contentText = getRichTextContent(richContent) || ""
 
+      // Handle subtitle - check if it's a Rich Text object or plain string
+      let subtitleText = ""
+      if (fields.subtitle) {
+        if (typeof fields.subtitle === "string") {
+          subtitleText = fields.subtitle
+        } else {
+          subtitleText = getRichTextContent(fields.subtitle) || ""
+        }
+      }
+
       return {
         id: item.sys.id,
         title: fields.name || "",
-        subtitle: fields.subtitle || "",
+        subtitle: subtitleText,
         slug: fields.slug || item.sys.id,
         excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
         content: contentText,
@@ -134,10 +144,20 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
     const richContent = fields.copy || fields.excerpt
     const contentText = getRichTextContent(richContent) || ""
 
+    // Handle subtitle - check if it's a Rich Text object or plain string
+    let subtitleText = ""
+    if (fields.subtitle) {
+      if (typeof fields.subtitle === "string") {
+        subtitleText = fields.subtitle
+      } else {
+        subtitleText = getRichTextContent(fields.subtitle) || ""
+      }
+    }
+
     return {
       id: item.sys.id,
       title: fields.name || "",
-      subtitle: fields.subtitle || "",
+      subtitle: subtitleText,
       slug: fields.slug || item.sys.id,
       excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
       content: contentText,
@@ -173,10 +193,20 @@ export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]>
       const richContent = fields.copy || fields.excerpt
       const contentText = getRichTextContent(richContent) || ""
 
+      // Handle subtitle - check if it's a Rich Text object or plain string
+      let subtitleText = ""
+      if (fields.subtitle) {
+        if (typeof fields.subtitle === "string") {
+          subtitleText = fields.subtitle
+        } else {
+          subtitleText = getRichTextContent(fields.subtitle) || ""
+        }
+      }
+
       return {
         id: item.sys.id,
         title: fields.name || "",
-        subtitle: fields.subtitle || "",
+        subtitle: subtitleText,
         slug: fields.slug || item.sys.id,
         excerpt: contentText.substring(0, 200) + (contentText.length > 200 ? "..." : ""),
         content: contentText,
