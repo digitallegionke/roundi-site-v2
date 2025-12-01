@@ -1,6 +1,7 @@
 import { getContentfulBlogPostBySlug, getContentfulBlogPosts } from "@/lib/contentful"
 import { BlogCard } from "@/components/blog-card"
 import { RichTextRenderer } from "@/components/rich-text-renderer"
+import { formatDate } from "@/lib/utils/date"
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
 import { notFound } from "next/navigation"
@@ -88,7 +89,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </div>
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <time>{post.date}</time>
+            <time>{formatDate(post.date)}</time>
             <span>•</span>
             <span>{post.readTime} min read</span>
           </div>

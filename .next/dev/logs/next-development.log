@@ -105,3 +105,44 @@
 [00:16:54.683] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
 [00:16:54.683] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
 [00:16:54.683] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764600030108}
+[00:18:50.546] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:18:50.546] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:00.733] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:00.747] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:01.552] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:19:01.554] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:02.292] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/the-aha-moment color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]","o":"http://localhost:3000/blog/the-aha-moment","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764600157393}
+[00:19:04.044] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:04.048] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:04.454] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:19:04.454] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:13.095] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:13.106] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:13.477] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:19:13.477] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:33.917] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:33.922] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:34.476] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:19:34.476] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:36.026] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:36.203] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:19:36.203] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog/the-aha-moment","route":"/blog/[slug]"}
+[00:19:36.203] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/the-aha-moment color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]","o":"http://localhost:3000/blog/the-aha-moment","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764600191668}
+[00:19:45.298] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:19:45.299] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:45.308] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:19:45.308] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:45.510] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764600200972}
+[00:19:49.484] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:49.489] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:49.741] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:19:49.741] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:19:49.906] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/the-aha-moment color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]","o":"http://localhost:3000/blog/the-aha-moment","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764600205366}
+[00:20:43.272] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:20:43.279] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:20:43.722] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:20:43.722] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:21:03.186] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:21:03.195] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:21:03.578] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:21:03.578] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"

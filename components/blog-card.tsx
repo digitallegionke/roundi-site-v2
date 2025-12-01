@@ -1,5 +1,6 @@
 import Link from "next/link"
 import type { BlogPost } from "@/lib/blog-data"
+import { formatDate } from "@/lib/utils/date"
 
 interface BlogCardProps {
   post: BlogPost
@@ -18,7 +19,7 @@ export function BlogCard({ post, variant = "default" }: BlogCardProps) {
               className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <time className="text-sm text-muted-foreground">{post.date}</time>
+          <time className="text-sm text-muted-foreground">{formatDate(post.date)}</time>
           <h3 className="text-base font-semibold text-foreground line-clamp-2 group-hover:text-primary transition-colors mt-2">
             {post.title}
           </h3>
@@ -38,7 +39,7 @@ export function BlogCard({ post, variant = "default" }: BlogCardProps) {
           />
         </div>
         <div className="flex items-center gap-2 mb-3">
-          <time className="text-sm text-muted-foreground">{post.date}</time>
+          <time className="text-sm text-muted-foreground">{formatDate(post.date)}</time>
           <span className="text-sm text-muted-foreground">•</span>
           <span className="text-sm text-muted-foreground">{post.readTime} min read</span>
         </div>

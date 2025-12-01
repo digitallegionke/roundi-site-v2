@@ -83,22 +83,30 @@ export function RichTextRenderer({ content }: RichTextRendererProps) {
 
       case "unordered-list":
         return (
-          <ul key={key} className="list-disc list-inside mb-6 space-y-2">
+          <ul key={key} className="list-disc pl-6 mb-6 space-y-2">
             {node.content?.map((child: any, i: number) => renderNode(child, i))}
           </ul>
         )
 
       case "ordered-list":
         return (
-          <ol key={key} className="list-decimal list-inside mb-6 space-y-2">
+          <ol key={key} className="list-decimal pl-6 mb-6 space-y-2">
             {node.content?.map((child: any, i: number) => renderNode(child, i))}
           </ol>
         )
 
       case "list-item":
+        const listItemContent = node.content?.map((child: any, i: number) => {
+          // For list items, we want to extract the text without the paragraph wrapper
+          if (child.nodeType === "paragraph" && child.content) {
+            return child.content.map((textNode: any, j: number) => renderNode(textNode, j))
+          }
+          return renderNode(child, i)
+        })
+
         return (
           <li key={key} className="text-foreground">
-            {node.content?.map((child: any, i: number) => renderNode(child, i))}
+            {listItemContent}
           </li>
         )
 
