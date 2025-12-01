@@ -1,10 +1,10 @@
 import Link from "next/link"
 import { BlogList } from "@/components/blog-list"
-import { getNotionFeaturedPosts } from "@/lib/notion"
+import { getContentfulFeaturedPosts } from "@/lib/contentful"
 import { Button } from "@/components/ui/button"
 
 export default async function Home() {
-  const featuredPosts = await getNotionFeaturedPosts(3)
+  const featuredPosts = await getContentfulFeaturedPosts(3)
 
   return (
     <main className="min-h-screen bg-background">

@@ -13,13 +13,25 @@ function getImageUrl(asset: any): string {
   return asset.fields.file?.url ? `https:${asset.fields.file.url}` : "/placeholder.jpg"
 }
 
+// Helper to extract text from Rich Text field
+function getRichTextContent(richText: any): string {
+  if (!richText || !richText.content) return ""
+  return richText.content
+    .map((node: any) => {
+      if (node.nodeType === "paragraph" && node.content) {
+        return node.content.map((item: any) => item.value || "").join("")
+      }
+      return ""
+    })
+    .join("\n")
+}
+
 // Fetch all blog posts from Contentful
 export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
   try {
     const response = await client.getEntries({
-      content_type: "blogPost",
+      content_type: "roundiblogs",
       order: ["-fields.date"],
-      "fields.published": true,
     })
 
     const posts: BlogPost[] = response.items.map((item: any) => {
@@ -27,20 +39,20 @@ export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
 
       return {
         id: item.sys.id,
-        title: fields.title || "",
+        title: fields.name || "",
         slug: fields.slug || item.sys.id,
-        excerpt: fields.excerpt || "",
-        content: fields.content || "",
+        excerpt: getRichTextContent(fields.excerpt) || "",
+        content: getRichTextContent(fields.excerpt) || "", // Using excerpt as content since you don't have separate content field
         date: fields.date || new Date().toISOString().split("T")[0],
-        readTime: fields.readTime || 5,
+        readTime: 5, // Default read time since you don't have this field
         author: {
-          name: fields.authorName || "Anonymous",
-          avatar: fields.authorAvatar ? getImageUrl(fields.authorAvatar) : "/placeholder-user.jpg",
-          title: fields.authorTitle || "Writer",
+          name: fields.author || "Anonymous",
+          avatar: "/placeholder-user.jpg", // Default avatar since you don't have this field
+          title: "Writer", // Default title since you don't have this field
         },
-        image: fields.image ? getImageUrl(fields.image) : "/placeholder.jpg",
+        image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.jpg",
         category: fields.category || "General",
-        featured: fields.featured || false,
+        featured: false, // Default to false since you don't have this field
       }
     })
 
@@ -55,9 +67,8 @@ export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
 export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPost | null> {
   try {
     const response = await client.getEntries({
-      content_type: "blogPost",
+      content_type: "roundiblogs",
       "fields.slug": slug,
-      "fields.published": true,
       limit: 1,
     })
 
@@ -70,20 +81,20 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
 
     return {
       id: item.sys.id,
-      title: fields.title || "",
+      title: fields.name || "",
       slug: fields.slug || item.sys.id,
-      excerpt: fields.excerpt || "",
-      content: fields.content || "",
+      excerpt: getRichTextContent(fields.excerpt) || "",
+      content: getRichTextContent(fields.excerpt) || "",
       date: fields.date || new Date().toISOString().split("T")[0],
-      readTime: fields.readTime || 5,
+      readTime: 5,
       author: {
-        name: fields.authorName || "Anonymous",
-        avatar: fields.authorAvatar ? getImageUrl(fields.authorAvatar) : "/placeholder-user.jpg",
-        title: fields.authorTitle || "Writer",
+        name: fields.author || "Anonymous",
+        avatar: "/placeholder-user.jpg",
+        title: "Writer",
       },
-      image: fields.image ? getImageUrl(fields.image) : "/placeholder.jpg",
+      image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.jpg",
       category: fields.category || "General",
-      featured: fields.featured || false,
+      featured: false,
     }
   } catch (error) {
     console.error("Error fetching blog post from Contentful:", error)
@@ -91,13 +102,11 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
   }
 }
 
-// Fetch featured posts
+// Fetch featured posts (just returns the latest posts since you don't have a featured field)
 export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]> {
   try {
     const response = await client.getEntries({
-      content_type: "blogPost",
-      "fields.featured": true,
-      "fields.published": true,
+      content_type: "roundiblogs",
       limit: limit,
       order: ["-fields.date"],
     })
@@ -107,20 +116,20 @@ export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]>
 
       return {
         id: item.sys.id,
-        title: fields.title || "",
+        title: fields.name || "",
         slug: fields.slug || item.sys.id,
-        excerpt: fields.excerpt || "",
-        content: fields.content || "",
+        excerpt: getRichTextContent(fields.excerpt) || "",
+        content: getRichTextContent(fields.excerpt) || "",
         date: fields.date || new Date().toISOString().split("T")[0],
-        readTime: fields.readTime || 5,
+        readTime: 5,
         author: {
-          name: fields.authorName || "Anonymous",
-          avatar: fields.authorAvatar ? getImageUrl(fields.authorAvatar) : "/placeholder-user.jpg",
-          title: fields.authorTitle || "Writer",
+          name: fields.author || "Anonymous",
+          avatar: "/placeholder-user.jpg",
+          title: "Writer",
         },
-        image: fields.image ? getImageUrl(fields.image) : "/placeholder.jpg",
+        image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.jpg",
         category: fields.category || "General",
-        featured: fields.featured || false,
+        featured: false,
       }
     })
 
