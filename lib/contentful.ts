@@ -15,15 +15,43 @@ function getImageUrl(asset: any): string {
 
 // Helper to extract text from Rich Text field
 function getRichTextContent(richText: any): string {
-  if (!richText || !richText.content) return ""
-  return richText.content
-    .map((node: any) => {
-      if (node.nodeType === "paragraph" && node.content) {
-        return node.content.map((item: any) => item.value || "").join("")
-      }
-      return ""
-    })
-    .join("\n")
+  if (!richText) return ""
+
+  // If it's already a string, return it
+  if (typeof richText === "string") return richText
+
+  // Handle Rich Text Document structure
+  if (!richText.content || !Array.isArray(richText.content)) {
+    console.log("Invalid rich text structure:", richText)
+    return ""
+  }
+
+  const extractText = (nodes: any[]): string => {
+    return nodes
+      .map((node: any) => {
+        // Handle text nodes
+        if (node.nodeType === "text") {
+          return node.value || ""
+        }
+
+        // Handle paragraph, heading, and other block nodes
+        if (node.content && Array.isArray(node.content)) {
+          const text = extractText(node.content)
+          // Add line breaks after block elements
+          if (["paragraph", "heading-1", "heading-2", "heading-3", "heading-4", "heading-5", "heading-6"].includes(node.nodeType)) {
+            return text + "\n\n"
+          }
+          return text
+        }
+
+        return ""
+      })
+      .join("")
+  }
+
+  const result = extractText(richText.content).trim()
+  console.log("Extracted text result:", result)
+  return result
 }
 
 // Fetch all blog posts from Contentful
@@ -78,6 +106,11 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
 
     const item: any = response.items[0]
     const fields = item.fields
+
+    // Debug logging
+    console.log("Contentful fields:", JSON.stringify(fields, null, 2))
+    console.log("Excerpt field:", fields.excerpt)
+    console.log("Extracted content:", getRichTextContent(fields.excerpt))
 
     return {
       id: item.sys.id,
