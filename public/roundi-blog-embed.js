@@ -60,7 +60,8 @@
         transition: transform 0.3s ease;
         text-decoration: none;
         color: inherit;
-        display: block;
+        display: flex;
+        flex-direction: column;
       }
 
       .roundi-blog-card:hover {
@@ -75,6 +76,9 @@
 
       .roundi-blog-card-content {
         padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
       }
 
       .roundi-blog-card-meta {
@@ -110,9 +114,8 @@
       }
 
       .roundi-blog-card-author {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
+        margin-top: auto;
+        padding-top: 1rem;
       }
 
       .roundi-blog-card-avatar {
