@@ -191,12 +191,12 @@ export function EarlyAccessFormContent() {
         }
 
         .section {
-          margin-bottom: 24px;
+          margin-bottom: 40px;
         }
 
         @media (min-width: 768px) {
           .section {
-            margin-bottom: 32px;
+            margin-bottom: 48px;
           }
         }
 
@@ -204,7 +204,7 @@ export function EarlyAccessFormContent() {
           color: #101828;
           font-size: 16px;
           letter-spacing: -0.3125px;
-          margin-bottom: 32px;
+          margin-bottom: 40px;
           font-weight: 500;
         }
 
