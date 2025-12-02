@@ -2,74 +2,32 @@ import Link from "next/link"
 
 export function Navbar() {
   return (
-    <nav
-      style={{
-        boxSizing: "border-box",
-        width: "100%",
-        height: "min-content",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "40px",
-        overflow: "clip",
-        alignContent: "center",
-        flexWrap: "nowrap",
-        gap: "10px",
-        position: "absolute",
-        borderRadius: "0px 0px 0px 0px",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "40px",
-          maxWidth: "1200px",
-          width: "100%",
-        }}
-      >
-        <Link
-          href="/"
-          style={{
-            fontSize: "1.5rem",
-            fontWeight: "bold",
-            color: "#1a1a1a",
-            textDecoration: "none",
-          }}
-        >
-          Roundi Blog
-        </Link>
-
-        <div
-          style={{
-            marginLeft: "auto",
-            display: "flex",
-            gap: "30px",
-          }}
-        >
-          <Link
-            href="/"
-            style={{
-              color: "#1a1a1a",
-              textDecoration: "none",
-              fontSize: "1rem",
-            }}
-          >
-            Home
-          </Link>
-          <Link
-            href="/blog"
-            style={{
-              color: "#1a1a1a",
-              textDecoration: "none",
-              fontSize: "1rem",
-            }}
-          >
-            Blog
-          </Link>
-        </div>
+    <nav className="flex items-center justify-between px-8 py-4 bg-white border-b border-gray-200">
+      {/* Logo */}
+      <div className="flex items-center">
+        <img src="/logo.svg" alt="Roundi Logo" className="h-12 w-auto" />
       </div>
+
+      {/* Navigation Links */}
+      <div className="flex items-center gap-6 flex-1 ml-12">
+        <Link href="/" className="text-gray-800 font-medium text-base hover:text-gray-600 transition">
+          Home
+        </Link>
+        <Link href="/about" className="text-gray-800 font-medium text-base hover:text-gray-600 transition">
+          About
+        </Link>
+        <Link href="/blog" className="text-gray-800 font-medium text-base hover:text-gray-600 transition">
+          Blog
+        </Link>
+        <Link href="/contact" className="text-gray-800 font-medium text-base hover:text-gray-600 transition">
+          Contact us
+        </Link>
+      </div>
+
+      {/* CTA Button */}
+      <button className="bg-gray-900 text-lime-300 font-semibold px-8 py-2 rounded-full hover:bg-gray-800 transition">
+        Talk to Us
+      </button>
     </nav>
   )
 }
