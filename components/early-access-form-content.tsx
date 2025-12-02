@@ -204,7 +204,7 @@ export function EarlyAccessFormContent() {
           color: #101828;
           font-size: 16px;
           letter-spacing: -0.3125px;
-          margin-bottom: 24px;
+          margin-bottom: 32px;
           font-weight: 500;
         }
 
@@ -464,8 +464,8 @@ export function EarlyAccessFormContent() {
 
       <form id="earlyAccessForm" className="early-access-form">
         {/* Contact Information Section */}
-        <div className="section">
-          <h2 className="section-title">Contact Information</h2>
+        <div className="mb-6 md:mb-8">
+          <h2 className="text-[#101828] text-xl sm:text-2xl font-bold tracking-[-0.0195rem] mb-8 font-medium">Contact Information</h2>
 
           <div className="form-group">
             <label htmlFor="fullName" className="form-label">
@@ -525,8 +525,8 @@ export function EarlyAccessFormContent() {
         </div>
 
         {/* Business Details Section */}
-        <div className="section">
-          <h2 className="section-title">Business Details</h2>
+        <div className="mb-6 md:mb-8">
+          <h2 className="text-[#101828] text-xl sm:text-2xl font-bold tracking-[-0.0195rem] mb-8 font-medium">Business Details</h2>
 
           <div className="form-group">
             <label className="form-label">Business Type</label>
@@ -656,8 +656,8 @@ export function EarlyAccessFormContent() {
         </div>
 
         {/* Additional Information Section */}
-        <div className="section">
-          <h2 className="section-title">Additional Information</h2>
+        <div className="mb-6">
+          <h2 className="text-[#101828] text-xl sm:text-2xl font-bold tracking-[-0.0195rem] mb-8 font-medium">Additional Information</h2>
 
           <div className="form-group">
             <label htmlFor="biggestChallenge" className="form-label">
