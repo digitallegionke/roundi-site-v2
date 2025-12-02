@@ -3,7 +3,7 @@ import Link from "next/link"
 export function Navbar() {
   return (
     <div className="p-10">
-      <nav className="flex items-center justify-between px-8 py-4 bg-white border border-gray-200 rounded-lg">
+      <nav className="flex items-center justify-between px-[18px] py-[22px] bg-white border border-gray-200 rounded-lg">
         {/* Logo */}
         <div className="flex items-center">
           <img src="/logo.svg" alt="Roundi Logo" className="h-12 w-auto" />
