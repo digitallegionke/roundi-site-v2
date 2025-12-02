@@ -190,7 +190,8 @@
           const response = await fetch(API_URL);
           if (!response.ok) throw new Error('Failed to fetch blog posts');
 
-          const posts = await response.json();
+          const data = await response.json();
+          const posts = data.posts || data;
           const limitedPosts = posts.slice(0, MAX_POSTS);
 
           // Create grid HTML

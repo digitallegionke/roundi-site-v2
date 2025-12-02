@@ -10,8 +10,8 @@ Copy and paste this code snippet into any HTML page where you want to display yo
 <script>
 (function(){
   // CONFIGURATION - Update these URLs with your deployed site
-  const API_URL = 'https://YOUR-SITE.vercel.app/api/blog';
-  const BLOG_URL = 'https://YOUR-SITE.vercel.app/blog';
+  const API_URL = 'https://v0-embeddable-blog-section.vercel.app/api/blog';
+  const BLOG_URL = 'https://v0-embeddable-blog-section.vercel.app/blog';
   const MAX_POSTS = 6;
 
   // Styles
@@ -50,7 +50,8 @@ Copy and paste this code snippet into any HTML page where you want to display yo
   // Load posts
   fetch(API_URL)
     .then(res => res.json())
-    .then(posts => {
+    .then(data => {
+      const posts = data.posts || data;
       const container = document.getElementById('roundi-blog-embed');
       container.className = 'roundi-blog-embed';
       let html = `
@@ -95,17 +96,18 @@ Copy and paste this code snippet into any HTML page where you want to display yo
 
 ## Configuration Steps
 
-1. **Replace the URLs:**
-   - Change `YOUR-SITE.vercel.app` to your actual deployed Vercel URL
-   - Example: `https://roundi-blog.vercel.app`
+1. **URLs Already Configured:**
+   - ✅ API URL: `https://v0-embeddable-blog-section.vercel.app/api/blog`
+   - ✅ Blog URL: `https://v0-embeddable-blog-section.vercel.app/blog`
+   - The embed code above is ready to use!
 
 2. **Customize (Optional):**
    - Change `MAX_POSTS` to show more or fewer posts (default: 6)
-   - Modify the title and subtitle in the HTML
+   - Modify the title "Latest from our blog" and subtitle in the code
    - Adjust colors and styles in the CSS section
 
-3. **Add CORS Support:**
-   Make sure your API route allows requests from external domains. The `/api/blog` route should already handle this.
+3. **CORS Support:**
+   The API route allows requests from external domains, so you can embed this anywhere.
 
 ## Usage Examples
 
