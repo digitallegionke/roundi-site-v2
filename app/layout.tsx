@@ -2,6 +2,7 @@ import type React from "react"
 // <CHANGE> Updated metadata for blog
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
+import { Navbar } from "@/components/navbar"
 import "./globals.css"
 
 export const metadata: Metadata = {
