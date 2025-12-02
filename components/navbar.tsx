@@ -38,6 +38,9 @@ export function Navbar() {
           >
             Contact us
           </a>
+          <Link href="/early-access-form.html" className="text-gray-800 font-medium text-sm sm:text-base hover:text-gray-600 transition">
+            Early Access
+          </Link>
         </div>
 
         {/* CTA Button */}
