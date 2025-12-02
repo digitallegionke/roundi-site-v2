@@ -19,10 +19,10 @@ Copy and paste this code snippet into any HTML page where you want to display yo
   style.textContent = `
     .roundi-blog-embed * { margin: 0; padding: 0; box-sizing: border-box; }
     .roundi-blog-embed { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
-    .roundi-blog-header { text-align: center; margin-bottom: 3rem; }
+    .roundi-blog-header { text-align: left; margin-bottom: 3rem; }
     .roundi-blog-title { font-size: 2.5rem; font-weight: bold; color: #1a1a1a; margin-bottom: 0.5rem; }
     .roundi-blog-subtitle { font-size: 1.125rem; color: #666; }
-    .roundi-blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; }
+    .roundi-blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
     .roundi-blog-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; color: inherit; display: block; }
     .roundi-blog-card:hover { transform: translateY(-4px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
     .roundi-blog-card-image { width: 100%; height: 200px; object-fit: cover; }

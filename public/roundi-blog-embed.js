@@ -30,7 +30,7 @@
       }
 
       .roundi-blog-header {
-        text-align: center;
+        text-align: left;
         margin-bottom: 3rem;
       }
 
@@ -48,7 +48,7 @@
 
       .roundi-blog-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         margin-bottom: 2rem;
       }
@@ -154,6 +154,12 @@
         font-size: 1rem;
       }
 
+      @media (max-width: 1024px) {
+        .roundi-blog-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
       @media (max-width: 768px) {
         .roundi-blog-title {
           font-size: 2rem;
@@ -161,6 +167,10 @@
 
         .roundi-blog-grid {
           grid-template-columns: 1fr;
+        }
+
+        .roundi-blog-header {
+          text-align: center;
         }
       }
     `;
