@@ -1,4 +1,3 @@
 {
-  "/api/subscribe/route": "app/api/subscribe/route.js",
   "/early-access-form/page": "app/early-access-form/page.js"
 }
