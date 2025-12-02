@@ -10,9 +10,9 @@ export default async function Home() {
   const featuredPosts = await getContentfulFeaturedPosts(3)
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background px-10">
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 sm:pb-[0]">
+      <section className="max-w-7xl mx-auto py-12 sm:py-16 sm:pb-[0]">
         <div className="mb-12">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4 text-balance">
             Read our blog
@@ -24,7 +24,7 @@ export default async function Home() {
       </section>
 
       {/* Featured Posts */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <section className="max-w-7xl mx-auto py-8">
         <BlogList posts={featuredPosts} />
       </section>
     </main>
