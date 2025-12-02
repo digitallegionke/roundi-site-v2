@@ -5,3 +5,626 @@
 [00:00:13.137] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
 [00:00:13.137] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/early-access-form","route":"/early-access-form"}
 [00:00:13.137] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/early-access-form color: rgb(120, 120, 120) color: inherit {"dp":"/early-access-form","o":"http://localhost:3000/early-access-form","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764684986477}
+[00:45:07.876] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:45:07.877] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:45:07.879] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:45:08.618] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:08.756] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:45:08.756] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:45:08.756] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764687682222}
+[00:45:09.303] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:45:09.304] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:45:09.304] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:45:09.733] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:09.861] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:45:09.861] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:45:09.862] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764687683325}
+[00:45:10.353] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:45:10.354] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:45:10.355] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:45:10.974] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:11.125] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:45:11.125] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:45:11.125] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764687684566}
+[00:45:39.260] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:45:39.261] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:45:39.262] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:45:41.646] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:45:41.647] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:45:41.647] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:45:48.915] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:45:48.917] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:45:49.161] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:45:49.162] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:45:49.162] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:45:49.329] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/the-aha-moment color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]","o":"http://localhost:3000/blog/the-aha-moment","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764687722794}
+[00:45:57.013] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:45:57.016] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:45:57.017] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:45:57.165] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog color: rgb(120, 120, 120) color: inherit {"dp":"/blog","o":"http://localhost:3000/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764687730631}
+[00:47:37.068] Browser ERROR   ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+Import trace for requested module:
+./components/navbar.tsx
+./app/layout.tsx
+[00:47:37.383] Server  ERROR    ⨯ ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+Import trace for requested module:
+./components/navbar.tsx
+./app/layout.tsx
+[00:47:39.020] Server  ERROR    ⨯ ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+Import trace for requested module:
+./components/navbar.tsx
+./app/layout.tsx
+[00:47:39.100] Browser ERROR   ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+Import trace for requested module:
+./components/navbar.tsx
+./app/layout.tsx
+[00:47:40.152] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+[00:47:40.265] Browser ERROR   ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+[00:47:41.208] Server  LOG      ○ Compiling /_error ...
+[00:47:46.560] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:47.194] Browser ERROR   ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+Import trace for requested module:
+./components/navbar.tsx
+./app/layout.tsx
+[00:47:47.294] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:47.477] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:48.323] Browser ERROR   ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+Import trace for requested module:
+./components/navbar.tsx
+./app/layout.tsx
+[00:47:48.556] Server  ERROR    ⨯ ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+Import trace for requested module:
+./components/navbar.tsx
+./app/layout.tsx
+[00:47:48.943] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+[00:47:49.044] Browser ERROR   ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+[00:47:49.997] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:50.597] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:50.599] Browser ERROR   ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+Import trace for requested module:
+./components/navbar.tsx
+./app/layout.tsx
+[00:47:51.056] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:47:51.437] Server  ERROR    ⨯ ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+Import trace for requested module:
+./components/navbar.tsx
+./app/layout.tsx
+[00:47:51.442] Browser ERROR   ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+Import trace for requested module:
+./components/navbar.tsx
+./app/layout.tsx
+[00:47:51.697] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/.pnpm/next@16.0.3_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+
+[00:47:51.803] Browser ERROR   ./components/navbar.tsx
+Error:   x You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :          ^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+  x You're importing a component that needs `useEffect`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+  |
+  |  Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+  |
+
+   ,-[/Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/components/navbar.tsx:2:1]
+ 1 | import Link from "next/link"
+ 2 | import { useState, useEffect } from "react"
+   :                    ^^^^^^^^^
+ 3 | 
+ 4 | export function Navbar() {
+ 5 |   const [isMenuOpen, setIsMenuOpen] = useState(false)
+   `----
+[00:47:58.779] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:00.041] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:00.736] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:48:01.044] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:48:01.044] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:48:01.045] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:48:01.068] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:48:01.068] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:48:01.068] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:48:01.094] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:48:01.095] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:48:01.095] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:48:01.155] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:48:01.155] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:48:01.155] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:48:01.741] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:01.901] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:48:01.901] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/blog","route":"/blog"}
+[00:48:01.901] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog color: rgb(120, 120, 120) color: inherit {"dp":"/blog","o":"http://localhost:3000/blog","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764687855338}
+[00:48:42.654] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:48:42.657] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:48:42.659] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:49:20.316] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:49:20.319] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:49:20.321] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:50:17.208] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:50:17.208] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:50:17.209] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:51:21.640] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:51:21.640] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:51:21.640] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:51:49.657] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:51:49.658] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:51:49.658] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:52:00.124] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:52:00.129] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:52:00.369] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:52:00.369] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:52:00.369] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:52:00.547] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/the-aha-moment color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]","o":"http://localhost:3000/blog/the-aha-moment","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764688093980}
+[00:53:38.432] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:53:38.442] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:53:38.820] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:53:38.820] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:53:38.820] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:53:46.860] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:53:46.867] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:53:47.278] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:53:47.279] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:53:47.283] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:55:29.405] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:55:29.413] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:55:29.639] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:55:29.656] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:55:29.879] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:55:29.880] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:55:29.880] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:55:30.054] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:55:30.054] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:55:30.054] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:55:52.924] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:55:52.938] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:55:53.199] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:55:53.199] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:55:53.201] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:07.161] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:07.172] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:07.422] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:56:07.422] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:56:07.423] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:19.798] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:19.872] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:20.273] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:56:20.274] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:56:20.274] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:34.026] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:34.053] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:34.527] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:56:34.528] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:56:34.529] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:44.069] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:44.096] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:56:44.531] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:56:44.532] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:56:44.533] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:58:20.463] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:58:20.471] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:58:21.294] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[00:58:21.294] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[00:58:21.295] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[00:58:21.457] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/the-future-of-local-delivery-what-businesses-want-vs-what-customers-expect color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]","o":"http://localhost:3000/blog/the-future-of-local-delivery-what-businesses-want-vs-what-customers-expect","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764688474884}
+[01:00:07.800] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[01:00:07.800] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[01:00:07.800] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[01:00:07.989] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764688581417}
+[01:00:11.634] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[01:00:11.635] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[01:00:11.635] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[01:00:38.655] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[01:00:38.658] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[01:00:39.187] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[01:00:39.188] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[01:00:39.189] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[01:00:39.407] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/the-aha-moment color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]","o":"http://localhost:3000/blog/the-aha-moment","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764688612835}

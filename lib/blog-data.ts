@@ -12,6 +12,7 @@ export interface BlogPost {
     name: string
     title: string
     avatar: string
+    bio?: string
   }
   readTime: number
   category?: string

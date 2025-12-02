@@ -1,3 +1,6 @@
 {
-  "/early-access-form/page": "app/early-access-form/page.js"
+  "/page": "app/page.js",
+  "/early-access-form/page": "app/early-access-form/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/blog/[slug]/page": "app/blog/[slug]/page.js"
 }

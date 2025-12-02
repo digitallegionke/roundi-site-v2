@@ -85,15 +85,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Meta Information */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-8 mb-8 border-b border-border">
           <div className="flex items-center gap-4">
-            <img
-              src={post.author.avatar || "/placeholder.svg"}
-              alt={post.author.name}
-              className="w-12 h-12 rounded-full object-cover"
-            />
-            <div>
-              <p className="font-medium text-foreground">{post.author.name}</p>
-              <p className="text-sm text-muted-foreground">{post.author.title}</p>
-            </div>
+            <p className="font-medium text-foreground">{post.author.name}</p>
           </div>
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <time>{formatDate(post.date)}</time>
@@ -117,24 +109,17 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           )}
         </div>
 
-        {/* Author Bio */}
-        <div className="bg-card border border-border rounded-lg p-6 mb-12">
-          <div className="flex items-start gap-4">
-            <img
-              src={post.author.avatar || "/placeholder.svg"}
-              alt={post.author.name}
-              className="w-16 h-16 rounded-full object-cover flex-shrink-0"
-            />
+        {/* Author Bio - Deactivated for now */}
+        {/* {post.author.bio && (
+          <div className="bg-card border border-border rounded-lg p-6 mb-12">
             <div>
-              <h3 className="font-semibold text-foreground mb-1">{post.author.name}</h3>
-              <p className="text-sm text-muted-foreground mb-3">{post.author.title}</p>
+              <h3 className="font-semibold text-foreground mb-3">{post.author.name}</h3>
               <p className="text-sm text-foreground">
-                Passionate about building products that make a difference. Follow along for insights on design,
-                engineering, and entrepreneurship.
+                {post.author.bio}
               </p>
             </div>
           </div>
-        </div>
+        )} */}
       </article>
 
       {/* Related Posts */}

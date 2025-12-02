@@ -97,6 +97,16 @@ export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
         }
       }
 
+      // Handle author bio - check if it's a Rich Text object or plain string
+      let authorBioText = ""
+      if (fields.authorBio) {
+        if (typeof fields.authorBio === "string") {
+          authorBioText = fields.authorBio
+        } else {
+          authorBioText = getRichTextContent(fields.authorBio) || ""
+        }
+      }
+
       return {
         id: item.sys.id,
         title: fields.name || "",
@@ -111,6 +121,7 @@ export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
           name: fields.author || "Anonymous",
           avatar: "/placeholder-user.jpg",
           title: "Writer",
+          bio: authorBioText,
         },
         image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.jpg",
         category: fields.category || "General",
@@ -154,6 +165,16 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
       }
     }
 
+    // Handle author bio - check if it's a Rich Text object or plain string
+    let authorBioText = ""
+    if (fields.authorBio) {
+      if (typeof fields.authorBio === "string") {
+        authorBioText = fields.authorBio
+      } else {
+        authorBioText = getRichTextContent(fields.authorBio) || ""
+      }
+    }
+
     return {
       id: item.sys.id,
       title: fields.name || "",
@@ -168,6 +189,7 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
         name: fields.author || "Anonymous",
         avatar: "/placeholder-user.jpg",
         title: "Writer",
+        bio: authorBioText,
       },
       image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.jpg",
       category: fields.category || "General",
@@ -203,6 +225,16 @@ export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]>
         }
       }
 
+      // Handle author bio - check if it's a Rich Text object or plain string
+      let authorBioText = ""
+      if (fields.authorBio) {
+        if (typeof fields.authorBio === "string") {
+          authorBioText = fields.authorBio
+        } else {
+          authorBioText = getRichTextContent(fields.authorBio) || ""
+        }
+      }
+
       return {
         id: item.sys.id,
         title: fields.name || "",
@@ -217,6 +249,7 @@ export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]>
           name: fields.author || "Anonymous",
           avatar: "/placeholder-user.jpg",
           title: "Writer",
+          bio: authorBioText,
         },
         image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.jpg",
         category: fields.category || "General",

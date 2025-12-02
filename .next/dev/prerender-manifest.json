@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "329a3ab01e568fbba317d7113917d321",
-    "previewModeSigningKey": "cd23ec22421624659c86007328d30abd23e09a7b41bd5daad418b1474c260b06",
-    "previewModeEncryptionKey": "6c0fe6be13897b2e82c7aacf19dae7843386780616884f969ea8153d87d15474"
-  }
-}
+{"version":4,"routes":{"/blog/the-future-of-local-delivery-what-businesses-want-vs-what-customers-expect":{},"/blog/why-we-are-building-roundi":{},"/blog/the-aha-moment":{}},"dynamicRoutes":{"/blog/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/blog/[slug]","routeRegex":"^\\/blog\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"329a3ab01e568fbba317d7113917d321","previewModeSigningKey":"cd23ec22421624659c86007328d30abd23e09a7b41bd5daad418b1474c260b06","previewModeEncryptionKey":"6c0fe6be13897b2e82c7aacf19dae7843386780616884f969ea8153d87d15474"}}
