@@ -23,7 +23,7 @@ Copy and paste this code snippet into any HTML page where you want to display yo
     .roundi-blog-title { font-size: 2.5rem; font-weight: bold; color: #1a1a1a; margin-bottom: 0.5rem; }
     .roundi-blog-subtitle { font-size: 1.125rem; color: #666; }
     .roundi-blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-    .roundi-blog-card { background: white; border-radius: 12px; overflow: hidden; transition: transform 0.3s; text-decoration: none; color: inherit; display: block; }
+    .roundi-blog-card { background: #fafafa; border-radius: 12px; overflow: hidden; transition: transform 0.3s; text-decoration: none; color: inherit; display: block; }
     .roundi-blog-card:hover { transform: translateY(-4px); }
     .roundi-blog-card-image { width: 100%; height: 200px; object-fit: cover; }
     .roundi-blog-card-content { padding: 1.5rem; }
@@ -75,11 +75,7 @@ Copy and paste this code snippet into any HTML page where you want to display yo
               <h3 class="roundi-blog-card-title">${post.title}</h3>
               ${post.subtitle ? `<p class="roundi-blog-card-excerpt">${post.subtitle}</p>` : ''}
               <div class="roundi-blog-card-author">
-                <img src="${post.author.avatar}" alt="${post.author.name}" class="roundi-blog-card-avatar">
-                <div>
-                  <div class="roundi-blog-card-author-name">${post.author.name}</div>
-                  <div class="roundi-blog-card-author-title">${post.author.title}</div>
-                </div>
+                <div class="roundi-blog-card-author-name">${post.author.name}</div>
               </div>
             </div>
           </a>

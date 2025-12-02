@@ -44,7 +44,7 @@
     }
 
     .roundi-blog-card {
-      background: white;
+      background: #fafafa;
       border-radius: 12px;
       overflow: hidden;
       transition: transform 0.3s ease;
@@ -218,11 +218,7 @@
                   <h3 class="roundi-blog-card-title">${post.title}</h3>
                   ${post.subtitle ? `<p class="roundi-blog-card-excerpt">${post.subtitle}</p>` : ''}
                   <div class="roundi-blog-card-author">
-                    <img src="${post.author.avatar}" alt="${post.author.name}" class="roundi-blog-card-avatar" />
-                    <div class="roundi-blog-card-author-info">
-                      <span class="roundi-blog-card-author-name">${post.author.name}</span>
-                      <span class="roundi-blog-card-author-title">${post.author.title}</span>
-                    </div>
+                    <span class="roundi-blog-card-author-name">${post.author.name}</span>
                   </div>
                 </div>
               </a>
