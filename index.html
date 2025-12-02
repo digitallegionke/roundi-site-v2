@@ -21,13 +21,16 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        /* The h1 font size will be controlled by Tailwind CSS classes */
         h1 {
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 12px; /* Further reduced margin-bottom */
+            /* font-size: 1rem; */ /* Removed font-size property */
         }
         p {
             color: #666;
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* Further reduced margin-bottom */
+            font-size: 1rem; /* Further reduced font size */
         }
         .button {
             display: inline-block;
@@ -46,9 +49,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome!</h1>
+        <h1 className="text-4xl sm:text-5xl font-bold">Welcome!</h1>
         <p>Click the button below to sign up for early access.</p>
-        <a href="early-access-form.html" class="button">Get Early Access</a>
+        <a href="/early-access-form" className="button">Get Early Access</a>
     </div>
 </body>
 </html>

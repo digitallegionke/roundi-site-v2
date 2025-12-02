@@ -172,124 +172,126 @@ export function EarlyAccessFormContent() {
         }
 
         .early-access-form {
-          background: white;
-          border-radius: 10px;
-          padding: 24px;
-          border: 1px solid rgba(22, 35, 24, 0.1);
-        }
-
-        @media (min-width: 768px) {
-          .early-access-form {
-            padding: 32px;
-          }
-        }
-
-        @media (min-width: 1024px) {
-          .early-access-form {
-            padding: 40px;
-          }
+          background: transparent;
+          padding: 0;
         }
 
         .section {
-          margin-bottom: 40px;
+          margin-bottom: 64px;
         }
 
         @media (min-width: 768px) {
           .section {
-            margin-bottom: 48px;
+            margin-bottom: 80px;
           }
         }
 
         .section-title {
-          color: #101828;
-          font-size: 16px;
-          letter-spacing: -0.3125px;
-          margin-bottom: 40px;
-          font-weight: 500;
+          color: #000;
+          font-size: 24px;
+          font-weight: 600;
+          letter-spacing: -0.02em;
+          margin-bottom: 48px;
+          line-height: 1.2;
+        }
+
+        @media (min-width: 768px) {
+          .section-title {
+            font-size: 28px;
+            margin-bottom: 56px;
+          }
         }
 
         .form-group {
-          margin-bottom: 24px;
+          margin-bottom: 32px;
         }
 
         .form-label {
           display: block;
-          font-size: 14px;
-          letter-spacing: -0.1504px;
-          color: #000;
-          margin-bottom: 8px;
+          font-size: 15px;
+          letter-spacing: -0.01em;
+          color: #1a1a1a;
+          margin-bottom: 12px;
           font-weight: 500;
         }
 
         .required {
-          color: #fb2c36;
+          color: #ef4444;
+          margin-left: 2px;
         }
 
         .form-input,
         .form-textarea {
           width: 100%;
-          background: white;
-          height: 48px;
-          font-size: 14px;
-          letter-spacing: -0.1504px;
-          padding: 12px 16px;
-          border: 1px solid #e5e7eb;
-          border-radius: 6px;
-          transition: all 0.15s;
+          background: #fafafa;
+          font-size: 15px;
+          letter-spacing: -0.01em;
+          padding: 16px 20px;
+          border: 2px solid transparent;
+          border-radius: 12px;
+          transition: all 0.2s ease;
           font-family: inherit;
+          color: #1a1a1a;
+        }
+
+        .form-input {
+          height: 56px;
         }
 
         .form-input::placeholder,
         .form-textarea::placeholder {
-          color: #717182;
+          color: #999;
         }
 
         .form-input:hover,
         .form-textarea:hover {
-          border-color: #d1d5db;
+          background: #f5f5f5;
         }
 
         .form-input:focus,
         .form-textarea:focus {
           outline: none;
-          border-color: #162318;
-          box-shadow: 0 0 0 1px #162318;
+          background: #fff;
+          border-color: #1a1a1a;
         }
 
         .form-input.error,
         .form-textarea.error {
           border-color: #ef4444;
+          background: #fef2f2;
         }
 
         .form-input.error:focus,
         .form-textarea.error:focus {
-          box-shadow: 0 0 0 1px #ef4444;
+          background: #fff;
         }
 
         .form-textarea {
-          min-height: 120px;
-          resize: none;
-          height: auto;
+          min-height: 140px;
+          resize: vertical;
+          padding-top: 16px;
         }
 
         .error-message {
           color: #ef4444;
           font-size: 14px;
-          margin-top: 4px;
+          margin-top: 8px;
+          font-weight: 500;
         }
 
         .helper-text {
           font-size: 14px;
-          color: #717182;
-          letter-spacing: -0.1504px;
-          margin-bottom: 8px;
+          color: #666;
+          letter-spacing: -0.01em;
+          margin-bottom: 12px;
+          line-height: 1.5;
         }
 
         .radio-group {
           display: grid;
           grid-template-columns: 1fr;
-          gap: 8px;
-          margin-bottom: 24px;
+          gap: 12px;
+          margin-bottom: 32px;
         }
 
         @media (min-width: 640px) {
@@ -299,32 +301,44 @@ export function EarlyAccessFormContent() {
         }
 
         .radio-group.delivery-ranges {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 640px) {
+          .radio-group.delivery-ranges {
+            grid-template-columns: repeat(3, 1fr);
+          }
         }
 
         .radio-group.team-sizes {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 640px) {
+          .radio-group.team-sizes {
+            grid-template-columns: repeat(3, 1fr);
+          }
         }
 
         .radio-label {
           position: relative;
           display: flex;
           align-items: center;
-          padding: 16px;
-          border-radius: 10px;
+          padding: 18px 20px;
+          border-radius: 12px;
           cursor: pointer;
-          transition: all 0.15s;
-          border: 2px solid #e5e7eb;
-          background: white;
+          transition: all 0.2s ease;
+          border: 2px solid transparent;
+          background: #fafafa;
         }
 
         .radio-label:hover {
-          border-color: #d1d5db;
+          background: #f5f5f5;
         }
 
         .radio-label.selected {
-          border-color: #162318;
-          background: #f9fafb;
+          border-color: #1a1a1a;
+          background: #fff;
         }
 
         .radio-input {
@@ -334,27 +348,29 @@ export function EarlyAccessFormContent() {
         }
 
         .radio-button {
-          width: 20px;
-          height: 20px;
+          width: 22px;
+          height: 22px;
           border-radius: 50%;
-          border: 2px solid #d1d5dc;
+          border: 2px solid #ccc;
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-right: 12px;
+          margin-right: 14px;
           flex-shrink: 0;
-          transition: all 0.15s;
+          transition: all 0.2s ease;
+          background: #fff;
         }
 
         .radio-label.selected .radio-button {
-          border-color: #162318;
+          border-color: #1a1a1a;
+          border-width: 2px;
         }
 
         .radio-dot {
           width: 10px;
           height: 10px;
           border-radius: 50%;
-          background: #162318;
+          background: #1a1a1a;
           display: none;
         }
 
@@ -363,14 +379,15 @@ export function EarlyAccessFormContent() {
         }
 
         .radio-text {
-          font-size: 14px;
-          letter-spacing: -0.3008px;
-          color: #364153;
+          font-size: 15px;
+          letter-spacing: -0.01em;
+          color: #1a1a1a;
+          font-weight: 500;
         }
 
         .radio-label.simple {
           justify-content: center;
-          padding: 16px;
+          padding: 18px;
         }
 
         .radio-label.simple .radio-button {
@@ -380,27 +397,34 @@ export function EarlyAccessFormContent() {
         .submit-container {
           display: flex;
           justify-content: flex-start;
-          padding-top: 16px;
+          padding-top: 24px;
         }
 
         .submit-button {
-          background: #162318;
+          background: #1a1a1a;
           color: white;
           border: none;
-          border-radius: 9999px;
-          padding: 12px 48px;
+          border-radius: 12px;
+          padding: 18px 48px;
           font-size: 16px;
-          font-weight: 500;
+          font-weight: 600;
           cursor: pointer;
-          transition: background-color 0.15s;
+          transition: all 0.2s ease;
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          min-height: 44px;
+          min-height: 56px;
+          letter-spacing: -0.01em;
         }
 
         .submit-button:hover:not(:disabled) {
-          background: #2a3d2e;
+          background: #000;
+          transform: translateY(-1px);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .submit-button:active:not(:disabled) {
+          transform: translateY(0);
         }
 
         .submit-button:disabled {
@@ -414,8 +438,8 @@ export function EarlyAccessFormContent() {
           border: 2px solid rgba(255, 255, 255, 0.3);
           border-top-color: white;
           border-radius: 50%;
-          animation: spin 1s linear infinite;
-          margin-right: 8px;
+          animation: spin 0.8s linear infinite;
+          margin-right: 10px;
         }
 
         @keyframes spin {
@@ -424,17 +448,18 @@ export function EarlyAccessFormContent() {
 
         .toast {
           position: fixed;
-          top: 20px;
-          right: 20px;
+          top: 24px;
+          right: 24px;
           background: white;
-          padding: 16px 24px;
-          border-radius: 8px;
-          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+          padding: 18px 24px;
+          border-radius: 12px;
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
           display: flex;
           align-items: center;
           gap: 12px;
           z-index: 1000;
           animation: slideIn 0.3s ease-out;
+          border: 1px solid #e5e5e5;
         }
 
         @keyframes slideIn {
@@ -457,15 +482,16 @@ export function EarlyAccessFormContent() {
         }
 
         .toast-message {
-          font-size: 14px;
-          color: #1f2937;
+          font-size: 15px;
+          color: #1a1a1a;
+          font-weight: 500;
         }
       `}</style>
 
       <form id="earlyAccessForm" className="early-access-form">
         {/* Contact Information Section */}
-        <div className="mb-6 md:mb-8">
-          <h2 className="text-[#101828] text-xl sm:text-2xl font-bold tracking-[-0.0195rem] mb-8 font-medium">Contact Information</h2>
+        <div className="section">
+          <h2 className="section-title">Contact Information</h2>
 
           <div className="form-group">
             <label htmlFor="fullName" className="form-label">
@@ -525,8 +551,8 @@ export function EarlyAccessFormContent() {
         </div>
 
         {/* Business Details Section */}
-        <div className="mb-6 md:mb-8">
-          <h2 className="text-[#101828] text-xl sm:text-2xl font-bold tracking-[-0.0195rem] mb-8 font-medium">Business Details</h2>
+        <div className="section">
+          <h2 className="section-title">Business Details</h2>
 
           <div className="form-group">
             <label className="form-label">Business Type</label>
@@ -587,9 +613,9 @@ export function EarlyAccessFormContent() {
                 <span className="radio-text">Alcohol / Beverages Distributor</span>
               </label>
               <label className="radio-label">
-                <input type="radio" name="businessType" value="Fresh Produce / Farmers\' Outlet" className="radio-input" />
+                <input type="radio" name="businessType" value="Fresh Produce / Farmers' Outlet" className="radio-input" />
                 <div className="radio-button"><div className="radio-dot"></div></div>
-                <span className="radio-text">Fresh Produce / Farmers\' Outlet</span>
+                <span className="radio-text">Fresh Produce / Farmers' Outlet</span>
               </label>
             </div>
           </div>
@@ -656,8 +682,8 @@ export function EarlyAccessFormContent() {
         </div>
 
         {/* Additional Information Section */}
-        <div className="mb-6">
-          <h2 className="text-[#101828] text-xl sm:text-2xl font-bold tracking-[-0.0195rem] mb-8 font-medium">Additional Information</h2>
+        <div className="section">
+          <h2 className="section-title">Additional Information</h2>
 
           <div className="form-group">
             <label htmlFor="biggestChallenge" className="form-label">
