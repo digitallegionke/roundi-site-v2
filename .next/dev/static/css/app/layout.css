@@ -400,6 +400,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -886,6 +889,16 @@
       }
     }
   }
+  .sm\:ml-12 {
+    @media (width >= 40rem) {
+      margin-left: calc(var(--spacing) * 12);
+    }
+  }
+  .sm\:h-12 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 12);
+    }
+  }
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
@@ -901,9 +914,29 @@
       justify-content: space-between;
     }
   }
+  .sm\:gap-0 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:gap-6 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:p-6 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 6);
+    }
+  }
   .sm\:px-6 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:px-8 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 8);
     }
   }
   .sm\:py-0 {
@@ -927,9 +960,20 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+  .sm\:text-base {
+    @media (width >= 40rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:p-10 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 10);
     }
   }
   .lg\:grid-cols-3 {
