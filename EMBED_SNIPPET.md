@@ -23,8 +23,8 @@ Copy and paste this code snippet into any HTML page where you want to display yo
     .roundi-blog-title { font-size: 2.5rem; font-weight: bold; color: #1a1a1a; margin-bottom: 0.5rem; }
     .roundi-blog-subtitle { font-size: 1.125rem; color: #666; }
     .roundi-blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-    .roundi-blog-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; color: inherit; display: block; }
-    .roundi-blog-card:hover { transform: translateY(-4px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+    .roundi-blog-card { background: white; border-radius: 12px; overflow: hidden; transition: transform 0.3s; text-decoration: none; color: inherit; display: block; }
+    .roundi-blog-card:hover { transform: translateY(-4px); }
     .roundi-blog-card-image { width: 100%; height: 200px; object-fit: cover; }
     .roundi-blog-card-content { padding: 1.5rem; }
     .roundi-blog-card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; font-size: 0.875rem; color: #666; }
