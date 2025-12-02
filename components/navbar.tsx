@@ -10,7 +10,7 @@ export function Navbar() {
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 flex-1 sm:ml-12">
+        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 flex-1 sm:ml-[72px]">
           <a
             href="https://roundi.framer.website"
             className="text-gray-800 font-medium text-sm sm:text-base hover:text-gray-600 transition"
@@ -38,9 +38,6 @@ export function Navbar() {
           >
             Contact us
           </a>
-          <Link href="/early-access-form.html" className="text-gray-800 font-medium text-sm sm:text-base hover:text-gray-600 transition">
-            Early Access
-          </Link>
         </div>
 
         {/* CTA Button */}
