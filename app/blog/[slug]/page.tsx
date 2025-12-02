@@ -53,9 +53,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const relatedPosts = blogPosts.filter((p) => p.id !== post.id).slice(0, 3)
 
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background px-10">
       {/* Post Content */}
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-0 mt-16">
+      <article className="max-w-4xl mx-auto py-12 sm:py-0 mt-16">
         {/* Back Button */}
         <Link
           href="/"
@@ -140,7 +140,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
         <section className="bg-card border-t border-border">
-          <div className="max-w-7xl mx-auto lg:px-8 py-12 sm:py-16 sm:px-1663px]62px]61px]59px]58px]455px]52px]51px]50px]49px]247px]46px]45px]143px]42px]41px]039px]38px]37px]35px]34px]30px]29px]27px]26px]25px] px-6">
+          <div className="max-w-7xl mx-auto py-12 sm:py-16">
             <h2 className="text-3xl font-bold text-foreground mb-8">Read more</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {relatedPosts.map((relatedPost) => (
