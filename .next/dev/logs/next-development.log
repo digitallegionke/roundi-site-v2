@@ -306,3 +306,78 @@
 [19:01:22.836] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
 [19:01:22.837] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
 [19:01:22.839] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[19:06:22.710] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[19:06:22.712] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[19:06:22.715] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[19:11:22.781] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[19:11:22.790] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[19:11:22.792] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[19:16:23.256] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[19:16:23.262] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[19:16:23.267] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[19:18:56.091] Server  WARN     ⚠ ./app/page.tsx
+Attempted import error: '@/components/navbar' does not contain a default export (imported as 'Navbar').
+
+Import trace for requested module:
+./app/page.tsx
+[19:21:22.129] Server  WARN     ⚠ ./app/page.tsx
+Attempted import error: '@/components/navbar' does not contain a default export (imported as 'Navbar').
+
+Import trace for requested module:
+./app/page.tsx
+[19:21:24.214] Server  WARN     ⚠ ./app/page.tsx
+Attempted import error: '@/components/navbar' does not contain a default export (imported as 'Navbar').
+
+Import trace for requested module:
+./app/page.tsx
+[19:21:25.059] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[19:21:25.061] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[19:21:25.062] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[19:21:25.154] Server  LOG      ○ Compiling /api/blog ...
+[19:26:22.480] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[19:26:22.482] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[19:26:22.486] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[19:48:34.835] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[19:48:34.837] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[19:48:34.839] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[19:55:55.222] Server  WARN     ⚠ ./app/page.tsx
+Attempted import error: '@/components/navbar' does not contain a default export (imported as 'Navbar').
+
+Import trace for requested module:
+./app/page.tsx
+[19:56:13.245] Server  WARN     ⚠ ./app/page.tsx
+Attempted import error: '@/components/navbar' does not contain a default export (imported as 'Navbar').
+
+Import trace for requested module:
+./app/page.tsx
+[19:56:13.387] Server  WARN     ⚠ ./app/page.tsx
+Attempted import error: '@/components/navbar' does not contain a default export (imported as 'Navbar').
+
+Import trace for requested module:
+./app/page.tsx
+[19:56:43.785] Server  WARN     ⚠ ./app/page.tsx
+Attempted import error: '@/components/navbar' does not contain a default export (imported as 'Navbar').
+
+Import trace for requested module:
+./app/page.tsx
+[19:59:04.054] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[19:59:04.058] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[19:59:04.059] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[19:59:25.895] Server  WARN     ⚠ ./app/page.tsx
+Attempted import error: '@/components/navbar' does not contain a default export (imported as 'Navbar').
+
+Import trace for requested module:
+./app/page.tsx
+[19:59:42.628] Server  WARN     ⚠ ./app/page.tsx
+Attempted import error: '@/components/navbar' does not contain a default export (imported as 'Navbar').
+
+Import trace for requested module:
+./app/page.tsx
+[19:59:57.865] Server  WARN     ⚠ ./app/page.tsx
+Attempted import error: '@/components/navbar' does not contain a default export (imported as 'Navbar').
+
+Import trace for requested module:
+./app/page.tsx
+[20:00:55.341] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[20:00:55.341] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[20:00:55.342] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
