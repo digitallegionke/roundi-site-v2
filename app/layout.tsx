@@ -36,7 +36,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        {children}
+        <Navbar />
+        <div style={{ paddingTop: "120px" }}>
+          {children}
+        </div>
         <Analytics />
       </body>
     </html>
