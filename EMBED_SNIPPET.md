@@ -23,14 +23,14 @@ Copy and paste this code snippet into any HTML page where you want to display yo
     .roundi-blog-title { font-size: 2.5rem; font-weight: bold; color: #1a1a1a; margin-bottom: 0.5rem; }
     .roundi-blog-subtitle { font-size: 1.125rem; color: #666; }
     .roundi-blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-    .roundi-blog-card { background: #fafafa; border-radius: 12px; overflow: hidden; transition: transform 0.3s; text-decoration: none; color: inherit; display: block; }
+    .roundi-blog-card { background: #fafafa; border-radius: 12px; overflow: hidden; transition: transform 0.3s; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
     .roundi-blog-card:hover { transform: translateY(-4px); }
     .roundi-blog-card-image { width: 100%; height: 200px; object-fit: cover; }
-    .roundi-blog-card-content { padding: 1.5rem; }
+    .roundi-blog-card-content { padding: 1.5rem; display: flex; flex-direction: column; height: 100%; }
     .roundi-blog-card-meta { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem; font-size: 0.875rem; color: #666; }
     .roundi-blog-card-title { font-size: 1.25rem; font-weight: 600; color: #1a1a1a; margin-bottom: 0.75rem; line-height: 1.4; }
     .roundi-blog-card-excerpt { font-size: 0.95rem; color: #666; line-height: 1.6; margin-bottom: 1rem; }
-    .roundi-blog-card-author { display: flex; align-items: center; gap: 0.75rem; }
+    .roundi-blog-card-author { margin-top: auto; padding-top: 1rem; }
     .roundi-blog-card-avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
     .roundi-blog-card-author-name { font-size: 0.875rem; font-weight: 500; color: #1a1a1a; }
     .roundi-blog-card-author-title { font-size: 0.75rem; color: #999; }
