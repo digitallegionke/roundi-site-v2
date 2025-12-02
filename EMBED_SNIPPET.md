@@ -34,7 +34,8 @@ Copy and paste this code snippet into any HTML page where you want to display yo
     .roundi-blog-card-avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
     .roundi-blog-card-author-name { font-size: 0.875rem; font-weight: 500; color: #1a1a1a; }
     .roundi-blog-card-author-title { font-size: 0.75rem; color: #999; }
-    @media (max-width: 768px) { .roundi-blog-title { font-size: 2rem; } .roundi-blog-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 1024px) { .roundi-blog-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 768px) { .roundi-blog-title { font-size: 2rem; } .roundi-blog-grid { grid-template-columns: 1fr; } .roundi-blog-header { text-align: center; } }
   `;
   document.head.appendChild(style);
 
