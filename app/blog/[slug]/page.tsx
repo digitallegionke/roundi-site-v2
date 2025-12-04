@@ -1,6 +1,7 @@
 import { getContentfulBlogPostBySlug, getContentfulBlogPosts } from "@/lib/contentful"
 import { BlogCard } from "@/components/blog-card"
 import { RichTextRenderer } from "@/components/rich-text-renderer"
+import { Footer } from "@/components/home/Footer"
 import { formatDate } from "@/lib/utils/date"
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
@@ -53,88 +54,92 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const relatedPosts = blogPosts.filter((p) => p.id !== post.id).slice(0, 3)
 
   return (
-    <main className="min-h-screen bg-background px-10">
-      {/* Post Content */}
-      <article className="max-w-4xl mx-auto py-12 sm:py-0 mt-16">
-        {/* Back Button */}
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
-        >
-          <ChevronLeft className="w-4 h-4" />
-          Back to blog
-        </Link>
+    <div className="flex flex-col min-h-screen">
+      <main className="min-h-screen bg-background px-10 flex-grow">
+        {/* Post Content */}
+        <article className="max-w-4xl mx-auto py-12 sm:py-0 mt-16">
+          {/* Back Button */}
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
+          >
+            <ChevronLeft className="w-4 h-4" />
+            Back to blog
+          </Link>
 
-        {/* Title Section */}
-        <div className="mb-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 text-balance">{post.title}</h1>
-        </div>
-
-        {/* Featured Image */}
-        <div className="mb-8 rounded-lg overflow-hidden">
-          <img src={post.image || "/placeholder.svg"} alt={post.title} className="w-full h-96 object-cover" />
-        </div>
-
-        {/* Subtitle Section */}
-        {post.subtitle && (
+          {/* Title Section */}
           <div className="mb-8">
-            <p className="text-xl text-muted-foreground leading-relaxed">{post.subtitle}</p>
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 text-balance">{post.title}</h1>
           </div>
-        )}
 
-        {/* Meta Information */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-8 mb-8 border-b border-border">
-          <div className="flex items-center gap-4">
-            <p className="font-medium text-foreground">{post.author.name}</p>
+          {/* Featured Image */}
+          <div className="mb-8 rounded-lg overflow-hidden">
+            <img src={post.image || "/placeholder.svg"} alt={post.title} className="w-full h-96 object-cover" />
           </div>
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <time>{formatDate(post.date)}</time>
-            <span>•</span>
-            <span>{post.readTime} min read</span>
-          </div>
-        </div>
 
-        {/* Post Body */}
-        <div className="mb-12">
-          {post.richContent ? (
-            <RichTextRenderer content={post.richContent} />
-          ) : (
-            <div className="prose prose-lg dark:prose-invert max-w-none">
-              {post.content.split("\n\n").map((paragraph, index) => (
-                <p key={index} className="text-base text-foreground leading-relaxed mb-6">
-                  {paragraph}
-                </p>
-              ))}
+          {/* Subtitle Section */}
+          {post.subtitle && (
+            <div className="mb-8">
+              <p className="text-xl text-muted-foreground leading-relaxed">{post.subtitle}</p>
             </div>
           )}
-        </div>
 
-        {/* Author Bio - Deactivated for now */}
-        {/* {post.author.bio && (
-          <div className="bg-card border border-border rounded-lg p-6 mb-12">
-            <div>
-              <h3 className="font-semibold text-foreground mb-3">{post.author.name}</h3>
-              <p className="text-sm text-foreground">
-                {post.author.bio}
-              </p>
+          {/* Meta Information */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-8 mb-8 border-b border-border">
+            <div className="flex items-center gap-4">
+              <p className="font-medium text-foreground">{post.author.name}</p>
+            </div>
+            <div className="flex items-center gap-4 text-sm text-muted-foreground">
+              <time>{formatDate(post.date)}</time>
+              <span>•</span>
+              <span>{post.readTime} min read</span>
             </div>
           </div>
-        )} */}
-      </article>
 
-      {/* Related Posts */}
-      {relatedPosts.length > 0 && (
-        <section className="bg-card border-t border-border">
-          <div className="max-w-7xl mx-auto py-12 sm:py-16">
-            <h2 className="text-3xl font-bold text-foreground mb-8">Read more</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {relatedPosts.map((relatedPost) => (
-                <BlogCard key={relatedPost.id} post={relatedPost} variant="compact" />
-              ))}
-            </div>
+          {/* Post Body */}
+          <div className="mb-12">
+            {post.richContent ? (
+              <RichTextRenderer content={post.richContent} />
+            ) : (
+              <div className="prose prose-lg dark:prose-invert max-w-none">
+                {post.content.split("\n\n").map((paragraph, index) => (
+                  <p key={index} className="text-base text-foreground leading-relaxed mb-6">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            )}
           </div>
-        </section>
-      )}
-    </main>
+
+          {/* Author Bio - Deactivated for now */}
+          {/* {post.author.bio && (
+            <div className="bg-card border border-border rounded-lg p-6 mb-12">
+              <div>
+                <h3 className="font-semibold text-foreground mb-3">{post.author.name}</h3>
+                <p className="text-sm text-foreground">
+                  {post.author.bio}
+                </p>
+              </div>
+            </div>
+          )} */}
+        </article>
+
+        {/* Related Posts */}
+        {relatedPosts.length > 0 && (
+          <section className="bg-card border-t border-border">
+            <div className="max-w-7xl mx-auto py-12 sm:py-16">
+              <h2 className="text-3xl font-bold text-foreground mb-8">Read more</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {relatedPosts.map((relatedPost) => (
+                  <BlogCard key={relatedPost.id} post={relatedPost} variant="compact" />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+      </main>
+      
+      <Footer />
+    </div>
   )
 }

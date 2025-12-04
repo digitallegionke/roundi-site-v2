@@ -1,32 +1,21 @@
-import Link from "next/link"
-import { BlogList } from "@/components/blog-list"
-import { getContentfulFeaturedPosts } from "@/lib/contentful"
-import { Button } from "@/components/ui/button"
+import { HeroSection } from '@/components/home/HeroSection';
+import { IntroSection } from '@/components/home/IntroSection';
+import { FeaturesSection } from '@/components/home/FeaturesSection';
+import { FAQSection } from '@/components/home/FAQSection';
+import { CTASection } from '@/components/home/CTASection';
+import { Footer } from '@/components/home/Footer';
 
-// Revalidate this page every 60 seconds
-export const revalidate = 60
-
-export default async function Home() {
-  const featuredPosts = await getContentfulFeaturedPosts(3)
-
+export default function Home() {
   return (
-    <main className="min-h-screen bg-background px-10">
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto py-12 sm:py-16 sm:pb-[0]">
-        <div className="mb-12">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4 text-balance">
-            Read our blog
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            Discover insights, stories, and updates from our team about delivery innovation and business growth.
-          </p>
-        </div>
-      </section>
-
-      {/* Featured Posts */}
-      <section className="max-w-7xl mx-auto py-8">
-        <BlogList posts={featuredPosts} />
-      </section>
-    </main>
-  )
+    <div className="bg-white flex flex-col w-full min-h-screen">
+      <div className="content-stretch flex flex-col gap-[6px] items-start relative shrink-0 w-full">
+        <HeroSection />
+        <IntroSection />
+        <FeaturesSection />
+        <FAQSection />
+        <CTASection />
+        <Footer />
+      </div>
+    </div>
+  );
 }

@@ -16,47 +16,39 @@ export function Navbar() {
 
         {/* Desktop Navigation Links */}
         <div className="hidden lg:flex items-center gap-6 flex-1 lg:ml-[72px]">
-          <a
-            href="https://roundi.framer.website"
+          <Link
+            href="/"
             className="text-gray-800 font-medium text-base hover:text-gray-600 transition"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             Home
-          </a>
+          </Link>
           <a
-            href="https://roundi.framer.website/#about"
+            href="/#features-section"
             className="text-gray-800 font-medium text-base hover:text-gray-600 transition"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             About
           </a>
           <Link href="/blog" className="text-gray-800 font-medium text-base hover:text-gray-600 transition">
             Blog
           </Link>
-          <a
-            href="https://roundi.framer.website/contact-v2"
+          <Link
+            href="/contact"
             className="text-gray-800 font-medium text-base hover:text-gray-600 transition"
-            target="_blank"
-            rel="noopener noreferrer"
           >
-            Contact us
-          </a>
+            Contact Us
+          </Link>
           <Link href="/early-access-form" className="text-gray-800 font-medium text-base hover:text-gray-600 transition">
             Early Access
           </Link>
         </div>
 
         {/* Desktop CTA Button */}
-        <a
-          href="https://roundi.framer.website/contact-v2"
+        <Link
+          href="/contact"
           className="hidden lg:flex bg-gray-900 text-lime-300 font-semibold px-8 py-2 rounded-full hover:bg-gray-800 transition text-base"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           Talk to Us
-        </a>
+        </Link>
 
         {/* Mobile Hamburger Button */}
         <button
@@ -85,20 +77,16 @@ export function Navbar() {
         {isMenuOpen && (
           <div className="absolute top-full right-0 mt-2 w-80 bg-white border border-gray-200 rounded-lg shadow-lg lg:hidden z-50">
             <div className="flex flex-col p-4">
-              <a
-                href="https://roundi.framer.website"
+              <Link
+                href="/"
                 className="text-gray-800 font-medium text-base hover:text-gray-600 transition py-3 border-b border-gray-100"
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
-              </a>
+              </Link>
               <a
-                href="https://roundi.framer.website/#about"
+                href="/#features-section"
                 className="text-gray-800 font-medium text-base hover:text-gray-600 transition py-3 border-b border-gray-100"
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
@@ -110,15 +98,13 @@ export function Navbar() {
               >
                 Blog
               </Link>
-              <a
-                href="https://roundi.framer.website/contact-v2"
+              <Link
+                href="/contact"
                 className="text-gray-800 font-medium text-base hover:text-gray-600 transition py-3 border-b border-gray-100"
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact us
-              </a>
+                Contact Us
+              </Link>
               <Link
                 href="/early-access-form"
                 className="text-gray-800 font-medium text-base hover:text-gray-600 transition py-3 border-b border-gray-100"
@@ -126,15 +112,13 @@ export function Navbar() {
               >
                 Early Access
               </Link>
-              <a
-                href="https://roundi.framer.website/contact-v2"
+              <Link
+                href="/contact"
                 className="bg-gray-900 text-lime-300 font-semibold px-8 py-3 rounded-full hover:bg-gray-800 transition text-base text-center mt-4"
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Talk to Us
-              </a>
+              </Link>
             </div>
           </div>
         )}

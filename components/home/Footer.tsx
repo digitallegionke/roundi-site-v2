@@ -1,9 +1,18 @@
+import Image from 'next/image';
+
 export function Footer() {
   return (
     <div className="bg-[#162318] relative shrink-0 w-full">
       <div className="flex flex-row items-center size-full">
         <div className="box-border content-stretch flex flex-col sm:flex-row items-center justify-between gap-[24px] sm:gap-0 p-[24px] md:p-[32px] lg:p-[40px] relative w-full">
-          <div className="h-[42px] md:h-[54px] lg:h-[67px] overflow-clip relative shrink-0 w-[148px] md:w-[190px] lg:w-[236px]">
+          <Image
+            src="/logos/light-green-roundi-logo.svg"
+            alt="Roundi Logo"
+            width={236}
+            height={67}
+            className="h-[42px] md:h-[54px] lg:h-[67px] w-auto"
+          />
+          <div className="hidden h-[42px] md:h-[54px] lg:h-[67px] overflow-clip relative shrink-0 w-[148px] md:w-[190px] lg:w-[236px]">
             <div className="absolute bottom-[-0.01%] left-0 right-[71.07%] top-0">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 69 67">
                 <g id="Group">

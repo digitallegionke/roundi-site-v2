@@ -2,12 +2,12 @@ import type React from "react"
 // <CHANGE> Updated metadata for blog
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
-import { Navbar } from "@/components/navbar"
+import { ConditionalNavbar } from "@/components/ConditionalNavbar"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Blog - Insights and Stories",
-  description: "Discover insights, stories, and updates from our team.",
+  title: "Roundi - Effortless Delivery Management",
+  description: "Startup hustle or seasoned brand. Deliver better, every time with Roundi's comprehensive delivery management platform.",
   generator: "v0.app",
   icons: {
     icon: [
@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        <Navbar />
+        <ConditionalNavbar />
         {children}
         <Analytics />
       </body>
