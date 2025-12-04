@@ -1,4 +1,4 @@
-// File: /Users/madebykush/Desktop/Dev folders/v0-embeddable-blog-section/app/layout.tsx
+// File: /Users/madebykush/Desktop/Dev folders/Roundi 2.0 stuff/Roundi site-Dec 4/app/layout.tsx
 import * as entry from '../../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
