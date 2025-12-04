@@ -628,3 +628,8 @@ Error:   x You're importing a component that needs `useState`. This React Hook o
 [01:00:39.188] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
 [01:00:39.189] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
 [01:00:39.407] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/blog/the-aha-moment color: rgb(120, 120, 120) color: inherit {"dp":"/blog/[slug]","o":"http://localhost:3000/blog/the-aha-moment","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764688612835}
+[01:46:53.429] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[01:46:53.433] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"
+[01:46:53.826] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/ytTNpkX5IVkcAGJBqlnYT/0d3f8a80f59c75371e90f7d6ce0f4fe7/Door-to-Door.jpg"
+[01:46:53.826] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/3lkes8qRu9n915E6WL20jr/a09cca537462150e42c8cf8a72e0a0c6/7de27352-357c-4caa-adff-c8b700cb4c28_2120x1364.webp"
+[01:46:53.826] Server  LOG     Image URL extracted: "https://images.ctfassets.net/pvdwb8rpa7g5/2hn1KFdaZgAbRkNxGvtiuD/2810fac35b9e785212403e125967f2cb/231687ac-8f6f-4dca-b83e-6eaf0fd907ed_1248x832.webp"

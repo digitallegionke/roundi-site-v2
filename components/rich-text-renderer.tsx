@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+
 interface RichTextRendererProps {
   content: any
 }
@@ -37,6 +39,18 @@ export function RichTextRenderer({ content }: RichTextRendererProps) {
           <p key={key} className="text-base text-foreground leading-relaxed mb-6">
             {node.content?.map((child: any, i: number) => renderNode(child, i))}
           </p>
+        )
+      case "embedded-asset-block":
+        const asset = node.data.target
+        const imageUrl = asset.fields.file.url
+        const imageAlt = asset.fields.description || asset.fields.title
+        return (
+          <img
+            key={key}
+            src={`https:${imageUrl}`}
+            alt={imageAlt}
+            className="my-8 rounded-lg shadow-md max-w-full h-auto"
+          />
         )
 
       case "heading-1":
@@ -122,6 +136,18 @@ export function RichTextRenderer({ content }: RichTextRendererProps) {
             {node.content?.map((child: any, i: number) => renderNode(child, i))}
           </a>
         )
+      case "entry-hyperlink":
+        // Assuming `uri` or `slug` is available in node.data.target.fields for internal links
+        const entrySlug = node.data.target.fields.slug
+        return (
+          <Link
+            key={key}
+            href={`/blog/${entrySlug}`}
+            className="text-blue-600 hover:text-blue-800 underline"
+          >
+            {node.content?.map((child: any, i: number) => renderNode(child, i))}
+          </Link>
+        )
 
       case "blockquote":
         return (
@@ -141,8 +167,8 @@ export function RichTextRenderer({ content }: RichTextRendererProps) {
         )
 
       default:
-        // For unknown node types, try to render children
-        if (node.content) {
+        // Fallback for unknown node types: render children if they exist
+        if (node.content && Array.isArray(node.content)) {
           return node.content.map((child: any, i: number) => renderNode(child, i))
         }
         return null
