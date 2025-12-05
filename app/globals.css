@@ -5,8 +5,8 @@
 
 @font-face {
   font-family: 'OpenRunde';
-  src: url('/fonts/OpenRunde-Regular-BF64ee9c627e5b6.otf') format('opentype'),
-       url('/fonts/OpenRunde-Regular-BF64ee9c6978988.woff') format('woff');
+  src: url('/fonts/OpenRunde-Regular-BF64ee9c6978988.woff') format('woff'),
+       url('/fonts/OpenRunde-Regular-BF64ee9c627e5b6.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -16,8 +16,8 @@
 
 @font-face {
   font-family: 'OpenRunde';
-  src: url('/fonts/OpenRunde-Medium-BF64ee9c62ad3ad.otf') format('opentype'),
-       url('/fonts/OpenRunde-Medium-BF64ee9c695513a.woff') format('woff');
+  src: url('/fonts/OpenRunde-Medium-BF64ee9c695513a.woff') format('woff'),
+       url('/fonts/OpenRunde-Medium-BF64ee9c62ad3ad.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'OpenRunde';
-  src: url('/fonts/OpenRunde-Semibold-BF64ee9c629e0a5.otf') format('opentype'),
-       url('/fonts/OpenRunde-Semibold-BF64ee9c69788f3.woff') format('woff');
+  src: url('/fonts/OpenRunde-Semibold-BF64ee9c69788f3.woff') format('woff'),
+       url('/fonts/OpenRunde-Semibold-BF64ee9c629e0a5.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
   font-family: 'OpenRunde';
-  src: url('/fonts/OpenRunde-Bold-BF64ee9c62a2035.otf') format('opentype'),
-       url('/fonts/OpenRunde-Bold-BF64ee9c696534f.woff') format('woff');
+  src: url('/fonts/OpenRunde-Bold-BF64ee9c696534f.woff') format('woff'),
+       url('/fonts/OpenRunde-Bold-BF64ee9c62a2035.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
