@@ -1,8 +1,8 @@
 'use client'
 
 import Link from "next/link"
-import Image from "next/image"
 import { useState } from "react"
+import { Menu as MenuIcon, X } from "lucide-react"
 
 interface NavbarProps {
   variant?: 'light' | 'dark'
@@ -12,6 +12,13 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const isDark = variant === 'dark'
+  const bgClass = isDark ? 'bg-[rgba(22,35,24,0.42)]' : 'bg-white'
+  const borderClass = isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-200'
+  const textClass = isDark ? 'text-white' : 'text-gray-800'
+  const hoverTextClass = isDark ? 'hover:text-white/80' : 'hover:text-gray-600'
+  const backdropClass = isDark ? 'backdrop-blur-[7px] backdrop-filter' : ''
+  const mobileMenuBg = isDark ? 'bg-[rgba(22,35,24,0.9)]' : 'bg-white'
+  const mobileMenuBorder = isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-200'
 
   const scrollToFeatures = () => {
     const featuresSection = document.getElementById('features-section')
@@ -22,169 +29,139 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
   }
 
   return (
-    <div className={isDark ? "p-[12px] md:p-[16px] lg:p-[20px]" : "p-4 sm:p-6 md:p-10"}>
-      <nav className={`flex items-center justify-between px-[18px] py-[22px] rounded-lg relative ${
-        isDark
-          ? 'backdrop-blur-[7px] backdrop-filter bg-[rgba(22,35,24,0.42)] border border-[rgba(255,255,255,0.1)]'
-          : 'bg-white border border-gray-200'
-      }`}>
+    <div className={`p-4 sm:p-6 md:p-10 ${isDark ? '' : ''}`}>
+      <nav className={`flex items-center justify-between px-[18px] py-[22px] ${bgClass} border ${borderClass} rounded-lg relative ${backdropClass}`}>
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <div className="flex items-center">
           {isDark ? (
-            <Image
-              src="/logos/white-roundi-logo.svg"
-              alt="Roundi Logo"
-              width={222}
-              height={63}
-              className="h-10 sm:h-12 w-auto"
-            />
+            <img src="/logos/white-roundi-logo.svg" alt="Roundi Logo" className="h-10 sm:h-12 w-auto" />
           ) : (
             <img src="/logo.svg" alt="Roundi Logo" className="h-10 sm:h-12 w-auto" />
           )}
-        </Link>
+        </div>
 
         {/* Desktop Navigation Links */}
-        <div className={`hidden lg:flex items-center flex-1 lg:ml-[72px] ${
-          isDark ? 'gap-[20px] xl:gap-[30px] text-[18px] xl:text-[23px] tracking-[-0.46px]' : 'gap-6 text-base'
-        }`}>
+        <div className={`hidden lg:flex items-center gap-6 flex-1 lg:ml-[72px] font-medium text-base ${textClass} transition`}>
           <Link
             href="/"
-            className={isDark ? "text-white font-medium hover:opacity-80 transition-opacity" : "text-gray-800 font-medium hover:text-gray-600 transition"}
+            className={`${hoverTextClass} transition`}
           >
             Home
           </Link>
           <a
             href="/#features-section"
-            className={isDark ? "text-white font-medium hover:opacity-80 transition-opacity cursor-pointer" : "text-gray-800 font-medium hover:text-gray-600 transition"}
             onClick={(e) => {
-              if (isDark) {
-                e.preventDefault()
-                scrollToFeatures()
-              }
+              e.preventDefault()
+              scrollToFeatures()
             }}
+            className={`${hoverTextClass} transition`}
           >
             About
           </a>
-          <Link
-            href="/blog"
-            className={isDark ? "text-white font-medium hover:opacity-80 transition-opacity" : "text-gray-800 font-medium hover:text-gray-600 transition"}
-          >
+          <Link href="/blog" className={`${hoverTextClass} transition`}>
             Blog
           </Link>
           <Link
             href="/contact"
-            className={isDark ? "text-white font-medium hover:opacity-80 transition-opacity" : "text-gray-800 font-medium hover:text-gray-600 transition"}
+            className={`${hoverTextClass} transition`}
           >
             Contact Us
           </Link>
-          <Link
-            href="/early-access-form"
-            className={isDark ? "text-white font-medium hover:opacity-80 transition-opacity" : "text-gray-800 font-medium hover:text-gray-600 transition"}
-          >
+          <Link href="/early-access-form" className={`${hoverTextClass} transition`}>
             Early Access
           </Link>
         </div>
 
         {/* Desktop CTA Button */}
-        <Link
-          href="/contact"
-          className={`hidden lg:flex font-semibold rounded-full transition text-base ${
-            isDark
-              ? 'bg-[#c8e298] text-[#162318] px-[16px] md:px-[20px] lg:px-[25px] py-[10px] md:py-[12px] lg:py-[14px] hover:bg-[#b8d288]'
-              : 'bg-gray-900 text-lime-300 px-8 py-2 hover:bg-gray-800'
-          }`}
-        >
-          Talk to Us
-        </Link>
+        {isDark ? (
+          <Link
+            href="/contact"
+            className="hidden lg:flex bg-[#c8e298] text-[#162318] font-semibold px-8 py-2 rounded-full hover:bg-[#b8d288] transition text-base"
+          >
+            Talk to Us
+          </Link>
+        ) : (
+          <Link
+            href="/contact"
+            className="hidden lg:flex bg-gray-900 text-lime-300 font-semibold px-8 py-2 rounded-full hover:bg-gray-800 transition text-base"
+          >
+            Talk to Us
+          </Link>
+        )}
 
         {/* Mobile Hamburger Button */}
         <button
-          className="lg:hidden p-2 cursor-pointer hover:opacity-70 transition-opacity"
+          className="lg:hidden flex flex-col items-center justify-center w-10 h-10 gap-1.5"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
-            <svg className={`w-6 h-6 ${isDark ? 'text-white' : 'text-gray-800'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
+            <X className={`w-6 h-6 ${isDark ? 'text-white' : 'text-gray-800'}`} />
           ) : (
-            <svg className={`w-6 h-6 ${isDark ? 'text-white' : 'text-gray-800'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+            <MenuIcon className={`w-6 h-6 ${isDark ? 'text-white' : 'text-gray-800'}`} />
           )}
         </button>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className={`absolute top-full left-0 right-0 mt-2 rounded-lg shadow-lg lg:hidden z-50 ${
-            isDark
-              ? 'backdrop-blur-[7px] backdrop-filter bg-[rgba(22,35,24,0.9)] border border-[rgba(255,255,255,0.14)]'
-              : 'bg-white border border-gray-200'
-          }`}>
-            <div className="flex flex-col p-[20px] gap-[16px]">
+          <div className={`absolute top-full right-0 mt-2 w-80 ${mobileMenuBg} border ${mobileMenuBorder} rounded-lg shadow-lg lg:hidden z-50 ${isDark ? 'backdrop-blur-[7px] backdrop-filter' : ''}`}>
+            <div className="flex flex-col p-4">
               <Link
                 href="/"
-                className={`font-medium text-[18px] py-[12px] transition ${
-                  isDark ? 'text-white hover:opacity-70 tracking-[-0.46px]' : 'text-gray-800 hover:text-gray-600'
-                }`}
+                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <a
                 href="/#features-section"
-                className={`font-medium text-[18px] py-[12px] transition cursor-pointer ${
-                  isDark ? 'text-white hover:opacity-70 tracking-[-0.46px]' : 'text-gray-800 hover:text-gray-600'
-                }`}
+                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'}`}
                 onClick={(e) => {
-                  if (isDark) {
-                    e.preventDefault()
-                    scrollToFeatures()
-                  } else {
-                    setIsMenuOpen(false)
-                  }
+                  e.preventDefault()
+                  scrollToFeatures()
+                  setIsMenuOpen(false)
                 }}
               >
                 About
               </a>
               <Link
                 href="/blog"
-                className={`font-medium text-[18px] py-[12px] transition ${
-                  isDark ? 'text-white hover:opacity-70 tracking-[-0.46px]' : 'text-gray-800 hover:text-gray-600'
-                }`}
+                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </Link>
               <Link
                 href="/contact"
-                className={`font-medium text-[18px] py-[12px] transition ${
-                  isDark ? 'text-white hover:opacity-70 tracking-[-0.46px]' : 'text-gray-800 hover:text-gray-600'
-                }`}
+                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
               </Link>
               <Link
                 href="/early-access-form"
-                className={`font-medium text-[18px] py-[12px] transition ${
-                  isDark ? 'text-white hover:opacity-70 tracking-[-0.46px]' : 'text-gray-800 hover:text-gray-600'
-                }`}
+                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Early Access
               </Link>
-              <Link
-                href="/contact"
-                className={`font-semibold px-[20px] py-[14px] rounded-full transition text-[18px] text-center mt-[8px] ${
-                  isDark
-                    ? 'bg-[#c8e298] text-[#162318] hover:bg-[#b8d288] tracking-[-0.4px]'
-                    : 'bg-gray-900 text-lime-300 hover:bg-gray-800'
-                }`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Talk to Us
-              </Link>
+              {isDark ? (
+                <Link
+                  href="/contact"
+                  className="bg-[#c8e298] text-[#162318] font-semibold px-8 py-3 rounded-full hover:bg-[#b8d288] transition text-base text-center mt-4"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Talk to Us
+                </Link>
+              ) : (
+                <Link
+                  href="/contact"
+                  className="bg-gray-900 text-lime-300 font-semibold px-8 py-3 rounded-full hover:bg-gray-800 transition text-base text-center mt-4"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Talk to Us
+                </Link>
+              )}
             </div>
           </div>
         )}
