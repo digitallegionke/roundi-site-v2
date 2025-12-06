@@ -17,7 +17,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
       onClick={onToggle}
     >
       <div className="flex items-start justify-between gap-4 w-full">
-        <p className="font-['Inter',sans-serif] font-medium leading-[1.3] not-italic text-[16px] md:text-[18px] lg:text-[20px] text-black flex-1">
+        <p className="font-sans font-medium leading-[1.3] not-italic text-[16px] md:text-[18px] lg:text-[20px] text-black flex-1">
           {question}
         </p>
         <div className="relative shrink-0 size-[24px] md:size-[28px] lg:size-[32px] text-black group-hover:opacity-70 transition-opacity">
@@ -26,7 +26,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
       </div>
       {isOpen && (
         <div className="mt-[16px] md:mt-[20px] lg:mt-[24px] pr-[36px] md:pr-[40px] lg:pr-[48px]">
-          <p className="font-['Inter',sans-serif] leading-[1.5] not-italic text-[14px] md:text-[16px] lg:text-[18px] text-[#6f6f6f]">
+          <p className="font-sans leading-[1.5] not-italic text-[14px] md:text-[16px] lg:text-[18px] text-[#6f6f6f]">
             {answer}
           </p>
         </div>
@@ -67,10 +67,10 @@ export function FAQSection() {
         <div className="box-border content-stretch flex flex-col lg:flex-row gap-[40px] md:gap-[60px] lg:gap-[100px] xl:gap-[140px] items-start p-[32px] md:p-[56px] lg:p-[80px] relative w-full">
           {/* Left side - Heading */}
           <div className="flex flex-col gap-[12px] md:gap-[16px] lg:gap-[20px] shrink-0 lg:w-[400px] xl:w-[450px]">
-            <p className="font-['Inter',sans-serif] font-medium leading-none not-italic text-[14px] md:text-[15px] lg:text-[16px] text-[#6f6f6f] tracking-[0.5px] uppercase">
+            <p className="font-sans font-medium leading-none not-italic text-[14px] md:text-[15px] lg:text-[16px] text-[#6f6f6f] tracking-[0.5px] uppercase">
               FAQs
             </p>
-            <h2 className="font-['Open_Runde',sans-serif] font-semibold leading-[1.1] not-italic text-[32px] md:text-[42px] lg:text-[52px] text-black tracking-[-1.2px] md:tracking-[-1.6px] lg:tracking-[-2px]">
+            <h2 className="font-sans font-semibold leading-[1.1] not-italic text-[32px] md:text-[42px] lg:text-[52px] text-black tracking-[-1.2px] md:tracking-[-1.6px] lg:tracking-[-2px]">
               Common questions & answers
             </h2>
           </div>

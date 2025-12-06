@@ -36,37 +36,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Font Preloading for Safari Mobile Compatibility */}
-        <link
-          rel="preload"
-          href="/fonts/OpenRunde-Regular-BF64ee9c6978988.woff"
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/OpenRunde-Medium-BF64ee9c695513a.woff"
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/OpenRunde-Semibold-BF64ee9c69788f3.woff"
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/OpenRunde-Bold-BF64ee9c696534f.woff"
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
+        <meta name="format-detection" content="telephone=no" />
+        <style dangerouslySetInnerHTML={{__html: `
+          * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+          }
+        `}} />
       </head>
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased`} style={{fontFamily: 'OpenRunde, system-ui, -apple-system, sans-serif'}}>
         <ConditionalNavbar />
         {children}
         <Analytics />

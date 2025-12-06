@@ -97,7 +97,7 @@ export function Footer() {
             </div>
           </div>
           <div className="content-stretch flex flex-col sm:flex-row gap-[16px] sm:gap-[28px] md:gap-[34px] lg:gap-[38px] items-center relative shrink-0">
-            <p className="font-['Inter',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[17px] md:text-[19px] lg:text-[21px] text-nowrap text-white tracking-[-0.42px] whitespace-pre">
+            <p className="font-sans font-medium leading-none not-italic relative shrink-0 text-[17px] md:text-[19px] lg:text-[21px] text-nowrap text-white tracking-[-0.42px] whitespace-pre">
               Follow us
             </p>
             <div className="content-stretch flex gap-[18px] md:gap-[22px] lg:gap-[26px] items-center relative shrink-0">

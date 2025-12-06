@@ -1,51 +1,51 @@
+@font-face {
+  font-family: 'OpenRunde';
+  src: url('/fonts/OpenRunde-Regular-BF64ee9c6978988.woff?v=1') format('woff'),
+       url('/fonts/OpenRunde-Regular-BF64ee9c627e5b6.otf?v=1') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+  ascent-override: 100%;
+  descent-override: 20%;
+}
+
+@font-face {
+  font-family: 'OpenRunde';
+  src: url('/fonts/OpenRunde-Medium-BF64ee9c695513a.woff?v=1') format('woff'),
+       url('/fonts/OpenRunde-Medium-BF64ee9c62ad3ad.otf?v=1') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+  ascent-override: 100%;
+  descent-override: 20%;
+}
+
+@font-face {
+  font-family: 'OpenRunde';
+  src: url('/fonts/OpenRunde-Semibold-BF64ee9c69788f3.woff?v=1') format('woff'),
+       url('/fonts/OpenRunde-Semibold-BF64ee9c629e0a5.otf?v=1') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+  ascent-override: 100%;
+  descent-override: 20%;
+}
+
+@font-face {
+  font-family: 'OpenRunde';
+  src: url('/fonts/OpenRunde-Bold-BF64ee9c696534f.woff?v=1') format('woff'),
+       url('/fonts/OpenRunde-Bold-BF64ee9c62a2035.otf?v=1') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+  ascent-override: 100%;
+  descent-override: 20%;
+}
+
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
-
-@font-face {
-  font-family: 'OpenRunde';
-  src: url('/fonts/OpenRunde-Regular-BF64ee9c6978988.woff') format('woff'),
-       url('/fonts/OpenRunde-Regular-BF64ee9c627e5b6.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@font-face {
-  font-family: 'OpenRunde';
-  src: url('/fonts/OpenRunde-Medium-BF64ee9c695513a.woff') format('woff'),
-       url('/fonts/OpenRunde-Medium-BF64ee9c62ad3ad.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@font-face {
-  font-family: 'OpenRunde';
-  src: url('/fonts/OpenRunde-Semibold-BF64ee9c69788f3.woff') format('woff'),
-       url('/fonts/OpenRunde-Semibold-BF64ee9c629e0a5.otf') format('opentype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@font-face {
-  font-family: 'OpenRunde';
-  src: url('/fonts/OpenRunde-Bold-BF64ee9c696534f.woff') format('woff'),
-       url('/fonts/OpenRunde-Bold-BF64ee9c62a2035.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 :root {
   --background: oklch(1 0 0);
