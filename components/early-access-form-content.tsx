@@ -227,8 +227,7 @@ export function EarlyAccessFormContent() {
         }
 
         .required {
-          color: #ef4444;
-          margin-left: 2px;
+          color: #fb2c36;
         }
 
         .form-input,
