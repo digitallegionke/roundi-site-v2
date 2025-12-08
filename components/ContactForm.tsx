@@ -158,12 +158,20 @@ export default function ContactForm() {
         .form-container {
           width: 100%;
           max-width: 100%;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+          font-family: 'OpenRunde', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
 
         .contact-form {
           background: white;
-          padding: 0;
+          padding: 40px;
+          border-radius: 10px;
+          border: 1px solid rgba(22, 35, 24, 0.1);
+        }
+
+        @media (max-width: 768px) {
+          .contact-form {
+            padding: 24px;
+          }
         }
 
         .form-title {
