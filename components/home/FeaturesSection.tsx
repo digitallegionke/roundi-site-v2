@@ -11,13 +11,13 @@ export function FeaturesSection() {
     {
       title: 'Transparency at Every Step',
       description: "Track riders in real time and give customers accurate ETAs, so there's never a \"Where's my order?\" moment.",
-      image: 'https://images.unsplash.com/photo-1586449480537-3a22cf98b04c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWxpdmVyeSUyMHRyYWNraW5nJTIwbWFwJTIwbW9iaWxlfGVufDF8fHx8MTc2NDY5NDgxN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '/QncIqKhv6wuo7gFnr6EKL9ME9Jw.avif',
       imageOnLeft: false,
     },
     {
       title: 'Deliver Like the Big Brands',
       description: 'Offer customers professional, on-time delivery — without the big corporate budget.',
-      image: 'https://images.unsplash.com/photo-1762851452423-34e7cf452780?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZWxpdmVyeSUyMHNlcnZpY2V8ZW58MXx8fHwxNzY0NjkzOTcwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/PUreFkeuAMBMEp73W1HuVs3fRE.avif',
       imageOnLeft: true,
     },
   ];
@@ -37,8 +37,8 @@ export function FeaturesSection() {
             {features.map((feature, index) => {
               const isSticky = index < 2;
               const topPosition = index === 0 ? '0px' : '10px';
-              // Reverse z-index so last card appears on top
-              const zIndex = features.length - index;
+              // Higher index = higher z-index, so cards stack on top of each other
+              const zIndex = index + 1;
 
               return (
                 <div
@@ -50,6 +50,9 @@ export function FeaturesSection() {
                     top: isSticky ? topPosition : 'auto',
                     zIndex: zIndex,
                     marginBottom: index < features.length - 1 ? '24px' : '0',
+                    // Force stacking context in Safari
+                    transform: 'translateZ(0)',
+                    willChange: isSticky ? 'top' : 'auto',
                   }}
                 >
                   <div
