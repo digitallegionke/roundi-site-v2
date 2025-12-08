@@ -7,12 +7,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Get all blog posts for dynamic routes
   const blogPosts = await getContentfulBlogPosts()
 
-  const blogUrls = blogPosts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.publishedDate),
-    changeFrequency: 'weekly' as const,
-    priority: 0.7,
-  }))
+  const blogUrls = blogPosts.map((post) => {
+    // Use publishedDate, fall back to date, or use current date if both are invalid
+    const dateValue = post.publishedDate || post.date
+    const lastModified = dateValue ? new Date(dateValue) : new Date()
+
+    return {
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: isNaN(lastModified.getTime()) ? new Date() : lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    }
+  })
 
   return [
     {
