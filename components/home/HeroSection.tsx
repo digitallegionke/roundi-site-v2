@@ -17,7 +17,7 @@ export function HeroSection() {
               priority
             />
             <div className="size-full">
-              <div className="box-border content-stretch flex flex-col items-start justify-end pb-[10px] md:pb-[20px] lg:pb-[60px] px-[16px] md:px-[28px] lg:px-[40px] pt-[300px] md:pt-[350px] lg:pt-[400px] relative size-full">
+              <div className="box-border content-stretch flex flex-col items-start justify-end pb-[40px] md:pb-[50px] lg:pb-[80px] px-[16px] md:px-[28px] lg:px-[40px] pt-[300px] md:pt-[350px] lg:pt-[400px] relative size-full">
 
                 <div className="content-stretch flex flex-col gap-[20px] md:gap-[24px] lg:gap-[32px] items-start relative shrink-0 w-full lg:w-[1021px]">
                   <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
@@ -37,7 +37,7 @@ export function HeroSection() {
                       <div className="box-border inline-flex gap-[10px] items-center justify-center px-[24px] md:px-[32px] lg:px-[40px] py-[16px] md:py-[18px] lg:py-[20px] relative rounded-[50px] shrink-0 cursor-pointer hover:bg-white/10 transition-colors w-full sm:w-auto min-h-[52px] sm:min-h-auto [-webkit-appearance:none] [-webkit-tap-highlight-color:transparent]">
                         <div aria-hidden="true" className="absolute border-2 border-solid border-white inset-0 pointer-events-none rounded-[50px]" />
                         <span className="font-sans font-bold leading-none not-italic relative shrink-0 text-[16px] md:text-[18px] lg:text-[21px] text-center text-white tracking-[-0.42px] whitespace-nowrap [-webkit-font-smoothing:antialiased]">
-                          Book a Demo
+                          Talk to Us
                         </span>
                       </div>
                     </Link>

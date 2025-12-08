@@ -50,9 +50,10 @@ export function FeaturesSection() {
                     top: isSticky ? topPosition : 'auto',
                     zIndex: zIndex,
                     marginBottom: index < features.length - 1 ? '24px' : '0',
-                    // Force stacking context in Safari
+                    // Force stacking context for consistent behavior across browsers
                     transform: 'translateZ(0)',
-                    willChange: isSticky ? 'top' : 'auto',
+                    WebkitTransform: 'translateZ(0)',
+                    willChange: isSticky ? 'top' : undefined,
                   }}
                 >
                   <div
