@@ -179,7 +179,7 @@ export function EarlyAccessFormContent() {
         .form-container {
           width: 100%;
           max-width: 100%;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+          font-family: 'Open Runde', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         }
 
         .early-access-form {
