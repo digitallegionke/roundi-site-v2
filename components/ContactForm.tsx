@@ -148,6 +148,219 @@ export default function ContactForm() {
 
   return (
     <div className="form-container">
+      <style jsx global>{`
+        .form-container * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        .form-container {
+          width: 100%;
+          max-width: 100%;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .contact-form {
+          background: white;
+          padding: 0;
+        }
+
+        .form-title {
+          font-size: 24px;
+          font-weight: 600;
+          color: #000;
+          margin-bottom: 8px;
+        }
+
+        .form-description {
+          font-size: 15px;
+          color: #717182;
+          margin-bottom: 32px;
+          line-height: 1.6;
+        }
+
+        .form-group {
+          margin-bottom: 24px;
+        }
+
+        .form-label {
+          display: block;
+          font-size: 15px;
+          letter-spacing: -0.01em;
+          color: #1a1a1a;
+          margin-bottom: 12px;
+          font-weight: 500;
+        }
+
+        .required {
+          color: #fb2c36;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+          width: 100%;
+          background: white;
+          font-size: 14px;
+          letter-spacing: -0.1504px;
+          padding: 12px 16px;
+          border: 1px solid #e5e7eb;
+          border-radius: 6px;
+          transition: all 0.15s;
+          font-family: inherit;
+          color: #1a1a1a;
+        }
+
+        .form-input,
+        .form-select {
+          height: 48px;
+        }
+
+        .form-input::placeholder,
+        .form-textarea::placeholder {
+          color: #717182;
+        }
+
+        .form-input:hover,
+        .form-select:hover,
+        .form-textarea:hover {
+          border-color: #d1d5db;
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+          outline: none;
+          border-color: #162318;
+          box-shadow: 0 0 0 1px #162318;
+        }
+
+        .form-input.error,
+        .form-select.error,
+        .form-textarea.error {
+          border-color: #ef4444;
+        }
+
+        .form-input.error:focus,
+        .form-select.error:focus,
+        .form-textarea.error:focus {
+          box-shadow: 0 0 0 1px #ef4444;
+        }
+
+        .form-textarea {
+          min-height: 150px;
+          resize: vertical;
+          height: auto;
+        }
+
+        .error-message {
+          color: #ef4444;
+          font-size: 14px;
+          margin-top: 4px;
+        }
+
+        .helper-text {
+          font-size: 13px;
+          color: #717182;
+          letter-spacing: -0.1504px;
+          margin-top: 4px;
+          line-height: 1.5;
+        }
+
+        .submit-container {
+          display: flex;
+          justify-content: flex-start;
+          padding-top: 8px;
+        }
+
+        .submit-button {
+          background: #162318;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          padding: 14px 32px;
+          font-size: 15px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.15s;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 48px;
+          letter-spacing: -0.1504px;
+        }
+
+        .submit-button:hover:not(:disabled) {
+          background: #0f1811;
+          transform: translateY(-1px);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .submit-button:active:not(:disabled) {
+          transform: translateY(0);
+        }
+
+        .submit-button:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+
+        .spinner {
+          width: 16px;
+          height: 16px;
+          border: 2px solid rgba(255, 255, 255, 0.3);
+          border-top-color: white;
+          border-radius: 50%;
+          animation: spin 0.8s linear infinite;
+          margin-right: 8px;
+        }
+
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+
+        .toast {
+          position: fixed;
+          top: 24px;
+          right: 24px;
+          background: white;
+          padding: 16px 20px;
+          border-radius: 6px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          z-index: 1000;
+          animation: slideIn 0.3s ease-out;
+          border: 1px solid #e5e7eb;
+        }
+
+        @keyframes slideIn {
+          from {
+            transform: translateX(400px);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        .toast.success {
+          border-left: 4px solid #10b981;
+        }
+
+        .toast.error {
+          border-left: 4px solid #ef4444;
+        }
+
+        .toast-message {
+          font-size: 14px;
+          color: #1a1a1a;
+          font-weight: 500;
+        }
+      `}</style>
       <form onSubmit={handleSubmit} className="contact-form">
         <h2 className="form-title">Get in Touch</h2>
         <p className="form-description">

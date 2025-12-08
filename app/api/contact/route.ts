@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const MAILERLITE_API_KEY = process.env.MAILERLITE_API_KEY;
 const MAILERLITE_GROUP_ID = process.env.MAILERLITE_GROUP_ID;
+const MAILERLITE_ENQUIRY_GROUP_ID = process.env.MAILERLITE_ENQUIRY_GROUP_ID;
 
 interface ContactFormData {
   name: string;
@@ -109,37 +110,51 @@ export async function POST(request: NextRequest) {
       console.log('Successfully created MailerLite subscriber, ID:', subscriberId);
     }
 
-    // Now add to group if we have both subscriber ID and group ID
-    if (subscriberId && MAILERLITE_GROUP_ID) {
-      console.log('Adding subscriber to group:', MAILERLITE_GROUP_ID);
+    // Now add to groups if we have subscriber ID
+    if (subscriberId) {
+      const groupIds = [];
 
-      const groupPayload = {
-        groups: [MAILERLITE_GROUP_ID],
-      };
-
-      const groupResponse = await fetch(
-        `https://connect.mailerlite.com/api/subscribers/${subscriberId}`,
-        {
-          method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${MAILERLITE_API_KEY}`,
-          },
-          body: JSON.stringify(groupPayload),
-        }
-      );
-
-      if (!groupResponse.ok) {
-        const groupErrorData = await groupResponse.json().catch(() => ({}));
-        console.error('Failed to add subscriber to group:', groupErrorData);
-        return NextResponse.json(
-          { error: 'Failed to add to group', details: groupErrorData },
-          { status: 500 }
-        );
-      } else {
-        console.log('Successfully added subscriber to group');
+      // Add main group if configured
+      if (MAILERLITE_GROUP_ID) {
+        groupIds.push(MAILERLITE_GROUP_ID);
       }
-    } else if (!subscriberId) {
+
+      // Add enquiry group if configured
+      if (MAILERLITE_ENQUIRY_GROUP_ID) {
+        groupIds.push(MAILERLITE_ENQUIRY_GROUP_ID);
+      }
+
+      if (groupIds.length > 0) {
+        console.log('Adding subscriber to groups:', groupIds);
+
+        const groupPayload = {
+          groups: groupIds,
+        };
+
+        const groupResponse = await fetch(
+          `https://connect.mailerlite.com/api/subscribers/${subscriberId}`,
+          {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${MAILERLITE_API_KEY}`,
+            },
+            body: JSON.stringify(groupPayload),
+          }
+        );
+
+        if (!groupResponse.ok) {
+          const groupErrorData = await groupResponse.json().catch(() => ({}));
+          console.error('Failed to add subscriber to groups:', groupErrorData);
+          return NextResponse.json(
+            { error: 'Failed to add to groups', details: groupErrorData },
+            { status: 500 }
+          );
+        } else {
+          console.log('Successfully added subscriber to groups');
+        }
+      }
+    } else {
       console.warn('No subscriber ID available, skipping group assignment');
       return NextResponse.json(
         { error: 'Could not identify subscriber' },
