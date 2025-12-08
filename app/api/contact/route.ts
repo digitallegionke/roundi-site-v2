@@ -110,22 +110,17 @@ export async function POST(request: NextRequest) {
       console.log('Successfully created MailerLite subscriber, ID:', subscriberId);
     }
 
-    // Now add to groups if we have subscriber ID
+    // Now add to enquiry group only (not main group)
     if (subscriberId) {
       const groupIds = [];
 
-      // Add main group if configured
-      if (MAILERLITE_GROUP_ID) {
-        groupIds.push(MAILERLITE_GROUP_ID);
-      }
-
-      // Add enquiry group if configured
+      // Only add to enquiry group for contact form submissions
       if (MAILERLITE_ENQUIRY_GROUP_ID) {
         groupIds.push(MAILERLITE_ENQUIRY_GROUP_ID);
       }
 
       if (groupIds.length > 0) {
-        console.log('Adding subscriber to groups:', groupIds);
+        console.log('Adding subscriber to enquiry group:', groupIds);
 
         const groupPayload = {
           groups: groupIds,
