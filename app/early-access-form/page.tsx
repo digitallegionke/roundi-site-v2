@@ -7,7 +7,7 @@ export default function EarlyAccessFormPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow min-h-screen py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-20">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Join Our Early Access Program</h1>
             <p className="text-lg text-gray-600">
               Be among the first to experience Roundi and help shape the future of delivery management.
