@@ -122,7 +122,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <article className="max-w-4xl mx-auto py-12 sm:py-0 mt-16">
           {/* Back Button */}
           <Link
-            href="/"
+            href="/blog"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8"
           >
             <ChevronLeft className="w-4 h-4" />
