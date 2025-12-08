@@ -37,7 +37,8 @@ export function FeaturesSection() {
             {features.map((feature, index) => {
               const isSticky = index < 2;
               const topPosition = index === 0 ? '0px' : '10px';
-              const zIndex = index + 1;
+              // Reverse z-index so last card appears on top
+              const zIndex = features.length - index;
 
               return (
                 <div
@@ -48,7 +49,7 @@ export function FeaturesSection() {
                   style={{
                     top: isSticky ? topPosition : 'auto',
                     zIndex: zIndex,
-                    marginBottom: index < features.length - 1 ? '16px' : '0',
+                    marginBottom: index < features.length - 1 ? '24px' : '0',
                   }}
                 >
                   <div
