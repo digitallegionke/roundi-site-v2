@@ -234,67 +234,65 @@ export function EarlyAccessFormContent() {
         .form-input,
         .form-textarea {
           width: 100%;
-          background: #fafafa;
-          font-size: 15px;
-          letter-spacing: -0.01em;
-          padding: 16px 20px;
-          border: 2px solid transparent;
-          border-radius: 12px;
-          transition: all 0.2s ease;
+          background: white;
+          font-size: 14px;
+          letter-spacing: -0.1504px;
+          padding: 12px 16px;
+          border: 1px solid #e5e7eb;
+          border-radius: 6px;
+          transition: all 0.15s;
           font-family: inherit;
           color: #1a1a1a;
         }
 
         .form-input {
-          height: 56px;
+          height: 48px;
         }
 
         .form-input::placeholder,
         .form-textarea::placeholder {
-          color: #999;
+          color: #717182;
         }
 
         .form-input:hover,
         .form-textarea:hover {
-          background: #f5f5f5;
+          border-color: #d1d5db;
         }
 
         .form-input:focus,
         .form-textarea:focus {
           outline: none;
-          background: #fff;
-          border-color: #1a1a1a;
+          border-color: #162318;
+          box-shadow: 0 0 0 1px #162318;
         }
 
         .form-input.error,
         .form-textarea.error {
           border-color: #ef4444;
-          background: #fef2f2;
         }
 
         .form-input.error:focus,
         .form-textarea.error:focus {
-          background: #fff;
+          box-shadow: 0 0 0 1px #ef4444;
         }
 
         .form-textarea {
-          min-height: 140px;
+          min-height: 150px;
           resize: vertical;
-          padding-top: 16px;
+          height: auto;
         }
 
         .error-message {
           color: #ef4444;
           font-size: 14px;
-          margin-top: 8px;
-          font-weight: 500;
+          margin-top: 4px;
         }
 
         .helper-text {
-          font-size: 14px;
-          color: #666;
-          letter-spacing: -0.01em;
-          margin-bottom: 12px;
+          font-size: 13px;
+          color: #717182;
+          letter-spacing: -0.1504px;
+          margin-top: 4px;
           line-height: 1.5;
         }
 
@@ -714,15 +712,15 @@ export function EarlyAccessFormContent() {
             <label htmlFor="biggestChallenge" className="form-label">
               Biggest Delivery Challenge
             </label>
-            <p className="helper-text">
-              Example: High costs, Late deliveries, Customer complaints, etc.
-            </p>
             <textarea
               id="biggestChallenge"
               name="biggestChallenge"
               className="form-textarea"
               placeholder="Tell us about your biggest delivery challenges..."
             ></textarea>
+            <p className="helper-text">
+              Example: High costs, Late deliveries, Customer complaints, etc.
+            </p>
           </div>
         </div>
 
