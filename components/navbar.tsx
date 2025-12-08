@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link"
+import { usePathname, useRouter } from "next/navigation"
 import { useState } from "react"
 import { Menu as MenuIcon, X } from "lucide-react"
 
@@ -10,6 +11,8 @@ interface NavbarProps {
 
 export function Navbar({ variant = 'light' }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
 
   const isDark = variant === 'dark'
   const bgClass = isDark ? 'bg-[rgba(22,35,24,0.42)]' : 'bg-white'
@@ -21,6 +24,14 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
   const mobileMenuBorder = isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-200'
 
   const scrollToFeatures = () => {
+    // If not on homepage, navigate to homepage with hash
+    if (pathname !== '/') {
+      router.push('/#features-section')
+      setIsMenuOpen(false)
+      return
+    }
+
+    // If on homepage, scroll to features section
     const featuresSection = document.getElementById('features-section')
     if (featuresSection) {
       featuresSection.scrollIntoView({ behavior: 'smooth' })
@@ -32,13 +43,13 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
     <div className={`p-4 sm:p-6 md:p-10 ${isDark ? '' : ''}`}>
       <nav className={`flex items-center justify-between px-[18px] py-[22px] ${bgClass} border ${borderClass} rounded-lg relative ${backdropClass}`}>
         {/* Logo */}
-        <div className="flex items-center">
+        <Link href="/" className="flex items-center">
           {isDark ? (
             <img src="/logos/white-roundi-logo.svg" alt="Roundi Logo" className="h-10 sm:h-12 w-auto" />
           ) : (
             <img src="/logo.svg" alt="Roundi Logo" className="h-10 sm:h-12 w-auto" />
           )}
-        </div>
+        </Link>
 
         {/* Desktop Navigation Links */}
         <div className={`hidden lg:flex items-center gap-6 flex-1 lg:ml-[72px] font-medium text-base ${textClass} transition`}>
