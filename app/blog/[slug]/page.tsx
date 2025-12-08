@@ -36,9 +36,40 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
     }
   }
 
+  const publishedDate = new Date(post.publishedDate || post.date)
+  const modifiedDate = new Date(post.updatedDate || post.date)
+
   return {
     title: post.title,
-    description: post.excerpt,
+    description: post.excerpt || post.subtitle,
+    keywords: post.tags || ["delivery management", "logistics", "Roundi"],
+    authors: [{ name: post.author.name }],
+    openGraph: {
+      title: post.title,
+      description: post.excerpt || post.subtitle,
+      url: `https://roundi.africa/blog/${post.slug}`,
+      type: 'article',
+      publishedTime: publishedDate.toISOString(),
+      modifiedTime: modifiedDate.toISOString(),
+      authors: [post.author.name],
+      images: [
+        {
+          url: post.image || '/hero-bg.png',
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt || post.subtitle,
+      images: [post.image || '/hero-bg.png'],
+    },
+    alternates: {
+      canonical: `https://roundi.africa/blog/${post.slug}`,
+    },
   }
 }
 
@@ -53,8 +84,39 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const blogPosts = await getContentfulBlogPosts()
   const relatedPosts = blogPosts.filter((p) => p.id !== post.id).slice(0, 3)
 
+  // Structured data for the blog post
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt || post.subtitle,
+    "image": post.image || "https://roundi.africa/hero-bg.png",
+    "datePublished": new Date(post.publishedDate || post.date).toISOString(),
+    "dateModified": new Date(post.updatedDate || post.date).toISOString(),
+    "author": {
+      "@type": "Person",
+      "name": post.author.name,
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Roundi",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://roundi.africa/logo.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://roundi.africa/blog/${post.slug}`
+    }
+  }
+
   return (
     <div className="flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <main className="min-h-screen bg-background px-10 flex-grow">
         {/* Post Content */}
         <article className="max-w-4xl mx-auto py-12 sm:py-0 mt-16">

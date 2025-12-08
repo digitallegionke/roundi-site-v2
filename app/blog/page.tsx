@@ -5,8 +5,17 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export const metadata = {
-  title: "Blog - Read Our Latest Articles",
-  description: "Explore our collection of articles and insights.",
+  title: "Blog - Delivery Management Insights & Tips",
+  description: "Expert insights on delivery management, logistics optimization, and growing your business in Africa. Learn best practices, industry trends, and success stories from Roundi.",
+  keywords: ["delivery management blog", "logistics tips", "delivery optimization", "African logistics insights", "business delivery strategies"],
+  openGraph: {
+    title: "Blog - Delivery Management Insights & Tips",
+    description: "Expert insights on delivery management, logistics optimization, and growing your business in Africa.",
+    url: "https://roundi.africa/blog",
+  },
+  alternates: {
+    canonical: "https://roundi.africa/blog",
+  },
 }
 
 // Revalidate this page every 60 seconds

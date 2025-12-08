@@ -1,6 +1,25 @@
 import { EarlyAccessFormContent } from '../../components/early-access-form-content';
 import { Footer } from '@/components/home/Footer';
 import { Users, TrendingUp, Shield, Award } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Join Early Access - Be First to Experience Roundi",
+  description: "Join Roundi's early access program and be among the first to transform your delivery operations. Get exclusive benefits, special pricing, and help shape the future of delivery management in Africa.",
+  keywords: ["Roundi early access", "delivery software beta", "logistics platform early bird", "delivery management trial", "Roundi signup"],
+  openGraph: {
+    title: "Join Early Access - Be First to Experience Roundi",
+    description: "Be among the first to transform your delivery operations with Roundi. Exclusive benefits and special pricing available.",
+    url: "https://roundi.africa/early-access-form",
+  },
+  alternates: {
+    canonical: "https://roundi.africa/early-access-form",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function EarlyAccessFormPage() {
   return (

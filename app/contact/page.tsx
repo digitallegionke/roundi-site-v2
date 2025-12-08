@@ -1,6 +1,21 @@
 import ContactForm from '@/components/ContactForm';
 import { Footer } from '@/components/home/Footer';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Contact Us - Get in Touch with Roundi",
+  description: "Have questions about Roundi's delivery management platform? Contact our team for demos, support, or partnership opportunities. We're here to help transform your delivery operations.",
+  keywords: ["contact Roundi", "delivery software support", "logistics platform demo", "Roundi customer service", "delivery management inquiries"],
+  openGraph: {
+    title: "Contact Us - Get in Touch with Roundi",
+    description: "Have questions about Roundi? Contact our team for demos, support, or partnership opportunities.",
+    url: "https://roundi.africa/contact",
+  },
+  alternates: {
+    canonical: "https://roundi.africa/contact",
+  },
+};
 
 export default function ContactPage() {
   return (
