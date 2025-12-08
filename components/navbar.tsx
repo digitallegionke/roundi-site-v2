@@ -86,17 +86,17 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
         {/* Desktop CTA Button */}
         {isDark ? (
           <Link
-            href="/contact"
+            href="/early-access-form"
             className="hidden lg:flex bg-[#c8e298] text-[#162318] font-semibold px-8 py-2 rounded-full hover:bg-[#b8d288] transition text-base"
           >
-            Talk to Us
+            Join Early Access
           </Link>
         ) : (
           <Link
-            href="/contact"
+            href="/early-access-form"
             className="hidden lg:flex bg-gray-900 text-lime-300 font-semibold px-8 py-2 rounded-full hover:bg-gray-800 transition text-base"
           >
-            Talk to Us
+            Join Early Access
           </Link>
         )}
 
@@ -158,19 +158,19 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
               </Link>
               {isDark ? (
                 <Link
-                  href="/contact"
+                  href="/early-access-form"
                   className="bg-[#c8e298] text-[#162318] font-semibold px-8 py-3 rounded-full hover:bg-[#b8d288] transition text-base text-center mt-4"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Talk to Us
+                  Join Early Access
                 </Link>
               ) : (
                 <Link
-                  href="/contact"
+                  href="/early-access-form"
                   className="bg-gray-900 text-lime-300 font-semibold px-8 py-3 rounded-full hover:bg-gray-800 transition text-base text-center mt-4"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Talk to Us
+                  Join Early Access
                 </Link>
               )}
             </div>
