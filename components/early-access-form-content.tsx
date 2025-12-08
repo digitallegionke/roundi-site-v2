@@ -183,38 +183,43 @@ export function EarlyAccessFormContent() {
         }
 
         .early-access-form {
-          background: transparent;
+          background: white;
           padding: 0;
         }
 
         .section {
-          margin-bottom: 64px;
+          margin-bottom: 32px;
         }
 
-        @media (min-width: 768px) {
-          .section {
-            margin-bottom: 80px;
-          }
+        .section:last-child {
+          margin-bottom: 0;
         }
 
         .section-title {
           color: #000;
-          font-size: 24px;
+          font-size: 18px;
           font-weight: 600;
           letter-spacing: -0.02em;
-          margin-bottom: 48px;
+          margin-bottom: 24px;
           line-height: 1.2;
         }
 
-        @media (min-width: 768px) {
-          .section-title {
-            font-size: 28px;
-            margin-bottom: 56px;
-          }
+        .form-group {
+          margin-bottom: 24px;
         }
 
-        .form-group {
+        .form-title {
+          font-size: 24px;
+          font-weight: 600;
+          color: #000;
+          margin-bottom: 8px;
+        }
+
+        .form-description {
+          font-size: 15px;
+          color: #717182;
           margin-bottom: 32px;
+          line-height: 1.6;
         }
 
         .form-label {
@@ -298,8 +303,7 @@ export function EarlyAccessFormContent() {
         .radio-group {
           display: grid;
           grid-template-columns: 1fr;
-          gap: 12px;
-          margin-bottom: 32px;
+          gap: 8px;
         }
 
         @media (min-width: 640px) {
@@ -332,21 +336,21 @@ export function EarlyAccessFormContent() {
           position: relative;
           display: flex;
           align-items: center;
-          padding: 18px 20px;
-          border-radius: 12px;
+          padding: 12px 16px;
+          border-radius: 6px;
           cursor: pointer;
-          transition: all 0.2s ease;
-          border: 2px solid transparent;
-          background: #fafafa;
+          transition: all 0.15s;
+          border: 1px solid #e5e7eb;
+          background: white;
         }
 
         .radio-label:hover {
-          background: #f5f5f5;
+          border-color: #d1d5db;
         }
 
         .radio-label.selected {
-          border-color: #1a1a1a;
-          background: #fff;
+          border-color: #162318;
+          box-shadow: 0 0 0 1px #162318;
         }
 
         .radio-input {
@@ -356,21 +360,21 @@ export function EarlyAccessFormContent() {
         }
 
         .radio-button {
-          width: 22px;
-          height: 22px;
+          width: 20px;
+          height: 20px;
           border-radius: 50%;
-          border: 2px solid #ccc;
+          border: 2px solid #d1d5db;
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-right: 14px;
+          margin-right: 12px;
           flex-shrink: 0;
-          transition: all 0.2s ease;
+          transition: all 0.15s;
           background: #fff;
         }
 
         .radio-label.selected .radio-button {
-          border-color: #1a1a1a;
+          border-color: #162318;
           border-width: 2px;
         }
 
@@ -378,7 +382,7 @@ export function EarlyAccessFormContent() {
           width: 10px;
           height: 10px;
           border-radius: 50%;
-          background: #1a1a1a;
+          background: #162318;
           display: none;
         }
 
@@ -387,15 +391,15 @@ export function EarlyAccessFormContent() {
         }
 
         .radio-text {
-          font-size: 15px;
-          letter-spacing: -0.01em;
+          font-size: 14px;
+          letter-spacing: -0.1504px;
           color: #1a1a1a;
           font-weight: 500;
         }
 
         .radio-label.simple {
           justify-content: center;
-          padding: 18px;
+          padding: 12px 16px;
         }
 
         .radio-label.simple .radio-button {
@@ -405,30 +409,30 @@ export function EarlyAccessFormContent() {
         .submit-container {
           display: flex;
           justify-content: flex-start;
-          padding-top: 24px;
+          padding-top: 8px;
         }
 
         .submit-button {
-          background: #1a1a1a;
+          background: #162318;
           color: white;
           border: none;
-          border-radius: 12px;
-          padding: 18px 48px;
-          font-size: 16px;
+          border-radius: 6px;
+          padding: 14px 32px;
+          font-size: 15px;
           font-weight: 600;
           cursor: pointer;
-          transition: all 0.2s ease;
+          transition: all 0.15s;
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          min-height: 56px;
-          letter-spacing: -0.01em;
+          min-height: 48px;
+          letter-spacing: -0.1504px;
         }
 
         .submit-button:hover:not(:disabled) {
-          background: #000;
+          background: #0f1811;
           transform: translateY(-1px);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .submit-button:active:not(:disabled) {
@@ -436,18 +440,18 @@ export function EarlyAccessFormContent() {
         }
 
         .submit-button:disabled {
-          opacity: 0.5;
+          opacity: 0.6;
           cursor: not-allowed;
         }
 
         .spinner {
-          width: 20px;
-          height: 20px;
+          width: 16px;
+          height: 16px;
           border: 2px solid rgba(255, 255, 255, 0.3);
           border-top-color: white;
           border-radius: 50%;
           animation: spin 0.8s linear infinite;
-          margin-right: 10px;
+          margin-right: 8px;
         }
 
         @keyframes spin {
@@ -459,15 +463,15 @@ export function EarlyAccessFormContent() {
           top: 24px;
           right: 24px;
           background: white;
-          padding: 18px 24px;
-          border-radius: 12px;
-          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+          padding: 16px 20px;
+          border-radius: 6px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
           display: flex;
           align-items: center;
           gap: 12px;
           z-index: 1000;
           animation: slideIn 0.3s ease-out;
-          border: 1px solid #e5e5e5;
+          border: 1px solid #e5e7eb;
         }
 
         @keyframes slideIn {
@@ -490,13 +494,18 @@ export function EarlyAccessFormContent() {
         }
 
         .toast-message {
-          font-size: 15px;
+          font-size: 14px;
           color: #1a1a1a;
           font-weight: 500;
         }
       `}</style>
 
       <form id="earlyAccessForm" className="early-access-form">
+        <h2 className="form-title">Get Early Access</h2>
+        <p className="form-description">
+          Fill out the form below and we'll get in touch with you to set up your account.
+        </p>
+
         {/* Contact Information Section */}
         <div className="section">
           <h2 className="section-title">Contact Information</h2>
