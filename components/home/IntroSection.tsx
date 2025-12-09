@@ -6,7 +6,7 @@ export function IntroSection() {
           <h2 className="font-sans leading-[1.3] not-italic relative shrink-0 text-[18px] md:text-[20px] lg:text-[22px] text-[#666666] tracking-[-0.3px] font-medium">
             Delivery Management Software Built for East Africa
           </h2>
-          <p className="font-sans leading-[1.4] not-italic relative shrink-0 text-[28px] md:text-[36px] lg:text-[44px] text-black tracking-[-0.8px] md:tracking-[-1px] lg:tracking-[-1.2px] font-normal">
+          <p className="font-sans leading-[1.4] not-italic relative shrink-0 text-[28px] md:text-[36px] lg:text-[44px] text-black tracking-[-0.8px] md:tracking-[-1px] lg:tracking-[-1.2px] font-medium">
             Roundi is delivery management software designed for Kenyan and East African SMEs. We help restaurants, e-commerce stores, and logistics businesses in Nairobi optimize delivery routes, manage riders efficiently, and track orders in real-time—making last-mile delivery simple and reliable across Kenya.
           </p>
           <p className="font-sans leading-[1.6] not-italic relative shrink-0 text-[16px] md:text-[18px] lg:text-[20px] text-[#555555] tracking-[-0.2px] mt-4">
