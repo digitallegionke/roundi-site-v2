@@ -2,7 +2,7 @@ export function IntroSection() {
   return (
     <div className="relative shrink-0 w-full">
       <div className="flex flex-row items-center justify-center size-full">
-        <div className="box-border content-stretch flex flex-col gap-[16px] md:gap-[20px] items-start p-[32px] md:p-[56px] lg:p-[80px] relative w-full max-w-6xl mx-auto">
+        <div className="box-border content-stretch flex flex-col gap-[16px] md:gap-[20px] items-start p-[32px] md:p-[56px] lg:p-[80px] relative w-full">
           <h2 className="font-sans leading-[1.3] not-italic relative shrink-0 text-[18px] md:text-[20px] lg:text-[22px] text-[#666666] tracking-[-0.3px] font-medium">
             Delivery Management Software Built for East Africa
           </h2>
