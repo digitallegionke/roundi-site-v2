@@ -192,7 +192,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link
                   href="/early-access-form"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-[#c8e298] hover:bg-[#b8d288] text-[#162318] font-semibold rounded-full transition-colors w-full sm:w-auto"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-[#162318] hover:bg-[#1a2a1f] text-[#c8e298] font-semibold rounded-full transition-colors w-full sm:w-auto"
                 >
                   Get Early Access
                 </Link>
