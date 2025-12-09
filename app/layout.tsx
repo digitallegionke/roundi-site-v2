@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Roundi",
     images: [
       {
-        url: "/hero-bg.png",
+        url: "/hero-bg.webp",
         width: 1200,
         height: 630,
         alt: "Roundi Delivery Management Platform",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Roundi - Effortless Delivery Management",
     description: "Transform your delivery operations with Roundi. Track orders, manage riders, and delight customers.",
-    images: ["/hero-bg.png"],
+    images: ["/hero-bg.webp"],
     creator: "@roundi",
   },
   robots: {

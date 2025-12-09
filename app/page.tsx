@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://roundi.africa",
     images: [
       {
-        url: "/hero-bg.png",
+        url: "/hero-bg.webp",
         width: 1200,
         height: 630,
         alt: "Roundi Delivery Management Platform",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Roundi - Transform Your Delivery Operations",
     description: "Effortless delivery management for African businesses. Track orders, manage riders, and delight customers.",
-    images: ["/hero-bg.png"],
+    images: ["/hero-bg.webp"],
   },
   alternates: {
     canonical: "https://roundi.africa",

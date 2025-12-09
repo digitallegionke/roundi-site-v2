@@ -101,67 +101,65 @@ export function Footer() {
               Follow us
             </p>
             <div className="content-stretch flex gap-[14px] sm:gap-[18px] md:gap-[22px] lg:gap-[26px] items-center relative shrink-0">
+              {/* Facebook */}
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative shrink-0 size-[24px] sm:size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
+              >
+                <Image
+                  src="/social-icons/Facebook - Negative.svg"
+                  alt="Facebook"
+                  width={32}
+                  height={32}
+                  className="size-full"
+                />
+              </a>
               {/* Instagram */}
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/getroundi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative shrink-0 size-[24px] sm:size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
               >
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
-                  <g clipPath="url(#clip0_2_290)" id="Social Icons">
-                    <path
-                      d="M16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0Z"
-                      fill="var(--fill-0, white)"
-                      stroke="var(--stroke-0, white)"
-                    />
-                    <path
-                      d="M16 10.3438C17.5166 10.3438 17.7013 10.35 18.3053 10.3769C19.4853 10.4284 20.1128 10.6475 20.5291 10.8284C21.0797 11.0678 21.4709 11.3509 21.8784 11.7575C22.2859 12.165 22.5697 12.5566 22.8091 13.1072C22.99 13.5225 23.2091 14.1509 23.2603 15.33C23.2872 15.9347 23.2938 16.1194 23.2938 17.6353C23.2938 19.1519 23.2872 19.3366 23.2603 19.9406C23.2088 21.1206 22.9897 21.7481 22.8091 22.1644C22.5697 22.715 22.2866 23.1062 21.8784 23.5137C21.4709 23.9212 21.0794 24.205 20.5291 24.4444C20.1138 24.6253 19.4853 24.8444 18.3053 24.8956C17.7006 24.9225 17.5163 24.9291 16 24.9291C14.4828 24.9291 14.2984 24.9225 13.6944 24.8956C12.5144 24.8441 11.8869 24.625 11.4706 24.4444C10.92 24.205 10.5288 23.9219 10.1213 23.5137C9.71375 23.1062 9.43 22.7147 9.19063 22.1644C9.00969 21.7491 8.79063 21.1206 8.73938 19.9406C8.7125 19.3359 8.70594 19.1516 8.70594 17.6353C8.70594 16.1181 8.7125 15.9337 8.73938 15.33C8.79094 14.15 9.01 13.5225 9.19063 13.1062C9.43 12.5556 9.71313 12.1644 10.1213 11.7569C10.5288 11.3494 10.9203 11.0656 11.4706 10.8262C11.8859 10.6453 12.5144 10.4262 13.6944 10.375C14.2984 10.3491 14.4831 10.3438 16 10.3438ZM16 8.70594C14.4472 8.70594 14.2472 8.7125 13.6328 8.73969C12.3903 8.79094 11.5347 9.01969 10.8 9.33531C10.0369 9.65906 9.39406 10.0847 8.75281 10.7259C8.11156 11.3672 7.68594 12.01 7.36219 12.7728C7.04656 13.5078 6.81781 14.3631 6.76656 15.6056C6.73937 16.2203 6.73281 16.4203 6.73281 17.9728C6.73281 19.5253 6.73937 19.7253 6.76656 20.34C6.81781 21.5825 7.04656 22.4378 7.36219 23.1728C7.68594 23.9359 8.11156 24.5787 8.75281 25.22C9.39406 25.8612 10.0369 26.2872 10.7997 26.6106C11.5347 26.9262 12.39 27.155 13.6325 27.2062C14.2469 27.2334 14.4469 27.24 15.9997 27.24C17.5525 27.24 17.7525 27.2334 18.3669 27.2062C19.6094 27.155 20.465 26.9262 21.1997 26.6106C21.9625 26.2872 22.6053 25.8612 23.2466 25.22C23.8878 24.5787 24.3138 23.9359 24.6372 23.1731C24.9528 22.4381 25.1816 21.5828 25.2328 20.3403C25.26 19.7259 25.2666 19.5259 25.2666 17.9731C25.2666 16.4203 25.26 16.2203 25.2328 15.6059C25.1816 14.3634 24.9528 13.5081 24.6372 12.7731C24.3138 12.01 23.8878 11.3672 23.2466 10.7259C22.6053 10.0847 21.9625 9.65875 21.2 9.33531C20.465 9.01969 19.6097 8.79094 18.3672 8.73969C17.7525 8.7125 17.5525 8.70594 16 8.70594Z"
-                      fill="var(--fill-0, #162318)"
-                    />
-                    <path
-                      d="M16 12.9747C14.3512 12.9747 13.0134 14.3122 13.0134 15.961C13.0134 17.6097 14.3512 18.9472 16 18.9472C17.6487 18.9472 18.9865 17.6097 18.9865 15.961C18.9865 14.3122 17.6487 12.9747 16 12.9747ZM16 20.585C13.4453 20.585 11.3753 18.515 11.3753 15.9603C11.3753 13.4056 13.4453 11.3356 16 11.3356C18.5546 11.3356 20.6246 13.4056 20.6246 15.9603C20.6246 18.515 18.5546 20.585 16 20.585Z"
-                      fill="var(--fill-0, #162318)"
-                    />
-                    <path
-                      d="M21.1869 13.1878C21.9056 13.1878 22.4878 12.6056 22.4878 11.8869C22.4878 11.1681 21.9056 10.5859 21.1869 10.5859C20.4681 10.5859 19.8859 11.1681 19.8859 11.8869C19.8859 12.6056 20.4681 13.1878 21.1869 13.1878Z"
-                      fill="var(--fill-0, #162318)"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_2_290">
-                      <rect fill="white" height="32" width="32" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-              {/* X/Twitter */}
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative shrink-0 size-[24px] sm:size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
-              >
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
-                  <path
-                    d="M25.1016 3.08125H29.5469L19.5609 14.4453L31.2031 28.9062H22.1172L14.9734 19.8828L6.84531 28.9062H2.39687L13.0297 16.8359L1.875 3.08125H11.2031L17.7016 11.3906L25.1016 3.08125ZM23.5359 26.2969H26.0203L9.67656 5.64062H6.99844L23.5359 26.2969Z"
-                    fill="var(--fill-0, white)"
-                  />
-                </svg>
+                <Image
+                  src="/social-icons/Instagram - Negative.svg"
+                  alt="Instagram"
+                  width={32}
+                  height={32}
+                  className="size-full"
+                />
               </a>
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/roundi?trk=article-ssr-frontend-pulse_little-mention"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative shrink-0 size-[24px] sm:size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
               >
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
-                  <path
-                    d="M27.2638 0H4.73281C2.11844 0 0 2.11844 0 4.73281V27.2638C0 29.8816 2.11844 32 4.73281 32H27.2638C29.8816 32 32 29.8816 32 27.2672V4.73281C32 2.11844 29.8816 0 27.2638 0ZM9.73281 27.2638H4.73281V11.6328H9.73281V27.2638ZM7.23281 9.59687C5.69375 9.59687 4.44531 8.34844 4.44531 6.80938C4.44531 5.27031 5.69375 4.02188 7.23281 4.02188C8.77187 4.02188 10.0203 5.27031 10.0203 6.80938C10.0203 8.34844 8.77187 9.59687 7.23281 9.59687ZM27.2638 27.2638H22.2638V19.7328C22.2638 17.7016 21.2016 16.7328 19.7328 16.7328C18.1969 16.7328 16.7328 17.8984 16.7328 19.7984V27.2638H11.7328V11.6328H16.5328V13.8328C17.1328 12.6984 18.9328 11.2328 21.2638 11.2328C23.8638 11.2328 27.2638 12.9328 27.2638 17.7328V27.2638Z"
-                    fill="var(--fill-0, white)"
-                  />
-                </svg>
+                <Image
+                  src="/social-icons/LinkedIn - Negative.svg"
+                  alt="LinkedIn"
+                  width={32}
+                  height={32}
+                  className="size-full"
+                />
+              </a>
+              {/* TikTok */}
+              <a
+                href="https://www.tiktok.com/@getroundi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative shrink-0 size-[24px] sm:size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
+              >
+                <Image
+                  src="/social-icons/TikTok - Negative.svg"
+                  alt="TikTok"
+                  width={32}
+                  height={32}
+                  className="size-full"
+                />
               </a>
             </div>
           </div>

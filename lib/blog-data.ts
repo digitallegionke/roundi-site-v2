@@ -34,12 +34,12 @@ It reminds of an article that that Imelda Hope recently wrote about the world we
 And we all know how that conversation went, the rider told the client that something happened on his way to the drop, true story or not, something happened he just made more money, but obviously that's not what he said.
 
 And I think that's the tiny corner we want to fix. Roundi makes it easy to know where your rider is and when they'll arrive. The gains really add up when you're handling multiple orders—we run an e-commerce store, so we've felt this pain.`,
-    image: "/delivery-tracking-app.jpg",
+    image: "/delivery-tracking-app.webp",
     date: "Oct 1, 2025",
     author: {
       name: "David Kuria",
       title: "Mobile Experience Designer",
-      avatar: "/diverse-person-avatar.png",
+      avatar: "/diverse-person-avatar.webp",
     },
     readTime: 4,
   },
@@ -53,12 +53,12 @@ And I think that's the tiny corner we want to fix. Roundi makes it easy to know 
 In today's fast-paced world, delivery is more than just logistics—it's about creating a personal connection with customers. When a delivery person takes the time to understand your needs, remember your preferences, and ensure your items arrive safely, it creates an experience that goes beyond transaction.
 
 We've seen time and again that customers who feel valued and understood become loyal advocates for businesses. This is the philosophy driving our approach at Roundi. We believe that every delivery should feel personal, every interaction should matter.`,
-    image: "/personal-delivery-service.jpg",
+    image: "/personal-delivery-service.webp",
     date: "Oct 21, 2025",
     author: {
       name: "Sarah Johnson",
       title: "Customer Experience Lead",
-      avatar: "/person-avatar-2.png",
+      avatar: "/person-avatar-2.webp",
     },
     readTime: 5,
   },
@@ -72,12 +72,12 @@ We've seen time and again that customers who feel valued and understood become l
 There are defining moments in every company's journey. For us, it happened when we realized that delivery wasn't just about moving packages from point A to point B. It was about trust, visibility, and the confidence both businesses and customers feel when they know exactly what's happening.
 
 That aha moment changed everything about how we approach problems and design solutions. Now, every feature we build is filtered through this lens: does this increase trust and transparency?`,
-    image: "/office-meeting-collaboration.jpg",
+    image: "/office-meeting-collaboration.webp",
     date: "Oct 18, 2025",
     author: {
       name: "Michael Chen",
       title: "Product Manager",
-      avatar: "/person-avatar-3.png",
+      avatar: "/person-avatar-3.webp",
     },
     readTime: 3,
   },
@@ -93,12 +93,12 @@ Every product starts with a problem. For us, it started with frustration. We wat
 We asked ourselves: what if there was a platform that made delivery simple to run and delightful to receive? What if technology could bridge the gap between these three parties and create genuine value for everyone?
 
 That's why we're building Roundi. We're not just creating another logistics tool. We're building a movement to transform how deliveries work in Africa and beyond.`,
-    image: "/startup-team-office.jpg",
+    image: "/startup-team-office.webp",
     date: "Oct 5, 2025",
     author: {
       name: "James Okonkwo",
       title: "Co-founder",
-      avatar: "/person-avatar-4.jpg",
+      avatar: "/person-avatar-4.webp",
     },
     readTime: 6,
   },

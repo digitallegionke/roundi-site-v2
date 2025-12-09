@@ -11,10 +11,10 @@ const client = createClient({
 function getImageUrl(asset: any): string {
   if (!asset || !asset.fields) {
     console.log("No asset or asset.fields found")
-    return "/placeholder.jpg"
+    return "/placeholder.webp"
   }
 
-  const url = asset.fields.file?.url ? `https:${asset.fields.file.url}` : "/placeholder.jpg"
+  const url = asset.fields.file?.url ? `https:${asset.fields.file.url}` : "/placeholder.webp"
   console.log("Image URL extracted:", url)
   return url
 }
@@ -119,7 +119,7 @@ export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
         readTime: Math.ceil(contentText.split(" ").length / 200) || 5,
         author: {
           name: fields.author || "Anonymous",
-          avatar: "/placeholder-user.jpg",
+          avatar: "/placeholder-user.webp",
           title: "Writer",
           bio: authorBioText,
         },
@@ -187,7 +187,7 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
       readTime: Math.ceil(contentText.split(" ").length / 200) || 5,
       author: {
         name: fields.author || "Anonymous",
-        avatar: "/placeholder-user.jpg",
+        avatar: "/placeholder-user.webp",
         title: "Writer",
         bio: authorBioText,
       },
@@ -247,7 +247,7 @@ export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]>
         readTime: Math.ceil(contentText.split(" ").length / 200) || 5,
         author: {
           name: fields.author || "Anonymous",
-          avatar: "/placeholder-user.jpg",
+          avatar: "/placeholder-user.webp",
           title: "Writer",
           bio: authorBioText,
         },

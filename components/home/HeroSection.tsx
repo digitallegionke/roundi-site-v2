@@ -13,7 +13,7 @@ export function HeroSection() {
               alt="Hero background"
               fill
               className="object-cover object-center pointer-events-none"
-              src="/hero-bg.png"
+              src="/hero-bg.webp"
               priority
             />
             <div className="absolute inset-0">

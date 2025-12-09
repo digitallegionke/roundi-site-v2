@@ -11,7 +11,7 @@ export function CTASection() {
               alt="CTA background"
               fill
               className="object-cover object-center pointer-events-none rounded-[20px]"
-              src="/cta-bg.png"
+              src="/cta-bg.webp"
             />
             <div className="flex flex-col justify-end size-full">
               <div className="box-border content-stretch flex flex-col gap-[10px] min-h-[400px] md:min-h-[550px] lg:h-[657px] items-start justify-end px-[24px] md:px-[36px] lg:px-[46px] py-[40px] md:py-[54px] lg:py-[67px] relative w-full">

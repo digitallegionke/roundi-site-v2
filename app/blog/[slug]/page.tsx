@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
       authors: [post.author.name],
       images: [
         {
-          url: post.image || '/hero-bg.png',
+          url: post.image || '/hero-bg.webp',
           width: 1200,
           height: 630,
           alt: post.title,
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt || post.subtitle,
-      images: [post.image || '/hero-bg.png'],
+      images: [post.image || '/hero-bg.webp'],
     },
     alternates: {
       canonical: `https://roundi.africa/blog/${post.slug}`,
@@ -90,7 +90,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.excerpt || post.subtitle,
-    "image": post.image || "https://roundi.africa/hero-bg.png",
+    "image": post.image || "https://roundi.africa/hero-bg.webp",
     "datePublished": new Date(post.publishedDate || post.date).toISOString(),
     "dateModified": new Date(post.updatedDate || post.date).toISOString(),
     "author": {
