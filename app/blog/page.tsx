@@ -28,9 +28,10 @@ export default async function BlogPage() {
       <main className="flex-grow min-h-screen bg-background px-10">
         {/* Page Header */}
         <section className="max-w-7xl mx-auto py-12 sm:py-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">Delivery Management Insights for Kenyan Businesses</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">Roundi Blog</h1>
+          <h2 className="text-2xl sm:text-3xl font-semibold text-foreground mb-4">Delivery Management Insights for Kenyan Businesses</h2>
           <p className="text-lg text-muted-foreground max-w-3xl">
-            Expert tips on managing deliveries in Nairobi and across Kenya. Learn from real stories, best practices, and insights on optimizing logistics for East African SMEs.
+            Actionable tips, real stories, and best practices for optimizing last-mile delivery in Nairobi and across Kenya.
           </p>
         </section>
 
