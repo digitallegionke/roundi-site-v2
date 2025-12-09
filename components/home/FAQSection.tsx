@@ -52,7 +52,7 @@ export function FAQSection() {
     {
       question: 'Why should I join early access?',
       answer:
-        'Early access users get: First access to new features, Lower lifetime pricing, Priority onboarding, Influence over product development, A head start before public launch',
+        'Early access users get: First access to new features, Priority onboarding, Influence over product development, A head start before public launch',
     },
     {
       question: 'How does Roundi help my business save money?',
@@ -70,11 +70,6 @@ export function FAQSection() {
         'Yes — via SMS or WhatsApp. They get: A tracking link, Live ETA, Delivery status, Proof of delivery',
     },
     {
-      question: 'Does Roundi support cash-on-delivery (COD)?',
-      answer:
-        'Yes. Riders can log cash collected, and you can track: Cash per rider, Pending returns, Completed reconciliations',
-    },
-    {
       question: 'Is Roundi available all over Kenya?',
       answer:
         'Yes — optimized for Nairobi, Kiambu, Mombasa, Kisumu, Nakuru, Eldoret, and all other towns.',
@@ -87,7 +82,7 @@ export function FAQSection() {
     {
       question: 'How much will Roundi cost?',
       answer:
-        'Pricing will be shared first with early access users. Early users get lifetime discounted pricing.',
+        'Pricing will be shared first with early access users.',
     },
     {
       question: 'Is Roundi difficult to set up?',

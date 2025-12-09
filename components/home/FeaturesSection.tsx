@@ -3,20 +3,20 @@ import Image from 'next/image';
 export function FeaturesSection() {
   const features = [
     {
-      title: 'Route Optimization That Reduces Delivery Costs',
-      description: "Nairobi traffic and fuel costs eating your margins? Our route optimization technology plans the smartest delivery routes for your riders, reducing fuel consumption and rider delays. Whether you're doing 5 or 50 deliveries a day across Kenya, Roundi's delivery management software ensures every route is efficient.",
+      title: 'Smarter Routes. Lower Costs.',
+      description: "Beat Nairobi traffic and save fuel with automatic route optimization. Roundi plans the fastest delivery routes so your riders complete more stops in less time — whether you handle 5 or 50 deliveries a day.",
       image: '/feature-1.png',
       imageOnLeft: true,
     },
     {
-      title: 'Real-Time Delivery Tracking Reduces Customer Complaints',
-      description: "Stop the \"Where's my order?\" calls. Roundi's real-time tracking gives your customers in Nairobi accurate ETAs and live rider locations. This transparency builds trust, reduces support tickets, and makes your Kenyan business look as professional as international brands—all with last mile delivery software built for East Africa.",
+      title: 'Live Tracking That Builds Trust.',
+      description: "Customers get real-time ETAs and live rider locations, reducing \"Where's my order?\" calls. Give your business the transparency and professionalism Kenyan shoppers expect.",
       image: '/QncIqKhv6wuo7gFnr6EKL9ME9Jw.avif',
       imageOnLeft: false,
     },
     {
-      title: 'Rider Management That Improves Accountability',
-      description: "Managing riders manually leads to missed deliveries and lost orders. Roundi's rider management system gives you visibility into rider performance, delivery completion rates, and real-time locations across Kenya. Improve accountability, reward top performers, and ensure every delivery in Nairobi meets your standards.",
+      title: 'Stronger Rider Accountability.',
+      description: "See rider locations, completion rates, and performance at a glance. Improve accountability, reduce missed deliveries, and reward your top performers.",
       image: '/PUreFkeuAMBMEp73W1HuVs3fRE.avif',
       imageOnLeft: true,
     },
