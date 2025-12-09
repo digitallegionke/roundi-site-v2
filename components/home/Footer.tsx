@@ -133,7 +133,7 @@ export function Footer() {
               </a>
               {/* LinkedIn */}
               <a
-                href="https://www.linkedin.com/company/roundi?trk=article-ssr-frontend-pulse_little-mention"
+                href="https://linkedin.com/company/roundi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative shrink-0 size-[24px] sm:size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
