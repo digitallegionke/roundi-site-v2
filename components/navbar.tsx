@@ -55,7 +55,7 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
         <div className={`hidden lg:flex items-center gap-6 flex-1 lg:ml-[72px] font-medium text-base ${textClass} transition`}>
           <Link
             href="/"
-            className={`${hoverTextClass} transition ${pathname === '/' ? 'border-b-2 border-current' : ''}`}
+            className={`${hoverTextClass} transition ${pathname === '/' ? 'border-b border-current opacity-60' : ''}`}
           >
             Home
           </Link>
@@ -71,19 +71,19 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
           </a>
           <Link
             href="/blog"
-            className={`${hoverTextClass} transition ${pathname.startsWith('/blog') ? 'border-b-2 border-current' : ''}`}
+            className={`${hoverTextClass} transition ${pathname.startsWith('/blog') ? 'border-b border-current opacity-60' : ''}`}
           >
             Blog
           </Link>
           <Link
             href="/contact"
-            className={`${hoverTextClass} transition ${pathname === '/contact' ? 'border-b-2 border-current' : ''}`}
+            className={`${hoverTextClass} transition ${pathname === '/contact' ? 'border-b border-current opacity-60' : ''}`}
           >
             Contact Us
           </Link>
           <Link
             href="/early-access-form"
-            className={`${hoverTextClass} transition ${pathname === '/early-access-form' ? 'border-b-2 border-current' : ''}`}
+            className={`${hoverTextClass} transition ${pathname === '/early-access-form' ? 'border-b border-current opacity-60' : ''}`}
           >
             Early Access
           </Link>
