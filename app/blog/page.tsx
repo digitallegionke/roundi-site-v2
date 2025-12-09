@@ -5,12 +5,12 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export const metadata = {
-  title: "Blog - Delivery Management Insights & Tips",
-  description: "Expert insights on delivery management, logistics optimization, and growing your business in Africa. Learn best practices, industry trends, and success stories from Roundi.",
-  keywords: ["delivery management blog", "logistics tips", "delivery optimization", "African logistics insights", "business delivery strategies"],
+  title: "Delivery Management Blog for Kenyan Businesses | Roundi Insights",
+  description: "Expert insights on delivery management for Kenyan and East African businesses. Learn logistics best practices, Nairobi delivery tips, and success stories from African SMEs using Roundi.",
+  keywords: ["delivery management blog Kenya", "logistics tips Nairobi", "Kenya delivery optimization", "African logistics insights", "Nairobi business delivery", "East Africa logistics blog", "Kenyan SME delivery strategies"],
   openGraph: {
-    title: "Blog - Delivery Management Insights & Tips",
-    description: "Expert insights on delivery management, logistics optimization, and growing your business in Africa.",
+    title: "Delivery Management Blog for Kenyan Businesses | Roundi",
+    description: "Expert insights on delivery management for Kenyan businesses. Learn Nairobi logistics tips and best practices from East African SMEs.",
     url: "https://roundi.africa/blog",
   },
   alternates: {
@@ -28,8 +28,10 @@ export default async function BlogPage() {
       <main className="flex-grow min-h-screen bg-background px-10">
         {/* Page Header */}
         <section className="max-w-7xl mx-auto py-12 sm:py-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">All Blog Posts</h1>
-          <p className="text-lg text-muted-foreground">A collection of thoughts and insights from our team.</p>
+          <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">Delivery Management Insights for Kenyan Businesses</h1>
+          <p className="text-lg text-muted-foreground max-w-3xl">
+            Expert tips on managing deliveries in Nairobi and across Kenya. Learn from real stories, best practices, and insights on optimizing logistics for East African SMEs.
+          </p>
         </section>
 
         {/* Blog Posts */}

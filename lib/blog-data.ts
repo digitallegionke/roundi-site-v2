@@ -23,18 +23,26 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
-    title: "Better delivery tracking",
+    title: "How Real-Time Delivery Tracking Solves Kenya's Boda Boda Transparency Problem",
     slug: "better-delivery-tracking",
-    excerpt: "How long walks, small truths, and one boda story clarified the real problem Roundi is built to solve.",
-    content: `How long walks, small truths, and one boda story clarified the real problem Roundi is built to solve.
+    excerpt: "A Nairobi entrepreneur's story reveals why delivery tracking software is essential for Kenyan SMEs managing riders and customer expectations.",
+    content: `## The Boda Boda Story That Changed Everything
 
-I need to walk more it seems, I used to take long walks for ideas, but now long walks are helping me think deeper on what we are trying to solve, and yesterday's 6k walk helped me think deeply on why we are torturing our selves with building Roundi, the impact that we aim to see, and I think we understood the problem and the solution better(I think) "Helping businesses make delivery simple to run and delightful to receive".
+Running a business in Nairobi, you quickly learn that delivery logistics can make or break customer trust. Here's a story that perfectly captures the delivery challenges facing Kenyan SMEs.
 
-It reminds of an article that that Imelda Hope recently wrote about the world we envision with Roundi in it. There's this experience Isaac Waithaka told me about this week, and it really brought it home, there's a time he was taking a walk on the road, he got tired and he needed a boda to take him home, the boda guy from the opposite direction saw Isaac and knew he had a golden chance to make some extra cash by serving Isaac: minutes after being dropped him off.
+Isaac Waithaka was walking in Nairobi when he got tired and flagged down a boda boda rider. The rider, seeing an opportunity, quoted a price and took the job. Minutes after dropping Isaac off, the rider called with a familiar excuse: "Something happened on the way to the drop-off." Whether true or not, the rider made extra money—and Isaac lost visibility into what actually happened.
 
-And we all know how that conversation went, the rider told the client that something happened on his way to the drop, true story or not, something happened he just made more money, but obviously that's not what he said.
+## Why Delivery Tracking Matters for Kenyan Businesses
 
-And I think that's the tiny corner we want to fix. Roundi makes it easy to know where your rider is and when they'll arrive. The gains really add up when you're handling multiple orders—we run an e-commerce store, so we've felt this pain.`,
+This tiny corner of the delivery experience—knowing where your rider is and when they'll arrive—is what Roundi fixes for businesses across Kenya and East Africa.
+
+For restaurants, e-commerce stores, and logistics companies in Nairobi, the gains from real-time tracking add up fast when you're handling multiple orders daily. We run an e-commerce store ourselves, so we've felt this pain firsthand.
+
+### The Real Problem We're Solving
+
+"Helping businesses make delivery simple to run and delightful to receive" isn't just our tagline—it's our mission for Kenyan SMEs. Whether you're a startup in Nairobi managing your first deliveries or an established business scaling across Kenya, delivery management software built for East Africa makes all the difference.
+
+With Roundi's delivery tracking platform, your customers in Nairobi, Mombasa, or anywhere in Kenya can see exactly where their order is—eliminating the uncertainty that erodes trust in African logistics.`,
     image: "/delivery-tracking-app.webp",
     imageCredits: "Photo by Unsplash",
     date: "Oct 1, 2025",
@@ -43,18 +51,26 @@ And I think that's the tiny corner we want to fix. Roundi makes it easy to know 
       title: "Mobile Experience Designer",
       avatar: "/diverse-person-avatar.webp",
     },
-    readTime: 4,
+    readTime: 5,
   },
   {
     id: "2",
-    title: "When Good Delivery Feels Personal",
+    title: "How Kenyan Restaurants Build Customer Loyalty Through Personalized Delivery",
     slug: "when-good-delivery-feels-personal",
-    excerpt: "Exploring the human side of delivery and how personalization transforms customer experience.",
-    content: `Exploring the human side of delivery and how personalization transforms customer experience.
+    excerpt: "Nairobi restaurants are winning customers by making delivery personal. Learn how delivery management software helps East African businesses create memorable experiences.",
+    content: `## The Personal Touch in Kenyan Delivery Services
 
-In today's fast-paced world, delivery is more than just logistics—it's about creating a personal connection with customers. When a delivery person takes the time to understand your needs, remember your preferences, and ensure your items arrive safely, it creates an experience that goes beyond transaction.
+In Nairobi's competitive restaurant scene, delivery is more than just logistics—it's about creating a personal connection with customers that keeps them coming back.
 
-We've seen time and again that customers who feel valued and understood become loyal advocates for businesses. This is the philosophy driving our approach at Roundi. We believe that every delivery should feel personal, every interaction should matter.`,
+## Why Personalization Matters for African Businesses
+
+When a delivery person takes the time to understand your needs, remember your preferences, and ensure your items arrive safely in busy Nairobi traffic, it creates an experience that goes beyond transaction. For restaurants and e-commerce businesses across Kenya, this human touch is what transforms one-time customers into loyal advocates.
+
+### The Roundi Approach for East African SMEs
+
+We've seen time and again that Kenyan customers who feel valued and understood become loyal advocates for businesses. This is the philosophy driving our approach at Roundi—delivery management software built specifically for the unique challenges of East African logistics.
+
+Whether you're running a restaurant in Westlands, an e-commerce store in Karen, or a logistics business serving all of Nairobi, every delivery should feel personal, every interaction should matter. That's how businesses across Kenya are building lasting customer relationships in a competitive market.`,
     image: "/personal-delivery-service.webp",
     date: "Oct 21, 2025",
     author: {
@@ -66,14 +82,24 @@ We've seen time and again that customers who feel valued and understood become l
   },
   {
     id: "3",
-    title: "The Aha Moment",
+    title: "Building Trust in Nairobi's Delivery Industry: Our Aha Moment",
     slug: "the-aha-moment",
-    excerpt: "Discovering the moment when everything clicked about what we were building and why it matters.",
-    content: `Discovering the moment when everything clicked about what we were building and why it matters.
+    excerpt: "How focusing on transparency and trust transformed our approach to delivery management software for Kenyan businesses.",
+    content: `## The Moment Everything Changed
 
-There are defining moments in every company's journey. For us, it happened when we realized that delivery wasn't just about moving packages from point A to point B. It was about trust, visibility, and the confidence both businesses and customers feel when they know exactly what's happening.
+There are defining moments in every company's journey. For Roundi, it happened during a meeting with Nairobi restaurant owners who shared their biggest delivery frustration: lack of visibility.
 
-That aha moment changed everything about how we approach problems and design solutions. Now, every feature we build is filtered through this lens: does this increase trust and transparency?`,
+## Trust is Everything in Kenyan Logistics
+
+We realized that delivery in Kenya wasn't just about moving packages from point A to point B. It was about trust, visibility, and the confidence both businesses and customers in Nairobi feel when they know exactly what's happening with their orders.
+
+For restaurants in Westlands serving customers in Kilimani, for e-commerce stores in Industrial Area delivering to Eastlands, for logistics companies managing routes across Kenya—trust is the foundation of successful delivery operations.
+
+### How This Shapes Roundi for East Africa
+
+That aha moment changed everything about how we approach problems and design solutions for African businesses. Now, every feature we build is filtered through this lens: does this increase trust and transparency for Kenyan SMEs?
+
+From real-time tracking that works in Nairobi's traffic to rider management tools built for East African workflows, we're solving the trust gap in African delivery logistics—one feature at a time.`,
     image: "/office-meeting-collaboration.webp",
     date: "Oct 18, 2025",
     author: {
@@ -81,20 +107,34 @@ That aha moment changed everything about how we approach problems and design sol
       title: "Product Manager",
       avatar: "/person-avatar-3.webp",
     },
-    readTime: 3,
+    readTime: 4,
   },
   {
     id: "4",
-    title: "Why we are building Roundi",
+    title: "Why We're Building Delivery Management Software for African SMEs",
     slug: "why-we-are-building-roundi",
-    excerpt: "The origin story and mission that drives Roundi forward every single day.",
-    content: `The origin story and mission that drives Roundi forward every single day.
+    excerpt: "The story behind Roundi: solving delivery challenges for Kenyan businesses and transforming logistics across East Africa.",
+    content: `## Our Mission: Transforming African Delivery Operations
 
-Every product starts with a problem. For us, it started with frustration. We watched businesses struggle to manage deliveries, watched customers anxiously track packages, and watched delivery partners navigate complex systems that didn't serve them well.
+Every product starts with a problem. For Roundi, it started with frustration watching Kenyan businesses struggle with delivery management.
 
-We asked ourselves: what if there was a platform that made delivery simple to run and delightful to receive? What if technology could bridge the gap between these three parties and create genuine value for everyone?
+## The Problem We Saw in Nairobi
 
-That's why we're building Roundi. We're not just creating another logistics tool. We're building a movement to transform how deliveries work in Africa and beyond.`,
+We watched restaurants in Nairobi struggle to manage multiple riders during lunch rush. We saw e-commerce stores across Kenya anxiously trying to track packages through unreliable systems. We noticed delivery partners navigating complex workflows that didn't serve them—or their customers—well.
+
+Operating in Kenya's delivery ecosystem, we experienced these pain points firsthand. From Nairobi's unpredictable traffic to managing riders across different parts of East Africa, the challenges facing African SMEs were clear.
+
+## The Vision: Delivery Software Built for East Africa
+
+We asked ourselves: what if there was a platform built specifically for African businesses—one that understood Nairobi's traffic patterns, Kenya's unique logistics challenges, and the needs of East African SMEs?
+
+What if technology could bridge the gap between businesses, riders, and customers—creating genuine value for everyone in the Kenyan delivery ecosystem?
+
+### Building More Than Software
+
+That's why we're building Roundi. We're not just creating another logistics tool. We're building a movement to transform how deliveries work across Kenya, East Africa, and beyond.
+
+From restaurants in Westlands to e-commerce stores in Mombasa, from startups managing their first deliveries to established businesses scaling across the region—we're here to make delivery management simple, reliable, and built for Africa.`,
     image: "/startup-team-office.webp",
     date: "Oct 5, 2025",
     author: {

@@ -180,6 +180,32 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             )}
           </div>
 
+          {/* CTA Section */}
+          <div className="bg-[#c8e298]/10 border border-[#c8e298]/30 rounded-xl p-8 mb-12">
+            <div className="max-w-2xl mx-auto text-center">
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Ready to Transform Your Delivery Operations in Kenya?
+              </h3>
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">
+                Join Kenyan businesses in Nairobi and across East Africa using Roundi to manage deliveries efficiently. Track orders in real-time, optimize routes, and delight your customers.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link
+                  href="/early-access-form"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-[#c8e298] hover:bg-[#b8d288] text-[#162318] font-semibold rounded-full transition-colors w-full sm:w-auto"
+                >
+                  Get Early Access
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center px-6 py-3 border-2 border-[#162318] hover:bg-[#162318] hover:text-white text-[#162318] font-semibold rounded-full transition-colors w-full sm:w-auto"
+                >
+                  Talk to Us
+                </Link>
+              </div>
+            </div>
+          </div>
+
           {/* Author Bio - Deactivated for now */}
           {/* {post.author.bio && (
             <div className="bg-card border border-border rounded-lg p-6 mb-12">
