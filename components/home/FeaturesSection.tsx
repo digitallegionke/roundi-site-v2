@@ -3,20 +3,20 @@ import Image from 'next/image';
 export function FeaturesSection() {
   const features = [
     {
-      title: 'Grow Without the Growing Pains',
-      description: "Whether you're sending out 5 or 50 deliveries a day, Roundi makes scaling smooth and stress-free.",
+      title: 'Route Optimization That Reduces Delivery Costs',
+      description: "Nairobi traffic and fuel costs eating your margins? Our route optimization technology plans the smartest delivery routes for your riders, reducing fuel consumption and rider delays. Whether you're doing 5 or 50 deliveries a day across Kenya, Roundi's delivery management software ensures every route is efficient.",
       image: '/feature-1.png',
       imageOnLeft: true,
     },
     {
-      title: 'Transparency at Every Step',
-      description: "Track riders in real time and give customers accurate ETAs, so there's never a \"Where's my order?\" moment.",
+      title: 'Real-Time Delivery Tracking Reduces Customer Complaints',
+      description: "Stop the \"Where's my order?\" calls. Roundi's real-time tracking gives your customers in Nairobi accurate ETAs and live rider locations. This transparency builds trust, reduces support tickets, and makes your Kenyan business look as professional as international brands—all with last mile delivery software built for East Africa.",
       image: '/QncIqKhv6wuo7gFnr6EKL9ME9Jw.avif',
       imageOnLeft: false,
     },
     {
-      title: 'Deliver Like the Big Brands',
-      description: 'Offer customers professional, on-time delivery — without the big corporate budget.',
+      title: 'Rider Management That Improves Accountability',
+      description: "Managing riders manually leads to missed deliveries and lost orders. Roundi's rider management system gives you visibility into rider performance, delivery completion rates, and real-time locations across Kenya. Improve accountability, reward top performers, and ensure every delivery in Nairobi meets your standards.",
       image: '/PUreFkeuAMBMEp73W1HuVs3fRE.avif',
       imageOnLeft: true,
     },
@@ -29,9 +29,9 @@ export function FeaturesSection() {
       <div className="flex flex-col items-center size-full">
         <div className="box-border content-stretch flex flex-col gap-[32px] md:gap-[48px] lg:gap-[64px] items-center p-[32px] md:p-[56px] lg:p-[80px] relative w-full">
           <h2 className="font-sans font-semibold leading-none not-italic relative shrink-0 text-[28px] sm:text-[38px] md:text-[50px] lg:text-[65px] text-black tracking-[-1.2px] sm:tracking-[-1.6px] md:tracking-[-2px] lg:tracking-[-2.6px] w-full">
-            Experience the ease of organized,{' '}
+            Delivery Management Features{' '}
             <br className="hidden sm:block" aria-hidden="true" />
-            on-time deliveries.
+            Built for Kenyan Businesses
           </h2>
           <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
             {features.map((feature, index) => {

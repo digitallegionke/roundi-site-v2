@@ -40,24 +40,29 @@ export function FAQSection() {
 
   const faqs = [
     {
-      question: "What's Roundi?",
+      question: "What is delivery management software in Kenya?",
       answer:
-        'Roundi is a delivery management platform designed to help product-based businesses streamline their delivery operations with smarter routes, dependable riders, and real-time tracking.',
+        'Delivery management software in Kenya is a platform that helps businesses coordinate their last mile delivery operations. Roundi is delivery management software built specifically for Kenyan SMEs, offering route optimization, rider management, real-time tracking, and dispatch tools designed for businesses in Nairobi and across East Africa.',
     },
     {
-      question: 'Who is Roundi for?',
+      question: 'Is Roundi a last mile delivery software for SMEs in Nairobi?',
       answer:
-        "Roundi is perfect for product-based businesses of all sizes — from startups sending out their first deliveries to established brands scaling their operations. Whether you're doing 5 or 50 deliveries a day, we make it easy.",
+        "Yes, Roundi is last mile delivery management software designed specifically for Kenyan SMEs. We help restaurants, e-commerce stores, and logistics businesses in Nairobi manage their delivery operations—from route planning and rider dispatch to real-time order tracking. Whether you're doing 5 or 500 deliveries a day across Kenya, Roundi makes delivery management simple and reliable.",
     },
     {
-      question: 'How is Roundi different from delivery companies or pickup points?',
+      question: 'How does Roundi compare to traditional delivery platforms in Kenya?',
       answer:
-        'Unlike traditional delivery companies, Roundi gives you full control and visibility over your delivery operations. We provide the technology to optimize routes, track deliveries in real-time, and offer your customers a professional delivery experience — all without the high costs of big logistics providers.',
+        'Unlike traditional delivery platforms that struggled with reliability and transparency, Roundi gives Kenyan businesses full control over their delivery operations. We provide modern delivery management software with real-time tracking, optimized routes, and rider accountability—without the high costs and unpredictability of older dispatch systems. You own your customer relationships and delivery experience.',
     },
     {
-      question: 'Is my data safe?',
+      question: 'Why do Kenyan businesses need delivery management software?',
       answer:
-        'Absolutely. We take data security seriously and use industry-standard encryption and security practices to protect your business and customer information. Your data is stored securely and never shared with third parties without your consent.',
+        'Kenyan businesses need delivery management software to handle the complexities of last mile delivery in cities like Nairobi—traffic congestion, rider coordination, customer expectations for real-time updates, and route optimization. Manual dispatch methods lead to delays, lost orders, and unhappy customers. Roundi solves these problems with technology built specifically for East African logistics challenges.',
+    },
+    {
+      question: 'Is my delivery data secure with Roundi?',
+      answer:
+        'Absolutely. Roundi uses industry-standard encryption and security practices to protect your business and customer data. All delivery information, customer details, and business analytics are stored securely in Kenya-compliant data centers and never shared with third parties without your explicit consent.',
     },
   ];
 

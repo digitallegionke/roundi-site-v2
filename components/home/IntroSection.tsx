@@ -7,10 +7,10 @@ export function IntroSection() {
             Delivery Management Software Built for East Africa
           </h2>
           <p className="font-sans leading-[1.4] not-italic relative shrink-0 text-[28px] md:text-[36px] lg:text-[44px] text-black tracking-[-0.8px] md:tracking-[-1px] lg:tracking-[-1.2px] font-medium">
-            Roundi is delivery management software designed for Kenyan and East African SMEs. We help restaurants, e-commerce stores, and logistics businesses in Nairobi optimize delivery routes, manage riders efficiently, and track orders in real-time—making last-mile delivery simple and reliable across Kenya.
+            Roundi is last mile delivery management software in Kenya built for SMEs that need faster, more reliable deliveries. We help restaurants, online stores, and logistics businesses in Nairobi plan smarter delivery routes, manage riders, and track orders in real-time. If you're looking for a modern alternative to outdated dispatch and delivery platforms in Kenya, Roundi is built for you.
           </p>
           <p className="font-sans leading-[1.6] not-italic relative shrink-0 text-[16px] md:text-[18px] lg:text-[20px] text-[#555555] tracking-[-0.2px] mt-4">
-            Whether you're a startup in Nairobi handling your first deliveries or an established business scaling across East Africa, Roundi gives you the tools to deliver better, every time. Join hundreds of African businesses already using our platform to transform their delivery operations.
+            Whether you're a startup in Nairobi handling your first deliveries or an established business scaling across East Africa, our delivery management software gives you the tools to optimize routes, improve rider accountability, and reduce customer complaints. Join hundreds of Kenyan businesses already using our platform to transform their last mile delivery operations.
           </p>
         </div>
       </div>
