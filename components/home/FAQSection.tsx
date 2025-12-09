@@ -40,29 +40,79 @@ export function FAQSection() {
 
   const faqs = [
     {
-      question: "What is delivery management software in Kenya?",
+      question: "What is Roundi?",
       answer:
-        'Delivery management software in Kenya is a platform that helps businesses coordinate their last mile delivery operations. Roundi is delivery management software built specifically for Kenyan SMEs, offering route optimization, rider management, real-time tracking, and dispatch tools designed for businesses in Nairobi and across East Africa.',
+        'Roundi is a delivery management software built for Kenyan SMEs. It helps businesses plan smarter routes, track riders in real time, send customer delivery updates, and manage proof of delivery — all in one simple platform.',
     },
     {
-      question: 'Is Roundi a last mile delivery software for SMEs in Nairobi?',
+      question: 'Who is Roundi built for?',
       answer:
-        "Yes, Roundi is last mile delivery management software designed specifically for Kenyan SMEs. We help restaurants, e-commerce stores, and logistics businesses in Nairobi manage their delivery operations—from route planning and rider dispatch to real-time order tracking. Whether you're doing 5 or 500 deliveries a day across Kenya, Roundi makes delivery management simple and reliable.",
+        "Roundi is perfect for businesses that do their own deliveries, including: E-commerce stores, Retail shops, Restaurants & cafes, Wines and spirits, Hardware stores & agro vets, Pharmacies, Fresh produce suppliers, Market sellers, Small courier businesses",
     },
     {
-      question: 'How does Roundi compare to traditional delivery platforms in Kenya?',
+      question: 'Why should I join early access?',
       answer:
-        'Unlike traditional delivery platforms that struggled with reliability and transparency, Roundi gives Kenyan businesses full control over their delivery operations. We provide modern delivery management software with real-time tracking, optimized routes, and rider accountability—without the high costs and unpredictability of older dispatch systems. You own your customer relationships and delivery experience.',
+        'Early access users get: First access to new features, Lower lifetime pricing, Priority onboarding, Influence over product development, A head start before public launch',
     },
     {
-      question: 'Why do Kenyan businesses need delivery management software?',
+      question: 'How does Roundi help my business save money?',
       answer:
-        'Kenyan businesses need delivery management software to handle the complexities of last mile delivery in cities like Nairobi—traffic congestion, rider coordination, customer expectations for real-time updates, and route optimization. Manual dispatch methods lead to delays, lost orders, and unhappy customers. Roundi solves these problems with technology built specifically for East African logistics challenges.',
+        'Roundi reduces delivery costs by: More efficient routes, Better rider productivity, Fewer delivery errors, Automated customer updates, Cleaner cash-on-delivery reconciliation',
     },
     {
-      question: 'Is my delivery data secure with Roundi?',
+      question: 'How does rider tracking work?',
       answer:
-        'Absolutely. Roundi uses industry-standard encryption and security practices to protect your business and customer data. All delivery information, customer details, and business analytics are stored securely in Kenya-compliant data centers and never shared with third parties without your explicit consent.',
+        'Riders use the Roundi Rider App, which updates their location in real time so you can see: Their current position, Progress through stops, Delays, Completed deliveries',
+    },
+    {
+      question: 'Do customers receive delivery updates?',
+      answer:
+        'Yes — via SMS or WhatsApp. They get: A tracking link, Live ETA, Delivery status, Proof of delivery',
+    },
+    {
+      question: 'Does Roundi support cash-on-delivery (COD)?',
+      answer:
+        'Yes. Riders can log cash collected, and you can track: Cash per rider, Pending returns, Completed reconciliations',
+    },
+    {
+      question: 'Is Roundi available all over Kenya?',
+      answer:
+        'Yes — optimized for Nairobi, Kiambu, Mombasa, Kisumu, Nakuru, Eldoret, and all other towns.',
+    },
+    {
+      question: 'Do riders need expensive smartphones?',
+      answer:
+        'No. If the phone can run Google Maps, it can run Roundi.',
+    },
+    {
+      question: 'How much will Roundi cost?',
+      answer:
+        'Pricing will be shared first with early access users. Early users get lifetime discounted pricing.',
+    },
+    {
+      question: 'Is Roundi difficult to set up?',
+      answer:
+        'No. Setup takes less than 10 minutes: Sign up, Add riders, Add delivery orders, Start tracking',
+    },
+    {
+      question: 'What makes Roundi different from other delivery apps?',
+      answer:
+        'Roundi is built specifically for Kenyan delivery realities: Estate layouts, Pin-drop issues, Traffic challenges, COD workflows, Rider device limitations, Customer communication habits',
+    },
+    {
+      question: 'Can I use Roundi even if I have only 1 or 2 riders?',
+      answer:
+        'Yes. Roundi works for any team size.',
+    },
+    {
+      question: 'When does Roundi officially launch?',
+      answer:
+        'Early access is open now. Public launch follows after feedback and onboarding rounds.',
+    },
+    {
+      question: 'How do I join early access?',
+      answer:
+        'Click below and fill in your details.',
     },
   ];
 
