@@ -23,18 +23,18 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
   const mobileMenuBg = isDark ? 'bg-[rgba(22,35,24,0.9)]' : 'bg-white'
   const mobileMenuBorder = isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-200'
 
-  const scrollToFeatures = () => {
+  const scrollToAbout = () => {
     // If not on homepage, navigate to homepage with hash
     if (pathname !== '/') {
-      router.push('/#features-section')
+      router.push('/#about-section')
       setIsMenuOpen(false)
       return
     }
 
-    // If on homepage, scroll to features section
-    const featuresSection = document.getElementById('features-section')
-    if (featuresSection) {
-      featuresSection.scrollIntoView({ behavior: 'smooth' })
+    // If on homepage, scroll to about section
+    const aboutSection = document.getElementById('about-section')
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' })
     }
     setIsMenuOpen(false)
   }
@@ -60,10 +60,10 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
             Home
           </Link>
           <a
-            href="/#features-section"
+            href="/#about-section"
             onClick={(e) => {
               e.preventDefault()
-              scrollToFeatures()
+              scrollToAbout()
             }}
             className={`${hoverTextClass} transition`}
           >
@@ -125,11 +125,11 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
                 Home
               </Link>
               <a
-                href="/#features-section"
+                href="/#about-section"
                 className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'}`}
                 onClick={(e) => {
                   e.preventDefault()
-                  scrollToFeatures()
+                  scrollToAbout()
                   setIsMenuOpen(false)
                 }}
               >
