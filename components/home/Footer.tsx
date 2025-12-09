@@ -103,7 +103,7 @@ export function Footer() {
             <div className="content-stretch flex gap-[14px] sm:gap-[18px] md:gap-[22px] lg:gap-[26px] items-center relative shrink-0">
               {/* Facebook */}
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/RoundiAfrica"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative shrink-0 size-[24px] sm:size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
