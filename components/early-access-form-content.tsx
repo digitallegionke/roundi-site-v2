@@ -184,11 +184,25 @@ export function EarlyAccessFormContent() {
 
         .early-access-form {
           background: white;
-          padding: 0;
+          padding: 40px;
+          border-radius: 10px;
+          border: 1px solid rgba(22, 35, 24, 0.1);
+        }
+
+        @media (max-width: 768px) {
+          .early-access-form {
+            padding: 24px;
+          }
         }
 
         .section {
-          margin-bottom: 32px;
+          margin-bottom: 24px;
+        }
+
+        @media (min-width: 640px) {
+          .section {
+            margin-bottom: 32px;
+          }
         }
 
         .section:last-child {
@@ -197,38 +211,71 @@ export function EarlyAccessFormContent() {
 
         .section-title {
           color: #000;
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 600;
           letter-spacing: -0.02em;
-          margin-bottom: 24px;
+          margin-bottom: 20px;
           line-height: 1.2;
         }
 
+        @media (min-width: 640px) {
+          .section-title {
+            font-size: 18px;
+            margin-bottom: 24px;
+          }
+        }
+
         .form-group {
-          margin-bottom: 24px;
+          margin-bottom: 20px;
+        }
+
+        @media (min-width: 640px) {
+          .form-group {
+            margin-bottom: 24px;
+          }
         }
 
         .form-title {
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 600;
           color: #000;
           margin-bottom: 8px;
         }
 
+        @media (min-width: 640px) {
+          .form-title {
+            font-size: 24px;
+          }
+        }
+
         .form-description {
-          font-size: 15px;
+          font-size: 14px;
           color: #717182;
-          margin-bottom: 32px;
+          margin-bottom: 24px;
           line-height: 1.6;
+        }
+
+        @media (min-width: 640px) {
+          .form-description {
+            font-size: 15px;
+            margin-bottom: 32px;
+          }
         }
 
         .form-label {
           display: block;
-          font-size: 15px;
+          font-size: 14px;
           letter-spacing: -0.01em;
           color: #1a1a1a;
-          margin-bottom: 12px;
+          margin-bottom: 10px;
           font-weight: 500;
+        }
+
+        @media (min-width: 640px) {
+          .form-label {
+            font-size: 15px;
+            margin-bottom: 12px;
+          }
         }
 
         .required {

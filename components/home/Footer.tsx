@@ -96,17 +96,17 @@ export function Footer() {
               </svg>
             </div>
           </div>
-          <div className="content-stretch flex flex-col sm:flex-row gap-[16px] sm:gap-[28px] md:gap-[34px] lg:gap-[38px] items-center relative shrink-0">
-            <p className="font-sans font-medium leading-none not-italic relative shrink-0 text-[17px] md:text-[19px] lg:text-[21px] text-nowrap text-white tracking-[-0.42px] whitespace-pre">
+          <div className="content-stretch flex flex-row gap-[16px] sm:gap-[28px] md:gap-[34px] lg:gap-[38px] items-center relative shrink-0">
+            <p className="font-sans font-medium leading-none not-italic relative shrink-0 text-[15px] sm:text-[17px] md:text-[19px] lg:text-[21px] text-nowrap text-white tracking-[-0.42px] whitespace-pre">
               Follow us
             </p>
-            <div className="content-stretch flex gap-[18px] md:gap-[22px] lg:gap-[26px] items-center relative shrink-0">
+            <div className="content-stretch flex gap-[14px] sm:gap-[18px] md:gap-[22px] lg:gap-[26px] items-center relative shrink-0">
               {/* Instagram */}
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative shrink-0 size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
+                className="relative shrink-0 size-[24px] sm:size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
               >
                 <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
                   <g clipPath="url(#clip0_2_290)" id="Social Icons">
@@ -140,7 +140,7 @@ export function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative shrink-0 size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
+                className="relative shrink-0 size-[24px] sm:size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
               >
                 <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
                   <path
@@ -154,7 +154,7 @@ export function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative shrink-0 size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
+                className="relative shrink-0 size-[24px] sm:size-[28px] md:size-[32px] cursor-pointer hover:opacity-70 transition-opacity"
               >
                 <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
                   <path

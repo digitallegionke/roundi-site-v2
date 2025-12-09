@@ -16,11 +16,11 @@ export function CTASection() {
             <div className="flex flex-col justify-end size-full">
               <div className="box-border content-stretch flex flex-col gap-[10px] min-h-[400px] md:min-h-[550px] lg:h-[657px] items-start justify-end px-[24px] md:px-[36px] lg:px-[46px] py-[40px] md:py-[54px] lg:py-[67px] relative w-full">
                 <div className="content-stretch flex flex-col gap-[20px] md:gap-[24px] lg:gap-[28px] items-start relative shrink-0 w-full max-w-[602px]">
-                  <div className="content-stretch flex flex-col gap-[7px] items-center not-italic relative shrink-0 w-full max-w-[602px]">
-                    <h2 className="font-sans font-semibold leading-[70.4px] relative shrink-0 text-[32px] sm:text-[44px] md:text-[56px] lg:text-[64px] text-white tracking-[-2.4px] w-full">
+                  <div className="content-stretch flex flex-col gap-[4px] items-center not-italic relative shrink-0 w-full max-w-[602px]">
+                    <h2 className="font-sans font-semibold leading-[1.1] relative shrink-0 text-[32px] sm:text-[44px] md:text-[56px] lg:text-[64px] text-white tracking-[-2.4px] w-full">
                       Signup for our Early Access.
                     </h2>
-                    <p className="font-sans font-normal leading-[33px] relative shrink-0 text-[18px] md:text-[20px] lg:text-[22px] text-[rgba(255,255,255,0.9)] w-full">
+                    <p className="font-sans font-normal leading-[1.5] relative shrink-0 text-[18px] md:text-[20px] lg:text-[22px] text-[rgba(255,255,255,0.9)] w-full">
                       Experience effortless, reliable delivery.
                     </p>
                   </div>

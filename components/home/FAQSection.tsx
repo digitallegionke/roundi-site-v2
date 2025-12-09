@@ -17,7 +17,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
       onClick={onToggle}
     >
       <div className="flex items-start justify-between gap-4 w-full">
-        <p className="font-sans font-medium leading-[1.3] not-italic text-[16px] md:text-[18px] lg:text-[20px] text-black flex-1">
+        <p className="font-sans font-medium leading-[1.3] not-italic text-[17px] md:text-[19px] lg:text-[21px] text-black flex-1">
           {question}
         </p>
         <div className="relative shrink-0 size-[24px] md:size-[28px] lg:size-[32px] text-black group-hover:opacity-70 transition-opacity">
@@ -26,7 +26,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
       </div>
       {isOpen && (
         <div className="mt-[16px] md:mt-[20px] lg:mt-[24px] pr-[36px] md:pr-[40px] lg:pr-[48px]">
-          <p className="font-sans leading-[1.5] not-italic text-[14px] md:text-[16px] lg:text-[18px] text-[#6f6f6f]">
+          <p className="font-sans leading-[1.5] not-italic text-[15px] md:text-[17px] lg:text-[19px] text-[#6f6f6f]">
             {answer}
           </p>
         </div>
