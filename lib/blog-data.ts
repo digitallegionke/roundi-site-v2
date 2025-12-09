@@ -7,6 +7,7 @@ export interface BlogPost {
   content: string
   richContent?: any // Rich Text document from Contentful
   image: string
+  imageCredits?: string
   date: string
   author: {
     name: string
@@ -35,6 +36,7 @@ And we all know how that conversation went, the rider told the client that somet
 
 And I think that's the tiny corner we want to fix. Roundi makes it easy to know where your rider is and when they'll arrive. The gains really add up when you're handling multiple orders—we run an e-commerce store, so we've felt this pain.`,
     image: "/delivery-tracking-app.webp",
+    imageCredits: "Photo by Unsplash",
     date: "Oct 1, 2025",
     author: {
       name: "David Kuria",

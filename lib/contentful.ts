@@ -123,7 +123,8 @@ export async function getContentfulBlogPosts(): Promise<BlogPost[]> {
           title: "Writer",
           bio: authorBioText,
         },
-        image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.jpg",
+        image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.webp",
+        imageCredits: fields.imageCredits || "",
         category: fields.category || "General",
         featured: false,
       }
@@ -191,7 +192,8 @@ export async function getContentfulBlogPostBySlug(slug: string): Promise<BlogPos
         title: "Writer",
         bio: authorBioText,
       },
-      image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.jpg",
+      image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.webp",
+      imageCredits: fields.imageCredits || "",
       category: fields.category || "General",
       featured: false,
     }
@@ -251,7 +253,8 @@ export async function getContentfulFeaturedPosts(limit = 3): Promise<BlogPost[]>
           title: "Writer",
           bio: authorBioText,
         },
-        image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.jpg",
+        image: fields.cover ? getImageUrl(fields.cover) : "/placeholder.webp",
+        imageCredits: fields.imageCredits || "",
         category: fields.category || "General",
         featured: false,
       }

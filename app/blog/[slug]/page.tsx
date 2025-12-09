@@ -135,8 +135,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
 
           {/* Featured Image */}
-          <div className="mb-8 rounded-lg overflow-hidden">
-            <img src={post.image || "/placeholder.svg"} alt={post.title} className="w-full h-96 object-cover" />
+          <div className="mb-8">
+            <div className="rounded-lg overflow-hidden">
+              <img src={post.image || "/placeholder.webp"} alt={post.title} className="w-full h-96 object-cover" />
+            </div>
+            {post.imageCredits && (
+              <p className="text-xs text-muted-foreground mt-2 italic">
+                {post.imageCredits}
+              </p>
+            )}
           </div>
 
           {/* Subtitle Section */}

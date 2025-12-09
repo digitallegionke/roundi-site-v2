@@ -14,7 +14,7 @@ export function BlogCard({ post, variant = "default" }: BlogCardProps) {
         <article className="group cursor-pointer">
           <div className="relative overflow-hidden rounded-lg mb-3">
             <img
-              src={post.image || "/placeholder.svg"}
+              src={post.image || "/placeholder.webp"}
               alt={post.title}
               className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
             />
@@ -36,7 +36,7 @@ export function BlogCard({ post, variant = "default" }: BlogCardProps) {
       <article className="group cursor-pointer bg-[#fafafa] rounded-xl overflow-hidden flex flex-col transition-transform duration-300 ease-in-out hover:-translate-y-1">
         <div className="relative overflow-hidden">
           <img
-            src={post.image || "/placeholder.svg"}
+            src={post.image || "/placeholder.webp"}
             alt={post.title}
             className="w-full h-[200px] object-cover"
           />
