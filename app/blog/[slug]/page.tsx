@@ -119,7 +119,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       />
       <main className="min-h-screen bg-background px-10 flex-grow">
         {/* Post Content */}
-        <article className="max-w-4xl mx-auto py-12 sm:py-0 mt-16">
+        <article className="max-w-4xl mx-auto py-6 sm:py-0 mt-6 sm:mt-10">
           {/* Back Button */}
           <Link
             href="/blog"
@@ -137,7 +137,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           {/* Featured Image */}
           <div className="mb-8">
             <div className="rounded-lg overflow-hidden">
-              <img src={post.image || "/placeholder.webp"} alt={post.title} className="w-full h-96 object-cover" />
+              <img src={post.image || "/placeholder.webp"} alt={post.title} className="w-full h-48 md:h-96 object-cover" />
             </div>
             {post.imageCredits && (
               <p className="text-xs text-muted-foreground mt-2 italic">

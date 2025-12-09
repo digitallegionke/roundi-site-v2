@@ -16,7 +16,7 @@ export function BlogCard({ post, variant = "default" }: BlogCardProps) {
             <img
               src={post.image || "/placeholder.webp"}
               alt={post.title}
-              className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-32 md:h-40 object-cover group-hover:scale-105 transition-transform duration-300"
             />
           </div>
           <time className="text-sm text-muted-foreground">{formatDate(post.date)}</time>
@@ -38,7 +38,7 @@ export function BlogCard({ post, variant = "default" }: BlogCardProps) {
           <img
             src={post.image || "/placeholder.webp"}
             alt={post.title}
-            className="w-full h-[200px] object-cover"
+            className="w-full h-[160px] md:h-[200px] object-cover"
           />
         </div>
         <div className="p-6 flex flex-col flex-1">
