@@ -55,7 +55,7 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
         <div className={`hidden lg:flex items-center gap-6 flex-1 lg:ml-[72px] font-medium text-base ${textClass} transition`}>
           <Link
             href="/"
-            className={`${hoverTextClass} transition`}
+            className={`${hoverTextClass} transition ${pathname === '/' ? 'border-b-2 border-current' : ''}`}
           >
             Home
           </Link>
@@ -69,16 +69,22 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
           >
             About
           </a>
-          <Link href="/blog" className={`${hoverTextClass} transition`}>
+          <Link
+            href="/blog"
+            className={`${hoverTextClass} transition ${pathname.startsWith('/blog') ? 'border-b-2 border-current' : ''}`}
+          >
             Blog
           </Link>
           <Link
             href="/contact"
-            className={`${hoverTextClass} transition`}
+            className={`${hoverTextClass} transition ${pathname === '/contact' ? 'border-b-2 border-current' : ''}`}
           >
             Contact Us
           </Link>
-          <Link href="/early-access-form" className={`${hoverTextClass} transition`}>
+          <Link
+            href="/early-access-form"
+            className={`${hoverTextClass} transition ${pathname === '/early-access-form' ? 'border-b-2 border-current' : ''}`}
+          >
             Early Access
           </Link>
         </div>
@@ -119,7 +125,7 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
             <div className="flex flex-col p-4">
               <Link
                 href="/"
-                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'}`}
+                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'} ${pathname === '/' ? 'font-bold' : ''}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
@@ -137,21 +143,21 @@ export function Navbar({ variant = 'light' }: NavbarProps) {
               </a>
               <Link
                 href="/blog"
-                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'}`}
+                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'} ${pathname.startsWith('/blog') ? 'font-bold' : ''}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </Link>
               <Link
                 href="/contact"
-                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'}`}
+                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'} ${pathname === '/contact' ? 'font-bold' : ''}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
               </Link>
               <Link
                 href="/early-access-form"
-                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'}`}
+                className={`${textClass} font-medium text-base hover:opacity-70 transition py-3 border-b ${isDark ? 'border-[rgba(255,255,255,0.1)]' : 'border-gray-100'} ${pathname === '/early-access-form' ? 'font-bold' : ''}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Early Access
