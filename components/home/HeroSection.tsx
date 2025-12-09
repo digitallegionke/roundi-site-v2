@@ -22,7 +22,7 @@ export function HeroSection() {
                 <div className="content-stretch flex flex-col gap-[20px] md:gap-[24px] lg:gap-[32px] items-start relative shrink-0 w-full lg:w-[1021px]">
                   <div className="content-stretch flex flex-col gap-[20px] items-start relative shrink-0 w-full">
                     <h1 className="font-sans font-semibold leading-[1.1] not-italic relative shrink-0 text-[40px] sm:text-[42px] md:text-[56px] lg:text-[68px] xl:text-[78px] text-white tracking-[-1.2px] sm:tracking-[-1.8px] md:tracking-[-2.4px] lg:tracking-[-2.8px] xl:tracking-[-3.12px] w-full [-webkit-font-smoothing:antialiased] [text-rendering:optimizeLegibility]">
-                      Startup hustle or seasoned brand. Deliver better, every time.
+                      Delivery Management Software for Kenyan SMEs & Businesses
                     </h1>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-[20px] lg:gap-[24px] items-stretch sm:items-start relative shrink-0 w-full max-w-full [-webkit-box-orient:vertical] [-webkit-box-direction:normal] sm:[-webkit-box-orient:horizontal]">

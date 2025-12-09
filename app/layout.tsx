@@ -8,10 +8,10 @@ import "./globals.css"
 export const metadata: Metadata = {
   metadataBase: new URL('https://roundi.africa'),
   title: {
-    default: "Roundi - Effortless Delivery Management for African Businesses",
-    template: "%s | Roundi"
+    default: "Delivery Management Software for SMEs in Kenya & Africa | Roundi",
+    template: "%s | Roundi - Delivery Management Software"
   },
-  description: "Transform your delivery operations with Roundi. Track orders, manage riders, optimize routes, and delight customers. Built for African businesses, from startups to established brands.",
+  description: "Roundi is delivery management software built for Kenyan and African SMEs. Track orders in real-time, manage riders, optimize routes for Nairobi deliveries. Used by restaurants, e-commerce, and logistics businesses across East Africa.",
   keywords: ["delivery management", "logistics software", "delivery tracking", "rider management", "route optimization", "last mile delivery", "Kenya delivery", "African logistics", "delivery app", "fleet management"],
   authors: [{ name: "Roundi" }],
   creator: "Roundi",
@@ -27,11 +27,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_KE",
     url: "https://roundi.africa",
-    title: "Roundi - Effortless Delivery Management for African Businesses",
-    description: "Transform your delivery operations with Roundi. Track orders, manage riders, optimize routes, and delight customers.",
-    siteName: "Roundi",
+    title: "Delivery Management Software for Kenyan SMEs | Roundi",
+    description: "Roundi is delivery management software for Kenyan and East African businesses. Track orders, manage Nairobi riders, optimize routes across Kenya.",
+    siteName: "Roundi - Delivery Management Software",
     images: [
       {
         url: "/hero-bg.webp",
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Roundi - Effortless Delivery Management",
-    description: "Transform your delivery operations with Roundi. Track orders, manage riders, and delight customers.",
+    title: "Delivery Management Software for Kenyan SMEs | Roundi",
+    description: "Roundi helps Kenyan businesses track orders, manage Nairobi riders, and optimize delivery routes across East Africa.",
     images: ["/hero-bg.webp"],
-    creator: "@roundi",
+    creator: "@getroundi",
   },
   robots: {
     index: true,
@@ -74,25 +74,54 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Roundi",
+    "alternateName": "Roundi Delivery Management",
     "url": "https://roundi.africa",
-    "logo": "https://roundi.africa/logo.svg",
-    "description": "Transform your delivery operations with Roundi. Track orders, manage riders, optimize routes, and delight customers.",
+    "logo": "https://roundi.africa/logos/light-green-roundi-logo.svg",
+    "description": "Delivery management software for Kenyan and East African SMEs. We help businesses track orders, manage riders, and optimize delivery routes across Nairobi and Kenya.",
+    "foundingDate": "2024",
+    "foundingLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "KE"
+      }
+    },
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Protectorate Flats, Mamlaka Road",
       "addressLocality": "Nairobi",
-      "addressCountry": "KE"
+      "addressRegion": "Nairobi County",
+      "addressCountry": "KE",
+      "postalCode": "00100"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-1.2921",
+      "longitude": "36.8219"
+    },
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "Kenya"
+      },
+      {
+        "@type": "City",
+        "name": "Nairobi"
+      }
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+254-722-235314",
       "contactType": "Customer Service",
       "email": "hello@roundi.africa",
-      "availableLanguage": ["English"]
+      "availableLanguage": ["English", "Swahili"],
+      "areaServed": "KE"
     },
     "sameAs": [
-      "https://twitter.com/roundi",
-      "https://linkedin.com/company/roundi"
+      "https://www.linkedin.com/company/roundi",
+      "https://www.instagram.com/getroundi/",
+      "https://www.tiktok.com/@getroundi"
     ]
   }
 
