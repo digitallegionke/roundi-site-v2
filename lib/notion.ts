@@ -84,9 +84,11 @@ export async function addEarlyAccessToNotion(
           ],
         },
         'Delivery Team Size': {
-          multi_select: [
+          rich_text: [
             {
-              name: formData.deliveryTeamSize,
+              text: {
+                content: formData.deliveryTeamSize,
+              },
             },
           ],
         },
