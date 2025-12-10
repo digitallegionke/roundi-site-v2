@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { addEarlyAccessToNotion } from '@/lib/notion';
 
 export async function POST(req: NextRequest) {
   try {
@@ -39,6 +40,9 @@ export async function POST(req: NextRequest) {
       console.error('MailerLite API error:', errorData);
       return NextResponse.json({ message: 'Failed to subscribe to MailerLite.', details: errorData }, { status: response.status });
     }
+
+    // Add to Notion database (non-blocking)
+    await addEarlyAccessToNotion(formData);
 
     return NextResponse.json({ message: 'Successfully subscribed to MailerLite.' });
   } catch (error) {

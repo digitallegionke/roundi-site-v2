@@ -54,17 +54,10 @@ export function EarlyAccessFormContent() {
       let isValid = true;
       const errors: { [key: string]: string } = {};
 
-      const firstNameInput = document.getElementById('firstName') as HTMLInputElement;
-      const firstName = firstNameInput.value.trim();
-      if (!firstName) {
-        errors.firstName = 'First name is required';
-        isValid = false;
-      }
-
-      const lastNameInput = document.getElementById('lastName') as HTMLInputElement;
-      const lastName = lastNameInput.value.trim();
-      if (!lastName) {
-        errors.lastName = 'Last name is required';
+      const fullNameInput = document.getElementById('fullName') as HTMLInputElement;
+      const fullName = fullNameInput.value.trim();
+      if (!fullName) {
+        errors.fullName = 'Full name is required';
         isValid = false;
       }
 
@@ -122,12 +115,8 @@ export function EarlyAccessFormContent() {
       submitBtn.innerHTML = '<div class="spinner"></div>Submitting...';
 
       // Collect form data
-      const firstName = (document.getElementById('firstName') as HTMLInputElement).value;
-      const lastName = (document.getElementById('lastName') as HTMLInputElement).value;
       const formData = {
-        fullName: `${firstName} ${lastName}`,
-        firstName: firstName,
-        lastName: lastName,
+        fullName: (document.getElementById('fullName') as HTMLInputElement).value,
         businessName: (document.getElementById('businessName') as HTMLInputElement).value,
         businessEmail: (document.getElementById('businessEmail') as HTMLInputElement).value,
         phoneNumber: (document.getElementById('phoneNumber') as HTMLInputElement).value,
@@ -558,31 +547,17 @@ export function EarlyAccessFormContent() {
           <h2 className="section-title">Contact Information</h2>
 
           <div className="form-group">
-            <label htmlFor="firstName" className="form-label">
-              First Name<span className="required">*</span>
+            <label htmlFor="fullName" className="form-label">
+              Full Name<span className="required">*</span>
             </label>
             <input
               type="text"
-              id="firstName"
-              name="firstName"
+              id="fullName"
+              name="fullName"
               className="form-input"
-              placeholder="Enter your first name"
+              placeholder="Enter your full name"
             />
-            <div id="firstNameError" className="error-message"></div>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="lastName" className="form-label">
-              Last Name<span className="required">*</span>
-            </label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              className="form-input"
-              placeholder="Enter your last name"
-            />
-            <div id="lastNameError" className="error-message"></div>
+            <div id="fullNameError" className="error-message"></div>
           </div>
 
           <div className="form-group">

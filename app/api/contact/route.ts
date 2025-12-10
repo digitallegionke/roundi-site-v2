@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { addContactToNotion } from '@/lib/notion';
 
 const MAILERLITE_API_KEY = process.env.MAILERLITE_API_KEY;
 const MAILERLITE_GROUP_ID = process.env.MAILERLITE_GROUP_ID;
@@ -157,8 +158,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Additional: You could also send an email notification here
-    // or log the submission to a database
+    // Add to Notion database (non-blocking)
+    await addContactToNotion(body);
 
     return NextResponse.json(
       {
