@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     title: "Delivery Management Software for Kenyan SMEs | Roundi",
     description: "Roundi is delivery management software for Kenyan businesses. Track orders, manage Nairobi riders, and optimize East African deliveries.",
     url: "https://roundi.africa",
+    type: "website",
     images: [
       {
         url: "/hero-bg.webp",
@@ -32,6 +33,9 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://roundi.africa",
+  },
+  other: {
+    'google-site-verification': '',
   },
 };
 
@@ -96,6 +100,19 @@ export default function Home() {
     ]
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://roundi.africa"
+      }
+    ]
+  };
+
   return (
     <>
       <script
@@ -105,6 +122,10 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="bg-white flex flex-col w-full min-h-screen">
         <div className="content-stretch flex flex-col gap-[6px] items-start relative shrink-0 w-full">

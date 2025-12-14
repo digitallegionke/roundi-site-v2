@@ -125,6 +125,23 @@ export default function RootLayout({
     ]
   }
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Roundi",
+    "url": "https://roundi.africa",
+    "description": "Delivery management software for Kenyan and East African SMEs",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Roundi"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://roundi.africa/blog?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+
   return (
     <html lang="en">
       <head>
@@ -132,6 +149,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
         <style dangerouslySetInnerHTML={{__html: `
           * {
