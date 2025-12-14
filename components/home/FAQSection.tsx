@@ -42,72 +42,67 @@ export function FAQSection() {
     {
       question: "What is Roundi?",
       answer:
-        'Roundi is a delivery management software built for Kenyan SMEs. It helps businesses plan smarter routes, track riders in real time, send customer delivery updates, and manage proof of delivery — all in one simple platform.',
+        'Roundi is a delivery management and last-mile delivery software built for Kenyan SMEs. It helps businesses plan delivery routes, track riders in real time, manage multiple deliveries, and give customers accurate ETAs — all in one platform designed for Nairobi and other Kenyan cities.',
     },
     {
       question: 'Who is Roundi built for?',
       answer:
-        "Roundi is perfect for businesses that do their own deliveries, including: E-commerce stores, Retail shops, Restaurants & cafes, Wines and spirits, Hardware stores & agro vets, Pharmacies, Fresh produce suppliers, Market sellers, Small courier businesses",
+        'Roundi is built for small and medium businesses in Kenya that manage their own deliveries. This includes online stores, product brands, wholesalers, and shops with one or more riders handling daily deliveries.',
     },
     {
-      question: 'Why should I join early access?',
+      question: 'How is Roundi different from Uber delivery?',
       answer:
-        'Early access users get: First access to new features, Priority onboarding, Influence over product development, A head start before public launch',
+        'Uber focuses on on-demand transport, not delivery operations. Roundi helps businesses manage their own riders, plan routes, track deliveries, and improve accountability — making it more cost-effective for businesses doing deliveries every day.',
     },
     {
-      question: 'How does Roundi help my business save money?',
+      question: 'How is Roundi different from Leta?',
       answer:
-        'Roundi reduces delivery costs by: More efficient routes, Better rider productivity, Fewer delivery errors, Automated customer updates, Cleaner cash-on-delivery reconciliation',
+        'Leta is built for large enterprises and logistics-heavy operations. Roundi is designed specifically for SMEs, with simpler setup, lower costs, and features focused on day-to-day delivery execution rather than complex logistics networks.',
     },
     {
-      question: 'How does rider tracking work?',
+      question: 'How does Roundi help businesses save money?',
       answer:
-        'Riders use the Roundi Rider App, which updates their location in real time so you can see: Their current position, Progress through stops, Delays, Completed deliveries',
+        'Roundi helps Kenyan businesses save money by: Optimizing routes to reduce fuel costs, Reducing failed and repeat deliveries, Cutting customer support calls with live tracking, Improving rider accountability and performance. Instead of hiring more riders or paying per-trip delivery fees, businesses run more efficient operations with what they already have.',
     },
     {
-      question: 'Do customers receive delivery updates?',
+      question: 'Does Roundi offer real-time rider tracking?',
       answer:
-        'Yes — via SMS or WhatsApp. They get: A tracking link, Live ETA, Delivery status, Proof of delivery',
+        'Yes. Roundi provides real-time rider tracking and live delivery updates so businesses can monitor deliveries and customers receive accurate ETAs — reducing "Where is my order?" calls.',
     },
     {
-      question: 'Is Roundi available all over Kenya?',
+      question: 'Is Roundi available across Kenya?',
       answer:
-        'Yes — optimized for Nairobi, Kiambu, Mombasa, Kisumu, Nakuru, Eldoret, and all other towns.',
+        'Roundi is built Nairobi-first, but works anywhere in Kenya where businesses manage deliveries using riders.',
     },
     {
       question: 'Do riders need expensive smartphones?',
       answer:
-        'No. If the phone can run Google Maps, it can run Roundi.',
+        'No. Roundi works on standard Android smartphones commonly used by riders in Kenya.',
     },
     {
-      question: 'How much will Roundi cost?',
+      question: 'Can I use Roundi if I only have one rider?',
       answer:
-        'Pricing will be shared first with early access users.',
+        'Yes. Roundi works whether you have one rider or a full delivery team. It scales as your business grows.',
+    },
+    {
+      question: 'How much does Roundi cost?',
+      answer:
+        'Roundi will offer affordable pricing designed for Kenyan SMEs, unlike enterprise logistics tools or per-delivery platforms. Pricing details will be shared at launch, with early access users receiving priority benefits.',
     },
     {
       question: 'Is Roundi difficult to set up?',
       answer:
-        'No. Setup takes less than 10 minutes: Sign up, Add riders, Add delivery orders, Start tracking',
-    },
-    {
-      question: 'What makes Roundi different from other delivery apps?',
-      answer:
-        'Roundi is built specifically for Kenyan delivery realities: Estate layouts, Pin-drop issues, Traffic challenges, COD workflows, Rider device limitations, Customer communication habits',
-    },
-    {
-      question: 'Can I use Roundi even if I have only 1 or 2 riders?',
-      answer:
-        'Yes. Roundi works for any team size.',
+        'No. Roundi is built for non-technical business owners. Most businesses can start managing deliveries quickly without technical onboarding.',
     },
     {
       question: 'When does Roundi officially launch?',
       answer:
-        'Early access is open now. Public launch follows after feedback and onboarding rounds.',
+        'Roundi is currently in early access. Businesses can sign up to test the platform and get priority access before public launch.',
     },
     {
       question: 'How do I join early access?',
       answer:
-        'Click below and fill in your details.',
+        'You can join early access by signing up on the Roundi website. Early users get priority onboarding and early feature access.',
     },
   ];
 
