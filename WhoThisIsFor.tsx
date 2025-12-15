@@ -1,6 +1,5 @@
 import { useState } from "react";
 import svgPaths from "../imports/svg-ch35q1dqk1";
-import imgFrame14 from "figma:asset/c27379de3e8bd162cfafaba69b7d4aa894c0af61.png";
 
 interface AccordionItem {
   id: string;
@@ -14,25 +13,25 @@ const accordionData: AccordionItem[] = [
     id: "smes",
     title: "SMEs",
     content: "Manage daily deliveries without the chaos.\nPlan routes, track riders, and reduce failed deliveries — even with just one rider.",
-    image: imgFrame14,
+    image: "/Who this is for/SME.png",
   },
   {
     id: "ecommerce",
     title: "E-commerce",
     content: "Turn delivery into a trust-builder, not a complaint channel.\nGive customers live ETAs and manage multiple orders with ease.",
-    image: "https://images.unsplash.com/photo-1631010232525-cd45da1a1fbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBwYWNrYWdlJTIwZGVsaXZlcnl8ZW58MXx8fHwxNzY1NzIwODIzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/Who this is for/E-commerce.png",
   },
   {
     id: "retail",
     title: "Retail",
     content: "Deliver faster, with fewer mistakes.\nTrack multiple deliveries per rider and keep orders moving on time.",
-    image: "https://images.unsplash.com/photo-1684560207594-a68e6b2f6ff1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXRhaWwlMjBzdG9yZSUyMGRlbGl2ZXJ5fGVufDF8fHx8MTc2NTcyMDgyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/Who this is for/Retail.png",
   },
   {
     id: "restaurants",
     title: "Restaurants",
     content: "Keep control of your deliveries and your margins.\nTrack your own riders and deliver food on time, every time.",
-    image: "https://images.unsplash.com/photo-1640082380928-2f7079392823?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRlbGl2ZXJ5fGVufDF8fHx8MTc2NTYyMjYwNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/Who this is for/Restaurants.png",
   },
 ];
 
@@ -77,11 +76,11 @@ export default function WhoThisIsFor() {
           <div className="flex flex-col lg:flex-row gap-[32px] md:gap-[40px] lg:gap-[80px] items-start w-full">
             {/* Image - Show on mobile/tablet at top */}
             <div className="w-full lg:hidden">
-              <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-[12px] md:rounded-[16px] overflow-hidden">
+              <div className="relative w-full aspect-4/3 sm:aspect-16/10 rounded-[12px] md:rounded-[16px] overflow-hidden">
                 <img
                   alt="Business owner managing deliveries"
                   className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
-                  src={expandedId ? accordionData.find((item) => item.id === expandedId)?.image : imgFrame14}
+                  src={expandedId ? accordionData.find((item) => item.id === expandedId)?.image : "/Who this is for/SME.png"}
                 />
               </div>
             </div>
@@ -114,11 +113,11 @@ export default function WhoThisIsFor() {
 
             {/* Image - Show on desktop on right */}
             <div className="hidden lg:block lg:flex-1 lg:max-w-[601px]">
-              <div className="relative w-full aspect-[601/647] rounded-[20px] overflow-hidden sticky top-[100px]">
+              <div className="w-full aspect-601/647 rounded-[20px] overflow-hidden sticky top-[100px]">
                 <img
                   alt="Business owner managing deliveries"
                   className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
-                  src={expandedId ? accordionData.find((item) => item.id === expandedId)?.image : imgFrame14}
+                  src={expandedId ? accordionData.find((item) => item.id === expandedId)?.image : "/Who this is for/SME.png"}
                 />
               </div>
             </div>
