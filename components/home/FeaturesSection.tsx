@@ -5,19 +5,19 @@ export function FeaturesSection() {
     {
       title: 'Smarter Routes. Lower Costs.',
       description: "Beat Nairobi traffic and save fuel with automatic route optimization. Roundi plans the fastest delivery routes so your riders complete more stops in less time — whether you handle 5 or 50 deliveries a day.",
-      image: '/feature-1.png',
+      image: '/Features/feature-1.webp',
       imageOnLeft: true,
     },
     {
       title: 'Live Tracking That Builds Trust.',
       description: "Customers get real-time ETAs and live rider locations, reducing \"Where's my order?\" calls. Give your business the transparency and professionalism Kenyan shoppers expect.",
-      image: '/QncIqKhv6wuo7gFnr6EKL9ME9Jw.avif',
+      image: '/Features/feature-2.webp',
       imageOnLeft: false,
     },
     {
       title: 'Stronger Rider Accountability.',
       description: "See rider locations, completion rates, and performance at a glance. Improve accountability, reduce missed deliveries, and reward your top performers.",
-      image: '/PUreFkeuAMBMEp73W1HuVs3fRE.avif',
+      image: '/Features/feature-3.webp',
       imageOnLeft: true,
     },
   ];

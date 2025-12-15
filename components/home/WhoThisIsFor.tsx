@@ -16,32 +16,29 @@ const accordionData: AccordionItem[] = [
     id: 'smes',
     title: 'SMEs',
     content:
-      'Manage daily deliveries without the chaos.\nPlan routes, track riders, and reduce failed deliveries — even with just one rider.',
-    image: '/placeholder.svg',
+      'Manage daily deliveries without the chaos.\n\nPlan routes, track riders, and reduce failed deliveries — even with just one rider.',
+    image: '/Who this is for/SME.webp',
   },
   {
     id: 'ecommerce',
     title: 'E-commerce',
     content:
-      'Turn delivery into a trust-builder, not a complaint channel.\nGive customers live ETAs and manage multiple orders with ease.',
-    image:
-      'https://images.unsplash.com/photo-1631010232525-cd45da1a1fbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBwYWNrYWdlJTIwZGVsaXZlcnl8ZW58MXx8fHwxNzY1NzIwODIzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      'Turn delivery into a trust-builder, not a complaint channel.\n\nGive customers live ETAs and manage multiple orders with ease.',
+    image: '/Who this is for/E-commerce.webp',
   },
   {
     id: 'retail',
     title: 'Retail',
     content:
-      'Deliver faster, with fewer mistakes.\nTrack multiple deliveries per rider and keep orders moving on time.',
-    image:
-      'https://images.unsplash.com/photo-1684560207594-a68e6b2f6ff1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXRhaWwlMjBzdG9yZSUyMGRlbGl2ZXJ5fGVufDF8fHx8MTc2NTcyMDgyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      'Deliver faster, with fewer mistakes.\n\nTrack multiple deliveries per rider and keep orders moving on time.',
+    image: '/Who this is for/Retail.webp',
   },
   {
     id: 'restaurants',
     title: 'Restaurants',
     content:
-      'Keep control of your deliveries and your margins.\nTrack your own riders and deliver food on time, every time.',
-    image:
-      'https://images.unsplash.com/photo-1640082380928-2f7079392823?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwZm9vZCUyMGRlbGl2ZXJ5fGVufDF8fHx8MTc2NTYyMjYwNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      'Keep control of your deliveries and your margins.\n\nTrack your own riders and deliver food on time, every time.',
+    image: '/Who this is for/Restaurants.webp',
   },
 ];
 
@@ -77,8 +74,8 @@ export function WhoThisIsFor() {
                   src={
                     expandedId
                       ? accordionData.find((item) => item.id === expandedId)?.image ||
-                        '/placeholder.svg'
-                      : '/placeholder.svg'
+                        '/Who this is for/SME.webp'
+                      : '/Who this is for/SME.png'
                   }
                 />
               </div>
@@ -124,8 +121,8 @@ export function WhoThisIsFor() {
                   src={
                     expandedId
                       ? accordionData.find((item) => item.id === expandedId)?.image ||
-                        '/placeholder.svg'
-                      : '/placeholder.svg'
+                        '/Who this is for/SME.webp'
+                      : '/Who this is for/SME.png'
                   }
                 />
               </div>
