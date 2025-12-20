@@ -1,8 +1,6 @@
-import { BlogList } from "@/components/blog-list"
+import { BlogPageContent } from "@/components/blog-page-content"
 import { getContentfulBlogPosts } from "@/lib/contentful"
 import { Footer } from "@/components/home/Footer"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 
 export const metadata = {
   title: "Delivery Management Blog for Kenyan Businesses | Roundi Insights",
@@ -35,12 +33,10 @@ export default async function BlogPage() {
           </p>
         </section>
 
-        {/* Blog Posts */}
-        <section className="max-w-7xl mx-auto py-8">
-          <BlogList posts={blogPosts} />
-        </section>
+        {/* Filter Chips and Blog Posts */}
+        <BlogPageContent posts={blogPosts} />
       </main>
-      
+
       <Footer />
     </div>
   )
