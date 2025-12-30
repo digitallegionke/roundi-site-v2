@@ -1,6 +1,6 @@
-import { getContentfulBlogPostBySlug, getContentfulBlogPosts } from "@/lib/contentful"
+import { getSanityBlogPostBySlug, getSanityBlogPosts } from "@/lib/sanity"
 import { BlogCard } from "@/components/blog-card"
-import { RichTextRenderer } from "@/components/rich-text-renderer"
+import { PortableTextRenderer } from "@/components/portable-text-renderer"
 import { Footer } from "@/components/home/Footer"
 import { formatDate } from "@/lib/utils/date"
 import Link from "next/link"
@@ -20,7 +20,7 @@ export const revalidate = 60
 export const dynamicParams = true
 
 export async function generateStaticParams() {
-  const blogPosts = await getContentfulBlogPosts()
+  const blogPosts = await getSanityBlogPosts()
   return blogPosts.map((post) => ({
     slug: post.slug,
   }))
@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: BlogPostPageProps) {
   const resolvedParams = await params
-  const post = await getContentfulBlogPostBySlug(resolvedParams.slug)
+  const post = await getSanityBlogPostBySlug(resolvedParams.slug)
 
   if (!post) {
     return {
@@ -75,13 +75,13 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const resolvedParams = await params
-  const post = await getContentfulBlogPostBySlug(resolvedParams.slug)
+  const post = await getSanityBlogPostBySlug(resolvedParams.slug)
 
   if (!post) {
     notFound()
   }
 
-  const blogPosts = await getContentfulBlogPosts()
+  const blogPosts = await getSanityBlogPosts()
   const relatedPosts = blogPosts.filter((p) => p.id !== post.id).slice(0, 3)
 
   // Structured data for the blog post
@@ -168,7 +168,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           {/* Post Body */}
           <div className="mb-12">
             {post.richContent ? (
-              <RichTextRenderer content={post.richContent} />
+              <PortableTextRenderer content={post.richContent} />
             ) : (
               <div className="prose prose-lg dark:prose-invert max-w-none">
                 {post.content.split("\n\n").map((paragraph, index) => (

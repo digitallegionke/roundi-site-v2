@@ -5,7 +5,7 @@ export interface BlogPost {
   slug: string
   excerpt: string
   content: string
-  richContent?: any // Rich Text document from Contentful
+  richContent?: any // Rich Text document from Contentful/Sanity
   image: string
   imageCredits?: string
   date: string
@@ -18,6 +18,9 @@ export interface BlogPost {
   readTime: number
   category?: string
   featured?: boolean
+  publishedDate?: string // For compatibility with metadata generation
+  updatedDate?: string // For compatibility with metadata generation
+  tags?: string[] // Tags for better organization
 }
 
 export const blogPosts: BlogPost[] = [

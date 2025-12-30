@@ -1,11 +1,11 @@
 import { MetadataRoute } from 'next'
-import { getContentfulBlogPosts } from '@/lib/contentful'
+import { getSanityBlogPosts } from '@/lib/sanity'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://roundi.africa'
 
   // Get all blog posts for dynamic routes
-  const blogPosts = await getContentfulBlogPosts()
+  const blogPosts = await getSanityBlogPosts()
 
   const blogUrls = blogPosts.map((post) => {
     // Use publishedDate, fall back to date, or use current date if both are invalid

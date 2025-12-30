@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server"
-import { getContentfulBlogPosts } from "@/lib/contentful"
+import { getSanityBlogPosts } from "@/lib/sanity"
 
 export async function GET() {
   try {
-    const posts = await getContentfulBlogPosts()
+    const posts = await getSanityBlogPosts()
 
     return NextResponse.json({
       success: true,

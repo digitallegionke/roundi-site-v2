@@ -1,5 +1,5 @@
 import { BlogPageContent } from "@/components/blog-page-content"
-import { getContentfulBlogPosts } from "@/lib/contentful"
+import { getSanityBlogPosts } from "@/lib/sanity"
 import { Footer } from "@/components/home/Footer"
 
 export const metadata = {
@@ -20,7 +20,7 @@ export const metadata = {
 export const revalidate = 60
 
 export default async function BlogPage() {
-  const blogPosts = await getContentfulBlogPosts()
+  const blogPosts = await getSanityBlogPosts()
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow min-h-screen bg-background px-10">
