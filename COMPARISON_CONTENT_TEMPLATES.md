@@ -85,6 +85,50 @@ Where Sendy focused on *moving parcels*, Roundi focuses on *running delivery ope
 
 ---
 
+## Roundi vs Sendy: Side-by-Side Comparison
+
+Here's how Roundi compares to what Sendy offered before it closed:
+
+**[INSERT COMPARISON TABLE HERE]**
+
+**Instructions for Sanity CMS:**
+1. Click the `+` button in the content area
+2. Select "Comparison Table"
+3. Competitor Name: `Sendy (Before Closure)`
+4. Add the following rows:
+
+**Row 1:**
+- Feature: `Rider Management`
+- Roundi: `You manage your own riders`
+- Competitor: `Marketplace model`
+
+**Row 2:**
+- Feature: `Cost Structure`
+- Roundi: `Flat subscription`
+- Competitor: `Per-delivery fees`
+
+**Row 3:**
+- Feature: `Route Planning`
+- Roundi: `Built-in optimization`
+- Competitor: `Limited`
+
+**Row 4:**
+- Feature: `Delivery Control`
+- Roundi: `Full control & visibility`
+- Competitor: `Outsourced to platform`
+
+**Row 5:**
+- Feature: `Long-term Viability`
+- Roundi: `Active & growing`
+- Competitor: `Shut down`
+
+**Row 6:**
+- Feature: `Customer Experience`
+- Roundi: `Branded tracking`
+- Competitor: `Generic platform`
+
+---
+
 ## The Bigger Lesson for Kenyan SMEs
 
 Sendy's closure showed that:
@@ -105,20 +149,11 @@ For SMEs doing daily deliveries, the future isn't outsourcing — it's **managin
 
 ---
 
-### Comparison Table Data
+## Want to Learn More?
 
-**Competitor Name**: Sendy (Before Closure)
+This comparison is part of our complete guide to delivery management in Kenya.
 
-**Comparison Rows**:
-
-| Feature | Roundi | Sendy (Before Closure) |
-|---------|--------|------------------------|
-| Rider Management | You manage your own riders | Marketplace model |
-| Cost Structure | Flat subscription | Per-delivery fees |
-| Route Planning | Built-in optimization | Limited |
-| Delivery Control | Full control & visibility | Outsourced to platform |
-| Long-term Viability | Active & growing | Shut down |
-| Customer Experience | Branded tracking | Generic platform |
+[Read: Delivery Management Software in Kenya — Complete Guide →](/blog/delivery-management-software-kenya)
 
 ---
 
@@ -210,6 +245,50 @@ If your business needs to **deliver to customers every day**, Roundi fits better
 
 ---
 
+## Roundi vs Leta: Side-by-Side Comparison
+
+Here's a detailed comparison:
+
+**[INSERT COMPARISON TABLE HERE]**
+
+**Instructions for Sanity CMS:**
+1. Click the `+` button in the content area
+2. Select "Comparison Table"
+3. Competitor Name: `Leta`
+4. Add the following rows:
+
+**Row 1:**
+- Feature: `Target Market`
+- Roundi: `SMEs (1-10 riders)`
+- Competitor: `Large enterprises`
+
+**Row 2:**
+- Feature: `Setup Complexity`
+- Roundi: `Simple, self-service`
+- Competitor: `Enterprise onboarding`
+
+**Row 3:**
+- Feature: `Pricing`
+- Roundi: `SME-friendly`
+- Competitor: `Enterprise pricing`
+
+**Row 4:**
+- Feature: `Feature Focus`
+- Roundi: `Daily delivery execution`
+- Competitor: `Complex logistics networks`
+
+**Row 5:**
+- Feature: `Ideal Team Size`
+- Roundi: `1-10 people`
+- Competitor: `20+ logistics staff`
+
+**Row 6:**
+- Feature: `Route Planning`
+- Roundi: `Optimized for Nairobi`
+- Competitor: `Multi-region logistics`
+
+---
+
 ## Bottom Line
 
 Leta solves logistics at scale. Roundi solves delivery at the SME level.
@@ -218,20 +297,11 @@ Choosing the right tool depends on the size and reality of your business.
 
 ---
 
-### Comparison Table Data
+## Want to Learn More?
 
-**Competitor Name**: Leta
+This comparison is part of our complete guide to delivery management in Kenya.
 
-**Comparison Rows**:
-
-| Feature | Roundi | Leta |
-|---------|--------|------|
-| Target Market | SMEs (1-10 riders) | Large enterprises |
-| Setup Complexity | Simple, self-service | Enterprise onboarding |
-| Pricing | SME-friendly | Enterprise pricing |
-| Feature Focus | Daily delivery execution | Complex logistics networks |
-| Ideal Team Size | 1-10 people | 20+ logistics staff |
-| Route Planning | Optimized for Nairobi | Multi-region logistics |
+[Read: Delivery Management Software in Kenya — Complete Guide →](/blog/delivery-management-software-kenya)
 
 ---
 
@@ -307,6 +377,50 @@ Instead of buying trips, businesses **build reliable delivery operations**.
 
 ---
 
+## Roundi vs Uber/Bolt: Side-by-Side Comparison
+
+Here's how the platforms compare:
+
+**[INSERT COMPARISON TABLE HERE]**
+
+**Instructions for Sanity CMS:**
+1. Click the `+` button in the content area
+2. Select "Comparison Table"
+3. Competitor Name: `Uber/Bolt Delivery`
+4. Add the following rows:
+
+**Row 1:**
+- Feature: `Rider Management`
+- Roundi: `Manage your own team`
+- Competitor: `On-demand marketplace`
+
+**Row 2:**
+- Feature: `Cost at Scale`
+- Roundi: `Predictable subscription`
+- Competitor: `Increases with volume`
+
+**Row 3:**
+- Feature: `Route Planning`
+- Roundi: `Multi-stop optimization`
+- Competitor: `Single trip focus`
+
+**Row 4:**
+- Feature: `Customer Experience`
+- Roundi: `Branded tracking & updates`
+- Competitor: `Generic platform`
+
+**Row 5:**
+- Feature: `Accountability`
+- Roundi: `Full rider oversight`
+- Competitor: `Limited control`
+
+**Row 6:**
+- Feature: `Best For`
+- Roundi: `Daily operations`
+- Competitor: `Occasional deliveries`
+
+---
+
 ## When Uber or Bolt Still Make Sense
 
 Uber or Bolt can work for:
@@ -327,20 +441,11 @@ If delivery is part of your core business, management always wins over on-demand
 
 ---
 
-### Comparison Table Data
+## Want to Learn More?
 
-**Competitor Name**: Uber/Bolt Delivery
+This comparison is part of our complete guide to delivery management in Kenya.
 
-**Comparison Rows**:
-
-| Feature | Roundi | Uber/Bolt Delivery |
-|---------|--------|-------------------|
-| Rider Management | Manage your own team | On-demand marketplace |
-| Cost at Scale | Predictable subscription | Increases with volume |
-| Route Planning | Multi-stop optimization | Single trip focus |
-| Customer Experience | Branded tracking & updates | Generic platform |
-| Accountability | Full rider oversight | Limited control |
-| Best For | Daily operations | Occasional deliveries |
+[Read: Delivery Management Software in Kenya — Complete Guide →](/blog/delivery-management-software-kenya)
 
 ---
 
