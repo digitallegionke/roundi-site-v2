@@ -88,6 +88,107 @@ export default defineType({
             },
           ],
         },
+        {
+          type: 'object',
+          name: 'divider',
+          title: 'Divider',
+          fields: [
+            {
+              name: 'style',
+              type: 'string',
+              title: 'Style',
+              options: {
+                list: [
+                  { title: 'Default', value: 'default' },
+                ],
+              },
+              initialValue: 'default',
+            },
+          ],
+          preview: {
+            prepare() {
+              return {
+                title: '--- Divider ---',
+              }
+            },
+          },
+        },
+        {
+          type: 'object',
+          name: 'comparisonTable',
+          title: 'Comparison Table',
+          fields: [
+            {
+              name: 'competitor',
+              type: 'string',
+              title: 'Competitor Name',
+              description: 'The name of the competitor being compared (e.g., "Sendy", "Leta", "Uber/Bolt")',
+              validation: (Rule) => Rule.required(),
+            },
+            {
+              name: 'rows',
+              type: 'array',
+              title: 'Comparison Rows',
+              of: [
+                {
+                  type: 'object',
+                  fields: [
+                    {
+                      name: 'feature',
+                      type: 'string',
+                      title: 'Feature',
+                      description: 'The feature being compared',
+                      validation: (Rule) => Rule.required(),
+                    },
+                    {
+                      name: 'roundi',
+                      type: 'string',
+                      title: 'Roundi',
+                      description: 'How Roundi handles this feature',
+                      validation: (Rule) => Rule.required(),
+                    },
+                    {
+                      name: 'competitor',
+                      type: 'string',
+                      title: 'Competitor',
+                      description: 'How the competitor handles this feature',
+                      validation: (Rule) => Rule.required(),
+                    },
+                  ],
+                  preview: {
+                    select: {
+                      feature: 'feature',
+                      roundi: 'roundi',
+                      competitor: 'competitor',
+                    },
+                    prepare(selection) {
+                      const { feature, roundi, competitor } = selection
+                      return {
+                        title: feature,
+                        subtitle: `Roundi: ${roundi} | Competitor: ${competitor}`,
+                      }
+                    },
+                  },
+                },
+              ],
+              validation: (Rule) => Rule.required().min(1),
+            },
+          ],
+          preview: {
+            select: {
+              competitor: 'competitor',
+              rows: 'rows',
+            },
+            prepare(selection) {
+              const { competitor, rows } = selection
+              const rowCount = rows?.length || 0
+              return {
+                title: `Comparison Table: Roundi vs ${competitor || 'Competitor'}`,
+                subtitle: `${rowCount} feature${rowCount !== 1 ? 's' : ''} compared`,
+              }
+            },
+          },
+        },
       ],
     }),
     defineField({

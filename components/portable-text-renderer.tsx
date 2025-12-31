@@ -4,6 +4,7 @@ import { PortableText } from '@portabletext/react'
 import imageUrlBuilder from '@sanity/image-url'
 import { client } from '@/lib/sanity.client'
 import Link from 'next/link'
+import { ComparisonTable } from './comparison-table'
 
 const builder = imageUrlBuilder(client)
 
@@ -28,6 +29,20 @@ const portableTextComponents = {
             </p>
           )}
         </div>
+      )
+    },
+    divider: () => {
+      return (
+        <hr className="my-8 border-t border-border" />
+      )
+    },
+    comparisonTable: ({ value }: any) => {
+      if (!value?.rows || !value?.competitor) return null
+      return (
+        <ComparisonTable
+          competitor={value.competitor}
+          rows={value.rows}
+        />
       )
     },
   },

@@ -2,10 +2,11 @@
 
 import { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
+import Link from 'next/link';
 
 interface FAQItemProps {
   question: string;
-  answer: string;
+  answer: string | React.ReactNode;
   isOpen: boolean;
   onToggle: () => void;
 }
@@ -26,9 +27,9 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
       </div>
       {isOpen && (
         <div className="mt-[16px] md:mt-[20px] lg:mt-[24px] pr-[36px] md:pr-[40px] lg:pr-[48px]">
-          <p className="font-sans leading-[1.5] not-italic text-[15px] md:text-[17px] lg:text-[19px] text-[#6f6f6f]">
-            {answer}
-          </p>
+          <div className="font-sans leading-[1.5] not-italic text-[15px] md:text-[17px] lg:text-[19px] text-[#6f6f6f]">
+            {typeof answer === 'string' ? <p>{answer}</p> : answer}
+          </div>
         </div>
       )}
     </div>
@@ -51,13 +52,37 @@ export function FAQSection() {
     },
     {
       question: 'How is Roundi different from Uber delivery?',
-      answer:
-        'Uber focuses on on-demand transport, not delivery operations. Roundi helps businesses manage their own riders, plan routes, track deliveries, and improve accountability — making it more cost-effective for businesses doing deliveries every day.',
+      answer: (
+        <>
+          <p className="mb-3">
+            Uber focuses on on-demand transport, not delivery operations. Roundi helps businesses manage their own riders, plan routes, track deliveries, and improve accountability — making it more cost-effective for businesses doing deliveries every day.
+          </p>
+          <Link
+            href="/blog/roundi-vs-uber-bolt-delivery"
+            className="text-[#162318] hover:text-[#1a2a1f] font-medium underline inline-flex items-center gap-1"
+            onClick={(e) => e.stopPropagation()}
+          >
+            Read the full comparison →
+          </Link>
+        </>
+      ),
     },
     {
       question: 'How is Roundi different from Leta?',
-      answer:
-        'Leta is built for large enterprises and logistics-heavy operations. Roundi is designed specifically for SMEs, with simpler setup, lower costs, and features focused on day-to-day delivery execution rather than complex logistics networks.',
+      answer: (
+        <>
+          <p className="mb-3">
+            Leta is built for large enterprises and logistics-heavy operations. Roundi is designed specifically for SMEs, with simpler setup, lower costs, and features focused on day-to-day delivery execution rather than complex logistics networks.
+          </p>
+          <Link
+            href="/blog/roundi-vs-leta"
+            className="text-[#162318] hover:text-[#1a2a1f] font-medium underline inline-flex items-center gap-1"
+            onClick={(e) => e.stopPropagation()}
+          >
+            Read the full comparison →
+          </Link>
+        </>
+      ),
     },
     {
       question: 'How does Roundi help businesses save money?',
