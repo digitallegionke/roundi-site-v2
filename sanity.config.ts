@@ -1,6 +1,7 @@
 import { defineConfig } from 'sanity'
 import { structureTool } from 'sanity/structure'
 import { visionTool } from '@sanity/vision'
+import { table } from '@sanity/table'
 import { schemaTypes } from './sanity/schemas'
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || import.meta.env.VITE_SANITY_PROJECT_ID || '8029w8ob'
@@ -13,7 +14,7 @@ export default defineConfig({
   projectId,
   dataset,
 
-  plugins: [structureTool(), visionTool()],
+  plugins: [structureTool(), visionTool(), table()],
 
   schema: {
     types: schemaTypes,

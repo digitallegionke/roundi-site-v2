@@ -5,6 +5,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import { client } from '@/lib/sanity.client'
 import Link from 'next/link'
 import { ComparisonTable } from './comparison-table'
+import { TableRenderer } from './table-renderer'
 
 const builder = imageUrlBuilder(client)
 
@@ -44,6 +45,9 @@ const portableTextComponents = {
           rows={value.rows}
         />
       )
+    },
+    table: ({ value }: any) => {
+      return <TableRenderer value={value} />
     },
   },
   block: {

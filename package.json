@@ -40,6 +40,7 @@
     "@radix-ui/react-toggle-group": "1.1.1",
     "@radix-ui/react-tooltip": "1.1.6",
     "@sanity/image-url": "^2.0.2",
+    "@sanity/table": "^2.0.1",
     "@vercel/analytics": "latest",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
@@ -73,8 +74,8 @@
     "@types/react-dom": "^19",
     "baseline-browser-mapping": "^2.8.32",
     "postcss": "^8.5",
-    "tailwindcss": "^4.1.9",
-    "tw-animate-css": "1.3.3",
+    "tailwindcss": "^4.1.18",
+    "tw-animate-css": "^1.3.3",
     "typescript": "^5"
   }
 }
