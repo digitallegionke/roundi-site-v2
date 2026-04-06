@@ -5,8 +5,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Contact Us - Build Your Foundation with Roundi",
-  description: "Questions about Roundi's logistics infrastructure platform? Contact our team for demos, support, or partnership opportunities. We're here to help you build the foundation to go as far as you dare.",
-  keywords: ["contact Roundi", "logistics infrastructure demo", "Roundi support", "logistics platform partnership", "African logistics platform contact"],
+  description: "Questions about Roundi's logistics platform? Contact our team for demos, support, or partnership opportunities. We're here to help you build the foundation to go as far as you dare.",
+  keywords: ["contact Roundi", "logistics platform demo", "Roundi support", "logistics platform partnership", "African logistics platform contact"],
   openGraph: {
     title: "Contact Us - Build Your Foundation with Roundi",
     description: "Have questions about Roundi? Contact our team for demos, support, or partnership opportunities.",
@@ -25,7 +25,7 @@ export default function ContactPage() {
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Let's Build Your Foundation</h1>
             <p className="text-lg text-gray-600">
-              Ready to scale your product business with logistics infrastructure built for where you're going next? Let's talk.
+              Ready to scale your product business with a logistics platform built for where you're going next? Let's talk.
             </p>
           </div>
 

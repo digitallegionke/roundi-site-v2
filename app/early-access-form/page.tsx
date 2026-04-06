@@ -5,11 +5,11 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Join Early Access - Build Your Foundation with Roundi",
-  description: "Join Roundi's early access program and be among the first to build logistics infrastructure for growth. Smart routing, real-time visibility, and operational tools — from your first order to your biggest market.",
-  keywords: ["Roundi early access", "logistics infrastructure Africa", "logistics platform beta", "African logistics early access", "Roundi signup"],
+  description: "Join Roundi's early access program and be among the first to access our logistics platform for growth. Smart routing, real-time visibility, and operational tools — from your first order to your biggest market.",
+  keywords: ["Roundi early access", "logistics platform Africa", "logistics platform beta", "African logistics early access", "Roundi signup"],
   openGraph: {
     title: "Join Early Access - Build Your Foundation with Roundi",
-    description: "Be among the first to build logistics infrastructure for growth with Roundi. Exclusive benefits and special pricing available.",
+    description: "Be among the first to access Roundi's logistics platform for growth. Exclusive benefits and special pricing available.",
     url: "https://roundi.africa/early-access-form",
   },
   alternates: {
@@ -29,7 +29,7 @@ export default function EarlyAccessFormPage() {
           <div className="text-center mb-8 md:mb-20">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 md:mb-4">Build Your Foundation Early</h1>
             <p className="text-base md:text-lg text-gray-600">
-              Be among the first to access the logistics infrastructure that moves with your business — from your first order to your biggest market.
+              Be among the first to access the logistics platform that moves with your business — from your first order to your biggest market.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export default function EarlyAccessFormPage() {
                   <Award className="w-5 h-5 md:w-6 md:h-6 text-gray-700 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Build Your Foundation Early</h3>
-                    <p className="text-gray-600 text-xs md:text-sm">Access the full infrastructure stack before launch — smart routing, real-time visibility, and operational tools.</p>
+                    <p className="text-gray-600 text-xs md:text-sm">Access the full platform before launch — smart routing, real-time visibility, and operational tools.</p>
                   </div>
                 </div>
 
@@ -53,7 +53,7 @@ export default function EarlyAccessFormPage() {
                 <div className="flex items-start gap-3 md:gap-4">
                   <Users className="w-5 h-5 md:w-6 md:h-6 text-gray-700 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Shape the Infrastructure</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Shape the Platform</h3>
                     <p className="text-gray-600 text-xs md:text-sm">Help us build the platform that African businesses deserve. Your feedback shapes what we build next.</p>
                   </div>
                 </div>
@@ -62,7 +62,7 @@ export default function EarlyAccessFormPage() {
                 <div className="flex items-start gap-3 md:gap-4">
                   <TrendingUp className="w-5 h-5 md:w-6 md:h-6 text-gray-700 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Preferred Infrastructure Pricing</h3>
+                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Preferred Pricing</h3>
                     <p className="text-gray-600 text-xs md:text-sm">Lock in exclusive early adopter pricing that grows with you, not against you.</p>
                   </div>
                 </div>

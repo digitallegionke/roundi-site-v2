@@ -9,11 +9,11 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Roundi - Logistics Platform for African Product Businesses",
-  description: "Roundi gives African product businesses smart routing, real-time visibility, and operational tools — the logistics infrastructure to operate reliably today and scale boldly tomorrow.",
-  keywords: ["logistics infrastructure Africa", "delivery platform Kenya", "smart routing Nairobi", "logistics operating system", "product business logistics", "African logistics platform", "delivery infrastructure Kenya", "logistics scale Africa", "Roundi logistics", "real-time delivery visibility"],
+  description: "Roundi gives African product businesses smart routing, real-time visibility, and operational tools — the logistics platform to operate reliably today and scale boldly tomorrow.",
+  keywords: ["logistics platform Africa", "delivery platform Kenya", "smart routing Nairobi", "logistics operating system", "product business logistics", "African logistics platform", "delivery platform Kenya", "logistics scale Africa", "Roundi logistics", "real-time delivery visibility"],
   openGraph: {
-    title: "Roundi - The Infrastructure to Go as Far as You Dare",
-    description: "Logistics infrastructure platform for African product businesses. Smart routing, real-time visibility, and operational tools — moving with your business from your first order to your biggest market.",
+    title: "Roundi - The Platform to Go as Far as You Dare",
+    description: "Logistics platform for African product businesses. Smart routing, real-time visibility, and operational tools — moving with your business from your first order to your biggest market.",
     url: "https://roundi.africa",
     type: "website",
     images: [
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
         url: "/hero-bg.webp",
         width: 1200,
         height: 630,
-        alt: "Roundi Logistics Infrastructure Platform",
+        alt: "Roundi Logistics Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Roundi - The Infrastructure to Go as Far as You Dare",
+    title: "Roundi - The Platform to Go as Far as You Dare",
     description: "Logistics infrastructure platform for African product businesses. Smart routing, real-time visibility, and operational tools.",
     images: ["/hero-bg.webp"],
   },
@@ -57,11 +57,11 @@ export default function Home() {
       "ratingValue": "4.8",
       "ratingCount": "127"
     },
-    "description": "Logistics infrastructure platform for African product businesses. Smart routing, real-time visibility, and operational tools — from your first order to your biggest market.",
+    "description": "Logistics platform for African product businesses. Smart routing, real-time visibility, and operational tools — from your first order to your biggest market.",
     "featureList": [
       "Smart routing for African roads",
       "Real-time visibility across every order",
-      "Route optimization infrastructure",
+      "Route optimization for African roads",
       "Live tracking and ETAs",
       "Operational tools that scale",
       "Performance analytics and insights"
@@ -78,7 +78,7 @@ export default function Home() {
         "name": "What is Roundi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Roundi is a logistics infrastructure platform that gives African product businesses smart routing, real-time visibility, and operational tools — everything needed to operate reliably today and scale boldly tomorrow. We move with your business from your first order to your biggest market."
+          "text": "Roundi is a logistics platform that gives African product businesses smart routing, real-time visibility, and operational tools — everything needed to operate reliably today and scale boldly tomorrow. We move with your business from your first order to your biggest market."
         }
       },
       {
@@ -94,7 +94,7 @@ export default function Home() {
         "name": "How is Roundi different from Uber delivery?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Uber is a consumer-focused marketplace where brands are just order sources. Roundi is logistics infrastructure built for product brands — smart routing, real-time visibility, and operational tools that scale from your first order to your biggest market."
+          "text": "Uber is a consumer-focused marketplace where brands are just order sources. Roundi is a logistics platform built for product brands — smart routing, real-time visibility, and operational tools that scale from your first order to your biggest market."
         }
       },
       {
@@ -102,7 +102,7 @@ export default function Home() {
         "name": "How is Roundi different from Leta?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Leta is built for large enterprises. Roundi is infrastructure for ambitious product brands — smart routing and real-time visibility that moves with your business. Faster to launch, built to scale, designed for where you're going next."
+          "text": "Leta is built for large enterprises. Roundi is a platform for ambitious product brands — smart routing and real-time visibility that moves with your business. Faster to launch, built to scale, designed for where you're going next."
         }
       },
       {
