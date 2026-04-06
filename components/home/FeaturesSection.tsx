@@ -3,20 +3,20 @@ import Image from 'next/image';
 export function FeaturesSection() {
   const features = [
     {
-      title: 'Smart Routing That Knows African Roads',
-      description: "Not Silicon Valley assumptions. Routing built for Nairobi's estates, matatu routes, and real traffic patterns. Your riders move faster, your orders arrive on time, and your business scales without chaos.",
+      title: 'Routing Built for African Roads',
+      description: "Not Silicon Valley assumptions. Routing that understands Nairobi's estates, matatu routes, and real traffic — so goods move faster and the chaos of managing it all stays off your plate. Infrastructure calibrated for where your business actually operates.",
       image: '/Features/feature-1.webp',
       imageOnLeft: true,
     },
     {
-      title: 'Real-Time Visibility Across Every Order',
-      description: "Complete transparency from dispatch to delivery. Track every rider, every order, every mile. Customers get accurate ETAs. You get the foundation to grow confidently.",
+      title: 'Visibility Across Every Movement',
+      description: "Full transparency from dispatch to door. Track every order, every logistics facilitator, every stage — from one place. Your customers know what to expect. You know exactly where your operations stand. That's the foundation you build scale on.",
       image: '/Features/feature-2.webp',
       imageOnLeft: false,
     },
     {
-      title: 'Operational Excellence at Scale',
-      description: "Complete visibility and control over your delivery operations. Track performance, optimize efficiency, and build the operational foundation that grows with your business.",
+      title: 'One Platform. Both Sides.',
+      description: "When your own capacity runs out, Roundi's network of logistics partners steps in. No calls, no scrambling. Businesses tap into capacity when they need it. Logistics partners tap into businesses ready to grow. Both sides run from the same platform — so neither side hits a ceiling.",
       image: '/Features/feature-3.webp',
       imageOnLeft: true,
     },

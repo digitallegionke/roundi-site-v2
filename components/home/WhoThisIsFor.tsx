@@ -13,37 +13,37 @@ interface AccordionItem {
 
 const accordionData: AccordionItem[] = [
   {
-    id: 'smes',
-    title: 'Product Brands & SMEs',
+    id: 'courier',
+    title: 'Courier and Dispatch Companies',
     content:
-      "From your first order to your biggest market.\n\nBuild the logistics platform to scale confidently — whether you're shipping 5 orders or 500. Smart routing, real-time visibility, and operational tools that grow with you.",
-    image: '/Who this is for/SME.webp',
-  },
-  {
-    id: 'ecommerce',
-    title: 'E-commerce & D2C Brands',
-    content:
-      'Turn delivery into your competitive advantage.\n\nGive customers the transparency they expect. Access the platform to handle growth. Scale from neighborhood deliveries to nationwide reach.',
-    image: '/Who this is for/E-commerce.webp',
-  },
-  {
-    id: 'retail',
-    title: 'Retail & Wholesale',
-    content:
-      'Move product faster. Reach more customers.\n\nLogistics platform built for businesses ready to expand. Optimize every route, track every order, and build operational excellence at scale.',
+      'You have the fleet and the facilitators. Roundi gives you the platform to run them efficiently, give your clients full visibility, and become the logistics partner they never have to replace.',
     image: '/Who this is for/Retail.webp',
   },
   {
-    id: 'restaurants',
-    title: 'Food & Beverage',
+    id: 'haulage',
+    title: 'Transport and Haulage Firms',
     content:
-      'Own your delivery experience. Keep your margins.\n\nBuild on a platform that moves with you — from single-location delivery to multi-branch operations. Control your operations. Scale your reach.',
+      'Long haul, second mile, or both. Roundi connects you to product businesses that need your capacity — and gives you the tools to manage every movement without the chaos.',
+    image: '/Who this is for/E-commerce.webp',
+  },
+  {
+    id: 'brands',
+    title: 'Product Brands and D2C Businesses',
+    content:
+      "Fashion, food, cosmetics, electronics. If you're moving goods across Nairobi and thinking about what comes next, Roundi connects you to logistics partners with the capacity to take you there.",
+    image: '/Who this is for/SME.webp',
+  },
+  {
+    id: 'smes',
+    title: 'Scaling SMEs',
+    content:
+      "You've grown past what calls and spreadsheets can hold. Roundi is the foundation you move onto — and the network that moves with you.",
     image: '/Who this is for/Restaurants.webp',
   },
 ];
 
 export function WhoThisIsFor() {
-  const [expandedId, setExpandedId] = useState<string>('smes');
+  const [expandedId, setExpandedId] = useState<string>('courier');
 
   const toggleAccordion = (id: string) => {
     setExpandedId(expandedId === id ? '' : id);
@@ -58,9 +58,14 @@ export function WhoThisIsFor() {
       <div className="flex flex-col items-center size-full">
         <div className="box-border content-stretch flex flex-col gap-[32px] md:gap-[48px] lg:gap-[64px] items-start p-[32px] md:p-[56px] lg:p-[80px] relative w-full">
           {/* Section Title */}
-          <h2 className="font-sans font-semibold leading-[1.1] not-italic text-[32px] md:text-[42px] lg:text-[52px] text-black tracking-[-1.2px] md:tracking-[-1.6px] lg:tracking-[-2px]">
-            Built for Businesses Ready to Scale
-          </h2>
+          <div className="flex flex-col gap-[16px] md:gap-[20px]">
+            <h2 className="font-sans font-semibold leading-[1.1] not-italic text-[32px] md:text-[42px] lg:text-[52px] text-black tracking-[-1.2px] md:tracking-[-1.6px] lg:tracking-[-2px]">
+              Built for the Companies That Move African Business
+            </h2>
+            <p className="font-sans leading-[1.6] not-italic text-[16px] md:text-[18px] lg:text-[20px] text-[#6f6f6f] max-w-[720px]">
+              Logistics partners who want to run better operations and win clients they can grow with. Product businesses that have outgrown WhatsApp and need the infrastructure to match their ambition.
+            </p>
+          </div>
 
           {/* Content Grid */}
           <div className="flex flex-col lg:flex-row gap-[32px] md:gap-[40px] lg:gap-[80px] items-start w-full">
@@ -75,7 +80,7 @@ export function WhoThisIsFor() {
                     expandedId
                       ? accordionData.find((item) => item.id === expandedId)?.image ||
                         '/Who this is for/SME.webp'
-                      : '/Who this is for/SME.png'
+                      : '/Who this is for/Retail.webp'
                   }
                 />
               </div>
@@ -122,7 +127,7 @@ export function WhoThisIsFor() {
                     expandedId
                       ? accordionData.find((item) => item.id === expandedId)?.image ||
                         '/Who this is for/SME.webp'
-                      : '/Who this is for/SME.png'
+                      : '/Who this is for/Retail.webp'
                   }
                 />
               </div>
