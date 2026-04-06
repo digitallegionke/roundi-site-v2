@@ -4,12 +4,12 @@ import { Users, TrendingUp, Shield, Award } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Join Early Access - Be First to Experience Roundi",
-  description: "Join Roundi's early access program and be among the first to transform your delivery operations. Get exclusive benefits, special pricing, and help shape the future of delivery management in Africa.",
-  keywords: ["Roundi early access", "delivery software beta", "logistics platform early bird", "delivery management trial", "Roundi signup"],
+  title: "Join Early Access - Build Your Foundation with Roundi",
+  description: "Join Roundi's early access program and be among the first to build logistics infrastructure for growth. Smart routing, real-time visibility, and operational tools — from your first order to your biggest market.",
+  keywords: ["Roundi early access", "logistics infrastructure Africa", "logistics platform beta", "African logistics early access", "Roundi signup"],
   openGraph: {
-    title: "Join Early Access - Be First to Experience Roundi",
-    description: "Be among the first to transform your delivery operations with Roundi. Exclusive benefits and special pricing available.",
+    title: "Join Early Access - Build Your Foundation with Roundi",
+    description: "Be among the first to build logistics infrastructure for growth with Roundi. Exclusive benefits and special pricing available.",
     url: "https://roundi.africa/early-access-form",
   },
   alternates: {
@@ -27,9 +27,9 @@ export default function EarlyAccessFormPage() {
       <main className="flex-grow min-h-screen py-8 md:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 md:mb-20">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 md:mb-4">Join Our Early Access Program</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3 md:mb-4">Build Your Foundation Early</h1>
             <p className="text-base md:text-lg text-gray-600">
-              Be among the first to experience Roundi and help shape the future of delivery management.
+              Be among the first to access the logistics infrastructure that moves with your business — from your first order to your biggest market.
             </p>
           </div>
 
@@ -44,8 +44,8 @@ export default function EarlyAccessFormPage() {
                 <div className="flex items-start gap-3 md:gap-4">
                   <Award className="w-5 h-5 md:w-6 md:h-6 text-gray-700 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Be First</h3>
-                    <p className="text-gray-600 text-xs md:text-sm">Get exclusive early access to Roundi before the official launch.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Build Your Foundation Early</h3>
+                    <p className="text-gray-600 text-xs md:text-sm">Access the full infrastructure stack before launch — smart routing, real-time visibility, and operational tools.</p>
                   </div>
                 </div>
 
@@ -53,8 +53,8 @@ export default function EarlyAccessFormPage() {
                 <div className="flex items-start gap-3 md:gap-4">
                   <Users className="w-5 h-5 md:w-6 md:h-6 text-gray-700 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Shape the Product</h3>
-                    <p className="text-gray-600 text-xs md:text-sm">Your feedback will directly influence product development and features.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Shape the Infrastructure</h3>
+                    <p className="text-gray-600 text-xs md:text-sm">Help us build the platform that African businesses deserve. Your feedback shapes what we build next.</p>
                   </div>
                 </div>
 
@@ -62,8 +62,8 @@ export default function EarlyAccessFormPage() {
                 <div className="flex items-start gap-3 md:gap-4">
                   <TrendingUp className="w-5 h-5 md:w-6 md:h-6 text-gray-700 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Special Pricing</h3>
-                    <p className="text-gray-600 text-xs md:text-sm">Lock in exclusive early adopter pricing and benefits.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Preferred Infrastructure Pricing</h3>
+                    <p className="text-gray-600 text-xs md:text-sm">Lock in exclusive early adopter pricing that grows with you, not against you.</p>
                   </div>
                 </div>
 
@@ -71,8 +71,8 @@ export default function EarlyAccessFormPage() {
                 <div className="flex items-start gap-3 md:gap-4">
                   <Shield className="w-5 h-5 md:w-6 md:h-6 text-gray-700 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Priority Support</h3>
-                    <p className="text-gray-600 text-xs md:text-sm">Get dedicated support from our team to help you succeed.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">Build Together</h3>
+                    <p className="text-gray-600 text-xs md:text-sm">Dedicated support from our team as you scale. We're invested in how far you go.</p>
                   </div>
                 </div>
               </div>

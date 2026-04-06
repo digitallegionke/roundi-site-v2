@@ -8,12 +8,12 @@ import { Footer } from '@/components/home/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Delivery Management Software for Kenyan SMEs & Businesses in Nairobi",
-  description: "Roundi is delivery management software built for Kenyan SMEs. Track orders in real-time, manage riders across Nairobi, optimize delivery routes. Trusted by restaurants, e-commerce stores, and logistics businesses across East Africa.",
-  keywords: ["delivery management software Kenya", "logistics platform Nairobi", "delivery tracking Kenya", "rider management Nairobi", "route optimization Kenya", "last mile delivery East Africa", "fleet management Kenya", "delivery app Kenyan businesses", "SME delivery software Africa", "Nairobi delivery management"],
+  title: "Roundi - Logistics Platform for African Product Businesses",
+  description: "Roundi gives African product businesses smart routing, real-time visibility, and operational tools — the logistics infrastructure to operate reliably today and scale boldly tomorrow.",
+  keywords: ["logistics infrastructure Africa", "delivery platform Kenya", "smart routing Nairobi", "logistics operating system", "product business logistics", "African logistics platform", "delivery infrastructure Kenya", "logistics scale Africa", "Roundi logistics", "real-time delivery visibility"],
   openGraph: {
-    title: "Delivery Management Software for Kenyan SMEs | Roundi",
-    description: "Roundi is delivery management software for Kenyan businesses. Track orders, manage Nairobi riders, and optimize East African deliveries.",
+    title: "Roundi - The Infrastructure to Go as Far as You Dare",
+    description: "Logistics infrastructure platform for African product businesses. Smart routing, real-time visibility, and operational tools — moving with your business from your first order to your biggest market.",
     url: "https://roundi.africa",
     type: "website",
     images: [
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
         url: "/hero-bg.webp",
         width: 1200,
         height: 630,
-        alt: "Roundi Delivery Management Platform",
+        alt: "Roundi Logistics Infrastructure Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Roundi - Transform Your Delivery Operations",
-    description: "Effortless delivery management for African businesses. Track orders, manage riders, and delight customers.",
+    title: "Roundi - The Infrastructure to Go as Far as You Dare",
+    description: "Logistics infrastructure platform for African product businesses. Smart routing, real-time visibility, and operational tools.",
     images: ["/hero-bg.webp"],
   },
   alternates: {
@@ -57,14 +57,14 @@ export default function Home() {
       "ratingValue": "4.8",
       "ratingCount": "127"
     },
-    "description": "Delivery management software for Kenyan and East African SMEs. Track orders, manage riders, and optimize routes across Nairobi and Kenya.",
+    "description": "Logistics infrastructure platform for African product businesses. Smart routing, real-time visibility, and operational tools — from your first order to your biggest market.",
     "featureList": [
-      "Real-time delivery tracking",
-      "Rider management",
-      "Route optimization for Nairobi",
-      "Order management",
-      "Customer notifications",
-      "Analytics and reporting"
+      "Smart routing for African roads",
+      "Real-time visibility across every order",
+      "Route optimization infrastructure",
+      "Live tracking and ETAs",
+      "Operational tools that scale",
+      "Performance analytics and insights"
     ],
     "screenshot": "https://roundi.africa/hero-bg.webp"
   };
@@ -78,7 +78,7 @@ export default function Home() {
         "name": "What is Roundi?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Roundi is a delivery management and last-mile delivery software built for Kenyan SMEs. It helps businesses plan delivery routes, track riders in real time, manage multiple deliveries, and give customers accurate ETAs — all in one platform designed for Nairobi and other Kenyan cities."
+          "text": "Roundi is a logistics infrastructure platform that gives African product businesses smart routing, real-time visibility, and operational tools — everything needed to operate reliably today and scale boldly tomorrow. We move with your business from your first order to your biggest market."
         }
       },
       {
@@ -86,7 +86,7 @@ export default function Home() {
         "name": "Who is Roundi built for?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Roundi is built for small and medium businesses in Kenya that manage their own deliveries. This includes online stores, product brands, wholesalers, and shops with one or more riders handling daily deliveries."
+          "text": "Roundi is built for ambitious product-based businesses that rely on delivery and are hungry to grow — including D2C brands, boutique manufacturers, cosmetics & skincare brands, fashion & apparel, food & beverage, and SMEs scaling nationwide or into new markets."
         }
       },
       {
@@ -94,7 +94,7 @@ export default function Home() {
         "name": "How is Roundi different from Uber delivery?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Uber focuses on on-demand transport, not delivery operations. Roundi helps businesses manage their own riders, plan routes, track deliveries, and improve accountability — making it more cost-effective for businesses doing deliveries every day."
+          "text": "Uber is a consumer-focused marketplace where brands are just order sources. Roundi is logistics infrastructure built for product brands — smart routing, real-time visibility, and operational tools that scale from your first order to your biggest market."
         }
       },
       {
@@ -102,15 +102,15 @@ export default function Home() {
         "name": "How is Roundi different from Leta?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Leta is built for large enterprises and logistics-heavy operations. Roundi is designed specifically for SMEs, with simpler setup, lower costs, and features focused on day-to-day delivery execution rather than complex logistics networks."
+          "text": "Leta is built for large enterprises. Roundi is infrastructure for ambitious product brands — smart routing and real-time visibility that moves with your business. Faster to launch, built to scale, designed for where you're going next."
         }
       },
       {
         "@type": "Question",
-        "name": "How does Roundi help businesses save money?",
+        "name": "How does Roundi help businesses grow?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Roundi helps Kenyan businesses save money by: Optimizing routes to reduce fuel costs, Reducing failed and repeat deliveries, Cutting customer support calls with live tracking, Improving rider accountability and performance. Instead of hiring more riders or paying per-trip delivery fees, businesses run more efficient operations with what they already have."
+          "text": "Roundi builds the foundation for growth by providing: Smart routing that scales with order volume, Real-time visibility that builds customer trust, Operational tools that grow with your business, Data and insights for better decisions. You're not just managing deliveries — you're laying the rails to go as far as you dare."
         }
       },
       {

@@ -18,10 +18,10 @@ export function CTASection() {
                 <div className="content-stretch flex flex-col gap-[20px] md:gap-[24px] lg:gap-[28px] items-start relative shrink-0 w-full max-w-[602px]">
                   <div className="content-stretch flex flex-col gap-[4px] items-center not-italic relative shrink-0 w-full max-w-[602px]">
                     <h2 className="font-sans font-semibold leading-[1.1] relative shrink-0 text-[32px] sm:text-[44px] md:text-[56px] lg:text-[64px] text-white tracking-[-2.4px] w-full">
-                      Signup for our Early Access.
+                      Build Your Foundation
                     </h2>
                     <p className="font-sans font-normal leading-[1.5] relative shrink-0 text-[18px] md:text-[20px] lg:text-[22px] text-[rgba(255,255,255,0.9)] w-full">
-                      Experience effortless, reliable delivery.
+                      Get early access to the logistics platform and operational tools that move with your business — from your first order to your biggest market.
                     </p>
                   </div>
                   <Link href="/early-access-form" className="w-full max-w-[307px]">

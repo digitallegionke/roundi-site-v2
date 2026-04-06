@@ -4,11 +4,11 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Contact Us - Get in Touch with Roundi",
-  description: "Have questions about Roundi's delivery management platform? Contact our team for demos, support, or partnership opportunities. We're here to help transform your delivery operations.",
-  keywords: ["contact Roundi", "delivery software support", "logistics platform demo", "Roundi customer service", "delivery management inquiries"],
+  title: "Contact Us - Build Your Foundation with Roundi",
+  description: "Questions about Roundi's logistics infrastructure platform? Contact our team for demos, support, or partnership opportunities. We're here to help you build the foundation to go as far as you dare.",
+  keywords: ["contact Roundi", "logistics infrastructure demo", "Roundi support", "logistics platform partnership", "African logistics platform contact"],
   openGraph: {
-    title: "Contact Us - Get in Touch with Roundi",
+    title: "Contact Us - Build Your Foundation with Roundi",
     description: "Have questions about Roundi? Contact our team for demos, support, or partnership opportunities.",
     url: "https://roundi.africa/contact",
   },
@@ -23,9 +23,9 @@ export default function ContactPage() {
       <main className="flex-grow min-h-screen py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">Let's Build Your Foundation</h1>
             <p className="text-lg text-gray-600">
-              Have a question or want to learn more about Roundi? We'd love to hear from you.
+              Ready to scale your product business with logistics infrastructure built for where you're going next? Let's talk.
             </p>
           </div>
 

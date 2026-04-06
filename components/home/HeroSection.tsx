@@ -22,10 +22,10 @@ export function HeroSection() {
                 <div className="content-stretch flex flex-col gap-[20px] md:gap-[24px] lg:gap-[32px] items-start relative shrink-0 w-full lg:w-[1021px]">
                   <div className="content-stretch flex flex-col gap-[16px] md:gap-[20px] items-start relative shrink-0 w-full">
                     <h1 className="font-sans font-semibold leading-[1.1] not-italic relative shrink-0 text-[40px] sm:text-[42px] md:text-[56px] lg:text-[68px] xl:text-[78px] text-white tracking-[-1.2px] sm:tracking-[-1.8px] md:tracking-[-2.4px] lg:tracking-[-2.8px] xl:tracking-[-3.12px] w-full [-webkit-font-smoothing:antialiased] [text-rendering:optimizeLegibility]">
-                      Delivery management for Kenya, finally done right.
+                      The platform to go as far as you dare.
                     </h1>
                     <p className="font-sans font-normal leading-[1.3] not-italic relative shrink-0 text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] text-white/90 tracking-[-0.4px] md:tracking-[-0.6px] lg:tracking-[-0.8px] w-full max-w-[800px] [-webkit-font-smoothing:antialiased]">
-                      Get early access to Roundi — route planning, rider tracking, and smart delivery tools in one place.
+                      Roundi gives African product businesses smart routing, real-time visibility, and operational tools — everything you need to operate reliably today and scale boldly tomorrow.
                     </p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-[20px] lg:gap-[24px] items-stretch sm:items-start relative shrink-0 w-full max-w-full [-webkit-box-orient:vertical] [-webkit-box-direction:normal] sm:[-webkit-box-orient:horizontal]">

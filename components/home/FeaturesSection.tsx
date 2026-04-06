@@ -3,20 +3,20 @@ import Image from 'next/image';
 export function FeaturesSection() {
   const features = [
     {
-      title: 'Smarter Routes. Lower Costs.',
-      description: "Beat Nairobi traffic and save fuel with automatic route optimization. Roundi plans the fastest delivery routes so your riders complete more stops in less time — whether you handle 5 or 50 deliveries a day.",
+      title: 'Smart Routing That Knows African Roads',
+      description: "Not Silicon Valley assumptions. Routing built for Nairobi's estates, matatu routes, and real traffic patterns. Your riders move faster, your orders arrive on time, and your business scales without chaos.",
       image: '/Features/feature-1.webp',
       imageOnLeft: true,
     },
     {
-      title: 'Live Tracking That Builds Trust.',
-      description: "Customers get real-time ETAs and live rider locations, reducing \"Where's my order?\" calls. Give your business the transparency and professionalism Kenyan shoppers expect.",
+      title: 'Real-Time Visibility Across Every Order',
+      description: "Complete transparency from dispatch to delivery. Track every rider, every order, every mile. Customers get accurate ETAs. You get the foundation to grow confidently.",
       image: '/Features/feature-2.webp',
       imageOnLeft: false,
     },
     {
-      title: 'Stronger Rider Accountability.',
-      description: "See rider locations, completion rates, and performance at a glance. Improve accountability, reduce missed deliveries, and reward your top performers.",
+      title: 'Operational Excellence at Scale',
+      description: "Complete visibility and control over your delivery operations. Track performance, optimize efficiency, and build the operational foundation that grows with your business.",
       image: '/Features/feature-3.webp',
       imageOnLeft: true,
     },
@@ -29,9 +29,9 @@ export function FeaturesSection() {
       <div className="flex flex-col items-center size-full">
         <div className="box-border content-stretch flex flex-col gap-[32px] md:gap-[48px] lg:gap-[64px] items-center p-[32px] md:p-[56px] lg:p-[80px] relative w-full">
           <h2 className="font-sans font-semibold leading-none not-italic relative shrink-0 text-[28px] sm:text-[38px] md:text-[50px] lg:text-[65px] text-black tracking-[-1.2px] sm:tracking-[-1.6px] md:tracking-[-2px] lg:tracking-[-2.6px] w-full">
-            Delivery Management Features{' '}
+            Built for{' '}
             <br className="hidden sm:block" aria-hidden="true" />
-            Built for Kenyan Businesses
+            Where You're Going Next
           </h2>
           <div className="content-stretch flex flex-col items-start relative shrink-0 w-full">
             {features.map((feature, index) => {

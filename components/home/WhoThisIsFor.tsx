@@ -14,30 +14,30 @@ interface AccordionItem {
 const accordionData: AccordionItem[] = [
   {
     id: 'smes',
-    title: 'SMEs',
+    title: 'Product Brands & SMEs',
     content:
-      'Manage daily deliveries without the chaos.\n\nPlan routes, track riders, and reduce failed deliveries — even with just one rider.',
+      "From your first order to your biggest market.\n\nBuild the logistics platform to scale confidently — whether you're shipping 5 orders or 500. Smart routing, real-time visibility, and operational tools that grow with you.",
     image: '/Who this is for/SME.webp',
   },
   {
     id: 'ecommerce',
-    title: 'E-commerce',
+    title: 'E-commerce & D2C Brands',
     content:
-      'Turn delivery into a trust-builder, not a complaint channel.\n\nGive customers live ETAs and manage multiple orders with ease.',
+      'Turn delivery into your competitive advantage.\n\nGive customers the transparency they expect. Access the platform to handle growth. Scale from neighborhood deliveries to nationwide reach.',
     image: '/Who this is for/E-commerce.webp',
   },
   {
     id: 'retail',
-    title: 'Retail',
+    title: 'Retail & Wholesale',
     content:
-      'Deliver faster, with fewer mistakes.\n\nTrack multiple deliveries per rider and keep orders moving on time.',
+      'Move product faster. Reach more customers.\n\nLogistics platform built for businesses ready to expand. Optimize every route, track every order, and build operational excellence at scale.',
     image: '/Who this is for/Retail.webp',
   },
   {
     id: 'restaurants',
-    title: 'Restaurants',
+    title: 'Food & Beverage',
     content:
-      'Keep control of your deliveries and your margins.\n\nTrack your own riders and deliver food on time, every time.',
+      'Own your delivery experience. Keep your margins.\n\nBuild on a platform that moves with you — from single-location delivery to multi-branch operations. Control your operations. Scale your reach.',
     image: '/Who this is for/Restaurants.webp',
   },
 ];
@@ -59,7 +59,7 @@ export function WhoThisIsFor() {
         <div className="box-border content-stretch flex flex-col gap-[32px] md:gap-[48px] lg:gap-[64px] items-start p-[32px] md:p-[56px] lg:p-[80px] relative w-full">
           {/* Section Title */}
           <h2 className="font-sans font-semibold leading-[1.1] not-italic text-[32px] md:text-[42px] lg:text-[52px] text-black tracking-[-1.2px] md:tracking-[-1.6px] lg:tracking-[-2px]">
-            Who this is for
+            Built for Businesses Ready to Scale
           </h2>
 
           {/* Content Grid */}

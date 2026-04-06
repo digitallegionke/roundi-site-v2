@@ -43,19 +43,19 @@ export function FAQSection() {
     {
       question: "What is Roundi?",
       answer:
-        'Roundi is a delivery management and last-mile delivery software built for Kenyan SMEs. It helps businesses plan delivery routes, track riders in real time, manage multiple deliveries, and give customers accurate ETAs — all in one platform designed for Nairobi and other Kenyan cities.',
+        'Roundi is a logistics platform that gives African product businesses smart routing, real-time visibility, and operational tools — everything you need to operate reliably today and scale boldly tomorrow. We move with your business from your first order to your biggest market.',
     },
     {
       question: 'Who is Roundi built for?',
       answer:
-        'Roundi is built for small and medium businesses in Kenya that manage their own deliveries. This includes online stores, product brands, wholesalers, and shops with one or more riders handling daily deliveries.',
+        'Roundi is built for ambitious product-based businesses that rely on delivery and are hungry to grow — including D2C brands, boutique manufacturers, cosmetics & skincare brands, fashion & apparel, food & beverage, and SMEs scaling nationwide or into new markets.',
     },
     {
       question: 'How is Roundi different from Uber delivery?',
       answer: (
         <>
           <p className="mb-3">
-            Uber focuses on on-demand transport, not delivery operations. Roundi helps businesses manage their own riders, plan routes, track deliveries, and improve accountability — making it more cost-effective for businesses doing deliveries every day.
+            Uber is a consumer-focused marketplace where brands are just order sources. Roundi is a logistics platform built for product brands — smart routing, real-time visibility, and operational tools that scale from your first order to your biggest market.
           </p>
           <Link
             href="/blog/roundi-vs-uber-bolt-delivery"
@@ -72,7 +72,7 @@ export function FAQSection() {
       answer: (
         <>
           <p className="mb-3">
-            Leta is built for large enterprises and logistics-heavy operations. Roundi is designed specifically for SMEs, with simpler setup, lower costs, and features focused on day-to-day delivery execution rather than complex logistics networks.
+            Leta is built for large enterprises. Roundi is a platform for ambitious product brands — smart routing and real-time visibility that moves with your business. Faster to launch, built to scale, designed for where you're going next.
           </p>
           <Link
             href="/blog/roundi-vs-leta"
@@ -85,49 +85,49 @@ export function FAQSection() {
       ),
     },
     {
-      question: 'How does Roundi help businesses save money?',
+      question: 'How does Roundi help businesses grow?',
       answer:
-        'Roundi helps Kenyan businesses save money by: Optimizing routes to reduce fuel costs, Reducing failed and repeat deliveries, Cutting customer support calls with live tracking, Improving rider accountability and performance. Instead of hiring more riders or paying per-trip delivery fees, businesses run more efficient operations with what they already have.',
+        "Roundi builds the foundation for growth by providing: Smart routing that scales with order volume, Real-time visibility that builds customer trust, Operational tools that grow with your business, Data and insights for better decisions. You're not just managing deliveries — you're laying the rails to go as far as you dare.",
     },
     {
-      question: 'Does Roundi offer real-time rider tracking?',
+      question: 'Does Roundi offer real-time visibility?',
       answer:
-        'Yes. Roundi provides real-time rider tracking and live delivery updates so businesses can monitor deliveries and customers receive accurate ETAs — reducing "Where is my order?" calls.',
+        'Yes. Real-time visibility across every order, every rider, every mile. Businesses get complete transparency, and customers receive accurate ETAs — building trust and reducing support calls.',
     },
     {
       question: 'Is Roundi available across Kenya?',
       answer:
-        'Roundi is built Nairobi-first, but works anywhere in Kenya where businesses manage deliveries using riders.',
+        'Roundi is built Nairobi-first with deep knowledge of local roads and conditions, but the platform works anywhere in Kenya where product businesses need reliable delivery operations.',
     },
     {
       question: 'Do riders need expensive smartphones?',
       answer:
-        'No. Roundi works on standard Android smartphones commonly used by riders in Kenya.',
+        'No. Roundi works on standard Android smartphones commonly used by riders in Kenya. Built for real African conditions, not Silicon Valley assumptions.',
     },
     {
-      question: 'Can I use Roundi if I only have one rider?',
+      question: 'Does Roundi scale from small to large operations?',
       answer:
-        'Yes. Roundi works whether you have one rider or a full delivery team. It scales as your business grows.',
+        "Yes. The platform moves with you — from your first order to your biggest market. Whether you have one rider today or planning for fifty, Roundi builds the foundation for where you're going next.",
     },
     {
       question: 'How much does Roundi cost?',
       answer:
-        'Roundi will offer affordable pricing designed for Kenyan SMEs, unlike enterprise logistics tools or per-delivery platforms. Pricing details will be shared at launch, with early access users receiving priority benefits.',
+        'Roundi offers affordable pricing designed for growing African businesses, unlike expensive enterprise tools or per-delivery platforms. Pricing details will be shared at launch, with early access users receiving priority benefits and preferred rates.',
     },
     {
       question: 'Is Roundi difficult to set up?',
       answer:
-        'No. Roundi is built for non-technical business owners. Most businesses can start managing deliveries quickly without technical onboarding.',
+        "No. The setup is straightforward and designed for non-technical users. Most businesses can start managing their deliveries quickly, without technical complexity.",
     },
     {
       question: 'When does Roundi officially launch?',
       answer:
-        'Roundi is currently in early access. Businesses can sign up to test the platform and get priority access before public launch.',
+        'Roundi is currently in early access. Ambitious businesses can sign up now to build their foundation early and get priority access before public launch.',
     },
     {
       question: 'How do I join early access?',
       answer:
-        'You can join early access by signing up on the Roundi website. Early users get priority onboarding and early feature access.',
+        'Sign up through the Roundi website. Early users get priority onboarding, early feature access, and preferred pricing — plus the chance to help shape the platform.',
     },
   ];
 
