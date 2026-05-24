@@ -63,6 +63,9 @@ const portableTextComponents = {
     h4: ({ children }: any) => (
       <h4 className="text-xl font-bold text-foreground mb-3 mt-4">{children}</h4>
     ),
+    h5: ({ children }: any) => (
+      <h5 className="text-lg font-bold text-foreground mb-2 mt-3">{children}</h5>
+    ),
     normal: ({ children }: any) => (
       <p className="text-base text-foreground leading-relaxed mb-6">{children}</p>
     ),
