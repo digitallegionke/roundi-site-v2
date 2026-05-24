@@ -3,6 +3,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
 import { ConditionalNavbar } from "@/components/ConditionalNavbar"
+import { ChatwootWidget } from "@/components/chatwoot-widget"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -166,6 +167,7 @@ export default function RootLayout({
         <ConditionalNavbar />
         {children}
         <Analytics />
+        <ChatwootWidget />
       </body>
     </html>
   )
